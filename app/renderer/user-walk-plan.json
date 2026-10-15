@@ -1,0 +1,48 @@
+{
+  "left": {
+    "frames": [
+      "./reviewed-walk-left-01.webp",
+      "./reviewed-walk-left-02.webp",
+      "./reviewed-walk-left-03.webp",
+      "./reviewed-walk-left-04.webp",
+      "./reviewed-walk-left-05.webp",
+      "./reviewed-walk-left-06.webp"
+    ],
+    "sources": [
+      "1000025711.png",
+      "1000025712.png",
+      "1000025713.png",
+      "1000025714.png",
+      "1000025715.png",
+      "1000025716.png"
+    ],
+    "landingFrames": [
+      0,
+      3
+    ]
+  },
+  "right": {
+    "frames": [
+      "./reviewed-walk-right-01.webp",
+      "./reviewed-walk-right-02.webp",
+      "./reviewed-walk-right-03.webp",
+      "./reviewed-walk-right-04.webp",
+      "./reviewed-walk-right-05.webp",
+      "./reviewed-walk-right-06.webp",
+      "./reviewed-walk-right-07.webp"
+    ],
+    "sources": [
+      "1000025694.png",
+      "1000025695.png",
+      "1000025696.png",
+      "1000025698.png",
+      "1000025709.png",
+      "1000025717.png",
+      "1000025719.png"
+    ],
+    "landingFrames": [
+      0,
+      5
+    ]
+  }
+}

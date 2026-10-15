@@ -1,0 +1,184 @@
+.moon-effects {
+  position: absolute;
+  inset: 0;
+  z-index: 4;
+  pointer-events: none;
+  overflow: visible;
+  color: #83ddff;
+}
+.moon-particle {
+  position: absolute;
+  font-style: normal;
+  width: var(--ps);
+  height: var(--ps);
+  font-size: var(--ps);
+  line-height: 1;
+  color: var(--tone);
+  opacity: 0;
+  filter: drop-shadow(0 0 3px var(--tone));
+  animation: moonScatter var(--life) ease-out var(--delay) both;
+}
+.moon-particle.dust {
+  border-radius: 50%;
+  background: radial-gradient(circle, #fff 0 15%, var(--tone) 25% 60%, transparent 74%);
+  box-shadow: 0 0 5px var(--tone);
+}
+.moon-particle.feather {
+  width: calc(var(--ps) * 0.55);
+  height: calc(var(--ps) * 1.8);
+  border-radius: 90% 12% 90% 12%;
+  background: linear-gradient(115deg, #fff, var(--tone) 40%, #718cdb);
+  border: 1px solid #d5f3ff;
+  box-shadow: 0 0 6px #8fdfff;
+}
+.moon-particle.note {
+  font-weight: bold;
+  font-size: calc(var(--ps) * 1.8);
+  text-shadow:
+    0 1px 1px #6952a0,
+    0 0 6px #dca3ff;
+}
+.moon-particle.heart {
+  text-shadow:
+    0 1px 1px #ba467a,
+    0 0 6px #ffcde8;
+}
+.moon-orbit {
+  position: absolute;
+  left: 19%;
+  top: 22%;
+  width: 62%;
+  height: 36%;
+  border: 2px solid transparent;
+  border-top-color: #fff1b9;
+  border-bottom-color: #81ddff;
+  border-radius: 50%;
+  filter: drop-shadow(0 0 4px #85cfff);
+  animation: moonOrbit 3500ms ease-in-out both;
+  transform: rotate(-25deg);
+}
+@keyframes moonScatter {
+  0% {
+    opacity: 0;
+    transform: translate(0, 8px) scale(0.25);
+  }
+  15%,
+  40% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translate(var(--px), var(--py)) rotate(var(--turn)) scale(0.65);
+  }
+}
+@keyframes moonOrbit {
+  0% {
+    opacity: 0;
+    transform: rotate(-45deg) scale(0.7);
+  }
+  20%,
+  65% {
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 0;
+    transform: rotate(15deg) scale(1.08);
+  }
+}
+.moon-effects[data-key^='pose:'] .moon-particle {
+  animation-iteration-count: 2;
+}
+/* Strong white core with blue/violet rim remains legible on both desktop themes. */
+.mote {
+  background: radial-gradient(circle, #fff7cf 0 9%, #a3ecff 18%, #7c9fffa0 42%, transparent 72%);
+  filter: drop-shadow(0 0 3px #88b6ff);
+}
+.mote:nth-child(3n) {
+  clip-path: polygon(50% 0, 62% 37%, 100% 50%, 62% 62%, 50% 100%, 38% 62%, 0 50%, 38% 37%);
+  background: linear-gradient(135deg, #fff5b5, #84ddff 45%, #be98ff);
+  filter: none;
+}
+.foot-ripple {
+  border-width: 2px;
+  border-color: #8ddcff;
+  box-shadow:
+    0 0 6px #7bcfff,
+    0 0 12px #a88bffa0;
+  background: radial-gradient(ellipse, #9cddff70, transparent 70%);
+}
+.foot-ripple:after {
+  border-color: #cab5ff;
+  border-width: 2px;
+  box-shadow: 0 0 4px #bba0ff;
+}
+.companion-prop {
+  color: #9870ed;
+  filter: drop-shadow(0 0 3px #fff) drop-shadow(0 0 4px #bba0ff);
+}
+.companion-prop.song-note {
+  color: #9a62e0;
+  font-weight: bold;
+  font-size: calc(29px * var(--pet-scale, 1));
+  text-shadow: 0 0 4px #f9dcff;
+}
+.companion-prop.shoulder-ring {
+  border: 2px solid #ffd99a;
+  opacity: 1;
+  box-shadow:
+    0 0 8px #ffe2a0,
+    inset 0 0 4px #fff3d3;
+}
+.pose-aura {
+  opacity: 0.9;
+  color: #c0a0ff;
+  text-shadow: 0 0 5px #c6edff;
+}
+.pose-feather {
+  color: #e7f5ff;
+  font-size: calc(22px * var(--pet-scale, 1));
+  filter: drop-shadow(0 0 4px #a78aff);
+}
+.badminton-shuttle {
+  filter: drop-shadow(0 0 3px #fff) drop-shadow(0 0 6px #a390ed);
+}
+.badminton-trail {
+  width: 5px;
+  height: 5px;
+  background: #fff2bb;
+  box-shadow: 0 0 5px #9cecff;
+}
+.badminton-hit {
+  width: calc(25px * var(--pet-scale, 1));
+  height: calc(25px * var(--pet-scale, 1));
+  border: 2px solid #fff1b7;
+  box-shadow:
+    0 0 7px #92ddff,
+    inset 0 0 6px #ceb7ff;
+}
+.badminton-hit:before,
+.badminton-hit:after {
+  content: '';
+  position: absolute;
+  left: 45%;
+  top: -30%;
+  width: 2px;
+  height: 160%;
+  background: linear-gradient(transparent, #fff0ae, transparent);
+  transform: rotate(45deg);
+}
+.badminton-hit:after {
+  transform: rotate(-45deg);
+}
+body.focus-mode .moon-effects {
+  display: none;
+}
+@media (prefers-reduced-motion: reduce) {
+  .mote {
+    animation: none;
+    opacity: 0.45;
+  }
+  .moon-particle,
+  .moon-orbit {
+    display: none;
+  }
+}

@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <title>哥伦比娅桌宠</title>
+    <!-- 需求 P0 要求"修复所有 CSP 报错"：页面原本完全没有 CSP，Electron 每次启动都会
+     打一条 Insecure Content-Security-Policy 告警。加上这条之后告警消失。
+     注意 img-src 必须显式写 file: —— file:// 页面的源是 opaque，只写 'self'
+     有可能把同目录的素材图挡掉（那就会变成一片空白）。 -->
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'none'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' file: data:; connect-src 'none'; media-src 'self' file:; object-src 'none';"
+    />
+    <link rel="stylesheet" href="./pet.css" />
+    <link rel="stylesheet" href="./companion-interactions.css" />
+    <link rel="stylesheet" href="./companionship-ui.css" />
+    <link rel="stylesheet" href="./voice-ui.css" />
+    <link rel="stylesheet" href="./moon-effects.css" />
+    <link rel="stylesheet" href="./relation-celebration.css" />
+    <link rel="stylesheet" href="./pet-reactions.css" />
+    <link rel="stylesheet" href="./playroom.css" />
+  </head>
+  <body>
+    <div id="petContainer">
+      <div id="stateBadge"></div>
+      <div id="motes"></div>
+      <div id="footRipples" aria-hidden="true"></div>
+      <img id="pet" src="./user-gaze-00.webp" alt="哥伦比娅" />
+      <div id="headZone"></div>
+      <div id="bellyZone"></div>
+      <div id="footZone"></div>
+      <div id="bubble"></div>
+    </div>
+    <!-- 主栏与分栏由 pet-menu.js 中的 MENU 数据生成。 -->
+    <div id="rightMenu"></div>
+    <div id="subMenu"></div>
+    <script src="./sequence-player.js"></script>
+    <script src="./companionship-runtime.js"></script>
+    <script src="./voice-runtime.js"></script>
+    <script src="./pet-runtime.js"></script>
+    <script src="./pet-preferences.js"></script>
+    <script src="./pet-menu.js"></script>
+    <script src="./pet-movement.js"></script>
+    <script src="./idle-cloth.js"></script>
+    <script src="./pet-bootstrap.js"></script>
+    <script src="./chat-pet-runtime.js"></script>
+    <script src="./weather-pet.js"></script>
+    <script src="./control-pet.js"></script>
+  </body>
+</html>

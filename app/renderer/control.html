@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'none';script-src 'self';style-src 'self';img-src 'self' file:;connect-src 'none';base-uri 'none';object-src 'none'"
+    />
+    <title>哥伦比娅 · 控制中心</title>
+    <link rel="stylesheet" href="control.css" />
+  </head>
+  <body>
+    <aside>
+      <div class="brand">
+        <div class="portrait">
+          <img src="user-gaze-00.webp" alt="哥伦比娅" />
+        </div>
+        <div><strong>月光手札</strong><small>把喜欢的留在手边</small></div>
+      </div>
+      <nav aria-label="控制中心">
+        <button data-tab="favorites">
+          常用收藏<span>喜欢的动作与氛围</span></button
+        ><button data-tab="actions">
+          动作与玩法<span>按分类寻找与演示</span></button
+        ><button data-tab="weather">
+          天气氛围<span>八种风景，随心切换</span></button
+        ><button data-tab="settings">
+          偏好设置<span>外观、声音与互动手感</span>
+        </button>
+        <button data-tab="menu">
+          菜单排序<span>自由排列主菜单与子菜单</span>
+        </button>
+      </nav>
+      <div class="aside-bottom">
+        <button id="stop">停止当前动作</button
+        ><button id="refresh">刷新当前状态</button>
+        <p>设置实时应用并在本机保存。</p>
+      </div>
+    </aside>
+    <main>
+      <header>
+        <small>COLUMBINA / CONTROL CENTER</small>
+        <h1 id="title">常用收藏</h1>
+        <p id="subtitle">收藏喜欢的搭配，下次一键调用。</p>
+      </header>
+      <section id="content" aria-label="控制内容"></section>
+      <p id="status" role="status">正在读取桌宠状态…</p>
+    </main>
+    <script src="control.js"></script>
+  </body>
+</html>

@@ -1,0 +1,357 @@
+{
+  "touch-head": {
+    "label": "摸头开心",
+    "frames": [
+      "./drawn-action-touch-head-00.webp",
+      "./drawn-action-touch-head-01.webp",
+      "./drawn-action-touch-head-02.webp",
+      "./drawn-action-touch-head-03.webp",
+      "./drawn-action-touch-head-04.webp",
+      "./drawn-action-touch-head-05.webp",
+      "./drawn-action-touch-head-06.webp",
+      "./drawn-action-touch-head-07.webp",
+      "./drawn-action-touch-head-08.webp",
+      "./drawn-action-touch-head-09.webp"
+    ],
+    "frameMs": 220,
+    "holdMs": 650,
+    "durationMs": 3430,
+    "frameCount": 10,
+    "generatedKeys": 0,
+    "mode": "drawn-frame-sequence",
+    "fusion": false,
+    "frameDurations": [
+      220,
+      220,
+      220,
+      420,
+      420,
+      420,
+      420,
+      220,
+      220,
+      650
+    ],
+    "sourceKeys": 10,
+    "source": "user-provided-20261010"
+  },
+  "touch-chest": {
+    "label": "抱胸生气",
+    "frames": [
+      "./drawn-action-touch-chest-00.webp",
+      "./drawn-action-touch-chest-01.webp",
+      "./drawn-action-touch-chest-02.webp",
+      "./drawn-action-touch-chest-03.webp",
+      "./drawn-action-touch-chest-04.webp",
+      "./drawn-action-touch-chest-05.webp",
+      "./drawn-action-touch-chest-06.webp",
+      "./drawn-action-touch-chest-07.webp",
+      "./drawn-action-touch-chest-08.webp",
+      "./drawn-action-touch-chest-09.webp"
+    ],
+    "frameMs": 220,
+    "holdMs": 650,
+    "durationMs": 3430,
+    "frameCount": 10,
+    "generatedKeys": 0,
+    "mode": "drawn-frame-sequence",
+    "fusion": false,
+    "frameDurations": [
+      220,
+      220,
+      220,
+      420,
+      420,
+      420,
+      420,
+      220,
+      220,
+      650
+    ],
+    "sourceKeys": 10,
+    "source": "user-provided-20261010"
+  },
+  "touch-foot": {
+    "label": "碰脚惊讶委屈",
+    "frames": [
+      "./drawn-action-touch-foot-00.webp",
+      "./drawn-action-touch-foot-01.webp",
+      "./drawn-action-touch-foot-02.webp",
+      "./drawn-action-touch-foot-03.webp",
+      "./drawn-action-touch-foot-04.webp",
+      "./drawn-action-touch-foot-05.webp",
+      "./drawn-action-touch-foot-06.webp",
+      "./drawn-action-touch-foot-07.webp"
+    ],
+    "frameMs": 220,
+    "holdMs": 650,
+    "durationMs": 2990,
+    "frameCount": 8,
+    "generatedKeys": 0,
+    "mode": "drawn-frame-sequence",
+    "fusion": false,
+    "frameDurations": [
+      220,
+      220,
+      220,
+      420,
+      420,
+      420,
+      420,
+      650
+    ],
+    "sourceKeys": 8,
+    "source": "user-provided-20261010"
+  },
+  "bow": {
+    "label": "颔首致意",
+    "frames": [
+      "./drawn-action-bow-00.webp",
+      "./drawn-action-bow-01.webp",
+      "./drawn-action-bow-02.webp",
+      "./drawn-action-bow-03.webp",
+      "./drawn-action-bow-04.webp",
+      "./drawn-action-bow-05.webp",
+      "./drawn-action-bow-06.webp",
+      "./drawn-action-bow-07.webp",
+      "./drawn-action-bow-08.webp"
+    ],
+    "frameMs": 210,
+    "holdMs": 400,
+    "durationMs": 2080,
+    "frameCount": 9,
+    "generatedKeys": 9,
+    "mode": "drawn-frame-sequence",
+    "fusion": false
+  },
+  "wish": {
+    "label": "月光祈愿",
+    "frames": [
+      "./drawn-action-wish-00.webp",
+      "./drawn-action-wish-01.webp",
+      "./drawn-action-wish-02.webp",
+      "./drawn-action-wish-03.webp",
+      "./drawn-action-wish-04.webp",
+      "./drawn-action-wish-05.webp",
+      "./drawn-action-wish-06.webp",
+      "./drawn-action-wish-07.webp",
+      "./drawn-action-wish-08.webp"
+    ],
+    "frameMs": 210,
+    "holdMs": 400,
+    "durationMs": 2080,
+    "frameCount": 9,
+    "generatedKeys": 9,
+    "mode": "drawn-frame-sequence",
+    "fusion": false
+  },
+  "listen": {
+    "label": "静静聆听",
+    "frames": [
+      "./drawn-action-listen-00.webp",
+      "./drawn-action-listen-01.webp",
+      "./drawn-action-listen-02.webp",
+      "./drawn-action-listen-03.webp",
+      "./drawn-action-listen-04.webp",
+      "./drawn-action-listen-05.webp",
+      "./drawn-action-listen-06.webp",
+      "./drawn-action-listen-07.webp",
+      "./drawn-action-listen-08.webp"
+    ],
+    "frameMs": 210,
+    "holdMs": 400,
+    "durationMs": 2080,
+    "frameCount": 9,
+    "generatedKeys": 9,
+    "mode": "drawn-frame-sequence",
+    "fusion": false
+  },
+  "stomp": {
+    "label": "生气跺脚",
+    "frames": [
+      "./drawn-action-stomp-00.webp",
+      "./drawn-action-stomp-01.webp",
+      "./drawn-action-stomp-02.webp",
+      "./drawn-action-stomp-03.webp",
+      "./drawn-action-stomp-04.webp",
+      "./drawn-action-stomp-05.webp"
+    ],
+    "frameMs": 250,
+    "holdMs": 400,
+    "durationMs": 1650,
+    "frameCount": 6,
+    "generatedKeys": 6,
+    "mode": "drawn-frame-sequence",
+    "fusion": false
+  },
+  "cover-laugh": {
+    "label": "捂脸笑",
+    "frames": [
+      "./drawn-action-cover-laugh-00.webp",
+      "./drawn-action-cover-laugh-01.webp",
+      "./drawn-action-cover-laugh-02.webp",
+      "./drawn-action-cover-laugh-03.webp",
+      "./drawn-action-cover-laugh-04.webp",
+      "./drawn-action-cover-laugh-05.webp"
+    ],
+    "frameMs": 250,
+    "holdMs": 400,
+    "durationMs": 1650,
+    "frameCount": 6,
+    "generatedKeys": 6,
+    "mode": "drawn-frame-sequence",
+    "fusion": false
+  },
+  "peace": {
+    "label": "比耶",
+    "frames": [
+      "./drawn-action-peace-00.webp",
+      "./drawn-action-peace-01.webp",
+      "./drawn-action-peace-02.webp",
+      "./drawn-action-peace-03.webp",
+      "./drawn-action-peace-04.webp",
+      "./drawn-action-peace-05.webp"
+    ],
+    "frameMs": 250,
+    "holdMs": 400,
+    "durationMs": 1650,
+    "frameCount": 6,
+    "generatedKeys": 6,
+    "mode": "drawn-frame-sequence",
+    "fusion": false
+  },
+  "wave": {
+    "label": "打招呼",
+    "frames": [
+      "./drawn-action-wave-00.webp",
+      "./drawn-action-wave-01.webp",
+      "./drawn-action-wave-02.webp",
+      "./drawn-action-wave-03.webp",
+      "./drawn-action-wave-04.webp",
+      "./drawn-action-wave-05.webp"
+    ],
+    "frameMs": 250,
+    "holdMs": 400,
+    "durationMs": 1650,
+    "frameCount": 6,
+    "generatedKeys": 6,
+    "mode": "drawn-frame-sequence",
+    "fusion": false
+  },
+  "surprise": {
+    "label": "惊讶捂嘴",
+    "frames": [
+      "./drawn-action-surprise-00.webp",
+      "./drawn-action-surprise-01.webp",
+      "./drawn-action-surprise-02.webp",
+      "./drawn-action-surprise-03.webp",
+      "./drawn-action-surprise-04.webp",
+      "./drawn-action-surprise-05.webp"
+    ],
+    "frameMs": 250,
+    "holdMs": 400,
+    "durationMs": 1650,
+    "frameCount": 6,
+    "generatedKeys": 6,
+    "mode": "drawn-frame-sequence",
+    "fusion": false
+  },
+  "sit-heart": {
+    "label": "蹲下比心",
+    "frames": [
+      "./drawn-action-sit-heart-00.webp",
+      "./drawn-action-sit-heart-01.webp",
+      "./drawn-action-sit-heart-02.webp",
+      "./drawn-action-sit-heart-03.webp",
+      "./drawn-action-sit-heart-04.webp",
+      "./drawn-action-sit-heart-05.webp"
+    ],
+    "frameMs": 250,
+    "holdMs": 400,
+    "durationMs": 1650,
+    "frameCount": 6,
+    "generatedKeys": 6,
+    "mode": "drawn-frame-sequence",
+    "fusion": false
+  },
+  "wink": {
+    "label": "俏皮眨眼",
+    "frames": [
+      "./drawn-action-wink-00.webp",
+      "./drawn-action-wink-01.webp",
+      "./drawn-action-wink-02.webp",
+      "./drawn-action-wink-03.webp",
+      "./drawn-action-wink-04.webp",
+      "./drawn-action-wink-05.webp"
+    ],
+    "frameMs": 250,
+    "holdMs": 400,
+    "durationMs": 1650,
+    "frameCount": 6,
+    "generatedKeys": 6,
+    "mode": "drawn-frame-sequence",
+    "fusion": false
+  },
+  "happy-cheeks": {
+    "label": "开心托腮",
+    "frames": [
+      "./drawn-action-happy-cheeks-00.webp",
+      "./drawn-action-happy-cheeks-01.webp",
+      "./drawn-action-happy-cheeks-02.webp",
+      "./drawn-action-happy-cheeks-03.webp",
+      "./drawn-action-happy-cheeks-04.webp",
+      "./drawn-action-happy-cheeks-05.webp"
+    ],
+    "frameMs": 250,
+    "holdMs": 400,
+    "durationMs": 1650,
+    "frameCount": 6,
+    "generatedKeys": 6,
+    "mode": "drawn-frame-sequence",
+    "fusion": false
+  },
+  "rest-chin": {
+    "label": "托腮发呆",
+    "frames": [
+      "./drawn-action-rest-chin-00.webp",
+      "./drawn-action-rest-chin-01.webp",
+      "./drawn-action-rest-chin-02.webp",
+      "./drawn-action-rest-chin-03.webp",
+      "./drawn-action-rest-chin-04.webp",
+      "./drawn-action-rest-chin-05.webp",
+      "./drawn-action-rest-chin-06.webp",
+      "./drawn-action-rest-chin-07.webp",
+      "./drawn-action-rest-chin-08.webp"
+    ],
+    "frameMs": 210,
+    "holdMs": 400,
+    "durationMs": 2080,
+    "frameCount": 9,
+    "generatedKeys": 9,
+    "mode": "drawn-frame-sequence",
+    "fusion": false
+  },
+  "yawn": {
+    "label": "打哈欠",
+    "frames": [
+      "./drawn-action-yawn-00.webp",
+      "./drawn-action-yawn-01.webp",
+      "./drawn-action-yawn-02.webp",
+      "./drawn-action-yawn-03.webp",
+      "./drawn-action-yawn-04.webp",
+      "./drawn-action-yawn-05.webp",
+      "./drawn-action-yawn-06.webp",
+      "./drawn-action-yawn-07.webp",
+      "./drawn-action-yawn-08.webp",
+      "./drawn-action-yawn-09.webp"
+    ],
+    "frameMs": 240,
+    "holdMs": 500,
+    "durationMs": 2660,
+    "frameCount": 10,
+    "generatedKeys": 10,
+    "mode": "drawn-frame-sequence",
+    "fusion": false,
+    "source": "user-provided-20261011"
+  }
+}

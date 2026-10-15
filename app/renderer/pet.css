@@ -1,0 +1,443 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: transparent;
+  overflow: hidden;
+  font-family: "Microsoft YaHei", sans-serif;
+}
+#petContainer {
+  /* 左上角定位（**不是 bottom**）——这一点是"拖滑块宠物乱动"的根子：
+     用 bottom 定位时，宠物在窗口内的纵向位置 = 窗口高度 − 70 − 宠物高度的一半，
+     也就是**依赖窗口高度**；而窗口尺寸的更新必然滞后于渲染层改 CSS（快拖时滞后好几步），
+     两者一对不上宠物就上下乱跳。改成 top 定位后纵向偏移只取决于宠物自身高度，
+     与窗口尺寸无关，窗口再怎么滞后宠物位置都稳。
+     左边的 44 和上边的 70 是给菜单留的：菜单以宠物中心为基准展开，
+     横向需主栏半宽 42、纵向需主栏半高 68。 */
+  position: absolute;
+  left: 44px;
+  top: 70px;
+  cursor: grab;
+  /* 防拖拽时出现蓝色选框。必须用 CSS，不能用 pointerdown 里 preventDefault()——
+     取消 pointerdown 会连带抑制兼容鼠标事件（含 click），三个区域就点不动了。 */
+  user-select: none;
+  -webkit-user-select: none;
+}
+#petContainer:active {
+  cursor: grabbing;
+}
+/* 头顶状态徽标：只在困/饿/睡时出现，不拦鼠标 */
+#stateBadge {
+  position: absolute;
+  left: 50%;
+  top: -26px;
+  transform: translateX(-50%);
+  font-size: 16px;
+  line-height: 1;
+  pointer-events: none;
+  z-index: 3;
+  display: none;
+  text-shadow: 0 1px 3px rgba(255, 255, 255, 0.9);
+}
+#pet {
+  /* 缩放走 CSS 变量：改的是布局宽度，height:auto 自然跟随。
+     不用 transform:scale —— 睡着时 #pet 自己会挂 .breathing 用 transform，会互相覆盖。 */
+  width: calc(220px * var(--pet-scale, 1));
+  height: auto;
+  transform: scale(var(--pose-scale, 1));
+  transform-origin: bottom center;
+  display: block;
+  -webkit-user-drag: none;
+  user-select: none;
+  -webkit-user-select: none;
+  /* 人物压在月光粒子上面 */
+  position: relative;
+  z-index: 1;
+}
+#footRipples {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 26px;
+  pointer-events: none;
+  z-index: 1;
+  overflow: visible;
+}
+.foot-ripple {
+  position: absolute;
+  bottom: 2px;
+  width: 12px;
+  height: 6px;
+  margin-left: -6px;
+  border: 1px solid rgba(177, 216, 255, 0.96);
+  border-radius: 50%;
+  box-shadow: 0 0 6px rgba(164, 202, 255, 0.62);
+  transform: scale(0.32, 0.55);
+  opacity: 0;
+  animation: footRipple 660ms ease-out forwards;
+}
+.foot-ripple::after {
+  content: "";
+  position: absolute;
+  inset: 1px -2px -1px;
+  border: 1px solid rgba(211, 230, 255, 0.72);
+  border-radius: 50%;
+  transform: scale(0.58, 0.7);
+  opacity: 0;
+  animation: footRippleEcho 610ms ease-out 70ms forwards;
+}
+@keyframes footRipple {
+  12% {
+    opacity: 0.88;
+  }
+  100% {
+    transform: scale(4.1, 2.05);
+    opacity: 0;
+  }
+}
+@keyframes footRippleEcho {
+  16% {
+    opacity: 0.64;
+  }
+  100% {
+    transform: scale(1, 1);
+    opacity: 0;
+  }
+}
+/* ===== 月光粒子 =====
+   需求：淡蓝紫色、半透明、缓慢向上漂浮、边缘模糊羽化、不能有廉价硬边和矩形光斑。
+   实现用 DOM + CSS 动画（transform/opacity 走合成器），**不是** canvas 每帧重绘：
+     · 每帧跑 JS 画 canvas 会一直占着主线程，低配机上肉眼可见地掉帧；
+     · 更不能给这种 canvas 加 willReadFrequently —— 那个开关会把 canvas 钉在
+       CPU 软件渲染后端，等于把硬件加速关掉（同类项目踩过这个坑）。
+   柔和的边缘用**径向渐变**做，不用 shadowBlur：shadowBlur 是 canvas 里最贵的操作之一，
+   同类项目因为一个"永远到不了零"的阴影强度，让每一帧都白背着一个高斯模糊。 */
+#motes {
+  opacity: 0.45; /* Keep ambient blue bubbles subtle beside the character. */
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  pointer-events: none; /* 粒子绝不能吃点击，否则点击穿透的判定会被搅乱 */
+  z-index: 0;
+}
+.mote {
+  position: absolute;
+  bottom: 0;
+  border-radius: 50%;
+  width: var(--size, 10px);
+  height: var(--size, 10px);
+  background: radial-gradient(
+    circle at 50% 50%,
+    rgba(219, 231, 255, calc(0.95 * var(--peak, 0.3))) 0%,
+    rgba(200, 216, 255, calc(0.55 * var(--peak, 0.3))) 38%,
+    rgba(188, 206, 255, 0) 76%
+  );
+  opacity: 0;
+  animation: moteRise var(--dur, 12s) linear var(--delay, 0s) infinite;
+  will-change: transform, opacity;
+}
+@keyframes moteRise {
+  0% {
+    transform: translate3d(0, 0, 0) scale(0.65);
+    opacity: 0;
+  }
+  14% {
+    opacity: 1;
+  }
+  68% {
+    opacity: 1;
+  }
+  100% {
+    transform: translate3d(var(--dx, 0px), calc(-1 * var(--rise, 120px)), 0)
+      scale(1.12);
+    opacity: 0;
+  }
+}
+#headZone,
+#bellyZone,
+#footZone {
+  position: absolute;
+  left: 0;
+  right: 0;
+  cursor: pointer;
+  /* ⚠️ 这三个区域必须压在人物图**上面**（#pet 是 z-index:1，为了让粒子待在人物背后）。
+     曾经漏了这一行，结果 <img> 把整个点击区域盖住，三个部位全都点不动
+     —— 右键菜单是 z-index 1000 在人物之上，所以菜单一直好使，症状就变成"只有身体点不动"。
+     加任何改 #pet 层级的样式时，都要回来看这里一眼。 */
+  z-index: 2;
+}
+#headZone {
+  top: 0;
+  height: 30%;
+}
+#bellyZone {
+  top: 30%;
+  height: 45%;
+}
+#footZone {
+  top: 75%;
+  height: 25%;
+}
+#bubble {
+  position: absolute;
+  /* 置于桌宠头顶上方：#petContainer 是 bottom:0 贴窗口底边的，所以 100% 就是头顶。
+     之前用 top:-10px; left:110% 把气泡推到了窗口右侧外面（实测 x=242~433，窗口只有 242 宽），
+     整个被裁掉，点了什么都看不见。 */
+  bottom: calc(100% + 6px);
+  left: 50%;
+  transform: translateX(-50%);
+  background: white;
+  padding: 8px 14px;
+  border-radius: 16px;
+  font-size: 14px;
+  color: #333;
+  max-width: 214px;
+  /* width:max-content 否则收缩到 fit-content，会被 left:50% 右半边只剩的宽度卡住
+     （实测只有 110px，一句台词被挤成 3 行） */
+  width: max-content;
+  white-space: normal;
+  text-align: center;
+  line-height: 1.35;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  display: none;
+  z-index: 999;
+  animation: bubbleFadeIn 0.2s ease-out;
+}
+/* 淡入的 transform 必须带上 translateX(-50%)，否则动画期间气泡会横向跳位 */
+@keyframes bubbleFadeIn {
+  from {
+    opacity: 0;
+    transform: translateX(-50%) translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+  }
+}
+/* 睡着时给 #pet 挂上 .breathing 就会用这套呼吸动画：
+   极慢、极轻（1.2% 纵向起伏，从底部起）—— 静止的躺姿否则看起来像卡死，
+   而幅度再大一点就会像"抽搐"而不是"呼吸"。*/
+@keyframes breathe {
+  0%,
+  100% {
+    transform: scale(var(--pose-scale, 1));
+  }
+  50% {
+    transform: scale(calc(var(--pose-scale, 1) * 1.015));
+  }
+}
+/* 睡觉时挂这个类（fallAsleep 加、wakeUp 去）。动画幅度只有 1.5%，
+   但周期放到 4.5 秒、变换原点放在底部，读起来才是"呼吸"而不是"抽搐"。 */
+#pet.idle-cloth {
+  filter: url(#idleCloth);
+}
+#pet.breathing {
+  transform-origin: bottom center;
+  animation: breathe 4.5s ease-in-out infinite;
+}
+/* 两级菜单。窗口只有 240px 宽（宠物占 220），所以两级都必须紧凑：
+   主栏只放图标+两字，分栏放具体项；总宽（主栏+分栏）必须留在窗口内，
+   否则会被 body 的 overflow:hidden 裁掉。 */
+#rightMenu,
+#subMenu {
+  position: absolute;
+  background: linear-gradient(
+    145deg,
+    rgba(253, 252, 255, 0.98),
+    rgba(237, 242, 255, 0.98)
+  );
+  border-radius: 14px;
+  padding: 4px 0;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
+  display: none;
+  z-index: 1000;
+  border: 1px solid #d8d9ef;
+  max-height: calc(100vh - 16px);
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #b9b4dc transparent;
+  font-size: 13px;
+  white-space: nowrap;
+}
+#subMenu {
+  z-index: 1001;
+}
+#rightMenu .mi,
+#subMenu .mi {
+  padding: 6px 10px;
+  cursor: pointer;
+  color: #333;
+  line-height: 1.5;
+}
+#rightMenu .mi:hover,
+#subMenu .mi:hover {
+  background: #e9e5fa;
+}
+#rightMenu .mi {
+  color: #514765;
+}
+#rightMenu .mi.active {
+  background: #e9e5fa;
+}
+#bubble {
+  background: linear-gradient(135deg, #fff, #f2efff);
+  border: 1px solid #ddd8ee;
+  color: #55496b;
+  font-size: 13px;
+  max-width: min(300px, calc(100vw - 16px));
+  line-height: 1.45;
+}
+#pet.listening {
+  transform-origin: bottom center;
+  animation: none;
+}
+#rightMenu .mi.active {
+  background: #f0f4ff;
+}
+#rightMenu .mi .arw {
+  margin-left: 6px;
+  color: #aab;
+  font-size: 11px;
+}
+/* 总栏里的分隔线（把「退出」和上面几组隔开） */
+#rightMenu .msep {
+  height: 1px;
+  background: #eef;
+  margin: 4px 8px;
+}
+/* 滑块行：不放图标，滑块本体就是控件 */
+#subMenu .mi.sl {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 8px;
+  cursor: default;
+}
+#subMenu .mi.sl:hover {
+  background: transparent;
+}
+#subMenu .mi.sl input[type="range"] {
+  width: 76px;
+  margin: 0;
+  accent-color: #8aa8ff;
+  cursor: pointer;
+}
+#subMenu .mi.sl .val {
+  min-width: 32px;
+  text-align: right;
+  color: #667;
+  font-size: 11px;
+}
+/* 预设倍率按钮行（滑块下方）。
+   必须显式限宽：分栏是 shrink-to-fit、且带 white-space:nowrap，
+   不限宽的话 max-content 会把 6 个按钮按**一行**算，分栏被撑到 250 多像素、
+   连带窗口右边多出一大片透明死区。132 = 3×36 + 2×4 + 左右 padding 16。 */
+#subMenu .mi.ps {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  width: 132px;
+  padding: 6px 8px 8px;
+  cursor: default;
+}
+#subMenu .mi.ps:hover {
+  background: transparent;
+}
+#subMenu .pbtn {
+  width: 36px;
+  padding: 3px 0;
+  font-size: 11px;
+  font-family: inherit;
+  line-height: 1.4;
+  color: #445;
+  background: #f2f5ff;
+  border: 1px solid #dce3f5;
+  border-radius: 7px;
+  cursor: pointer;
+}
+#subMenu .pbtn:hover {
+  background: #e4ebff;
+}
+#subMenu .pbtn.on {
+  background: #8aa8ff;
+  border-color: #7a99f0;
+  color: #fff;
+}
+#pet.burst-hidden {
+  opacity: 0 !important;
+}
+#pet.gentle-bow {
+  transform-origin: bottom center;
+  animation: none;
+}
+#pet.moon-wish {
+  transform-origin: bottom center;
+  animation: none;
+}
+@keyframes gentleBow {
+  0%,
+  100% {
+    transform: rotate(0);
+  }
+  45%,
+  65% {
+    transform: rotate(2deg);
+  }
+}
+/* Keep the complete supplied sprite. Only the actual screen edge hides the outside body. */
+#petContainer[data-edge="left"] #headZone {
+  left: 44%;
+  right: 32%;
+  top: 0;
+  height: 25%;
+}
+#petContainer[data-edge="left"] #bellyZone {
+  left: 39%;
+  right: 31%;
+  top: 25%;
+  height: 22%;
+}
+#petContainer[data-edge="right"] #headZone {
+  left: 17%;
+  right: 55%;
+  top: 0;
+  height: 25%;
+}
+#petContainer[data-edge="right"] #bellyZone {
+  left: 27%;
+  right: 40%;
+  top: 25%;
+  height: 22%;
+}
+#petContainer[data-edge] #footRipples {
+  display: none;
+}
+
+/* Keep tall costume portraits within the same full-body square without clipping. */
+#petContainer.portrait-showcase {
+  width: calc(220px * var(--pet-scale, 1));
+  height: calc(220px * var(--pet-scale, 1));
+  display: grid;
+  place-items: center;
+}
+#pet.portrait-fit {
+  width: calc(220px * var(--pet-scale, 1) * var(--portrait-ratio, 1));
+  height: auto;
+  margin-inline: auto;
+}
+
+.wardrobe-icon {
+  width: 18px;
+  height: 18px;
+  vertical-align: -4px;
+  fill: #eee3f8;
+  stroke: #9367ad;
+  stroke-width: 1.5;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+}

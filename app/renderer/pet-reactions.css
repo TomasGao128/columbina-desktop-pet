@@ -1,0 +1,116 @@
+.pet-reactions {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 4;
+}
+.touch-feel-layer {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 5;
+}
+.touch-feel-spark {
+  position: absolute;
+  left: calc(36% + var(--i) * 7%);
+  top: calc(14% + var(--i) * 1%);
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #f8e2ff;
+  box-shadow: 0 0 9px 3px #c3b0ff;
+  animation: strokeSpark 1100ms ease-in-out infinite;
+  animation-delay: calc(var(--i) * -200ms);
+}
+@keyframes strokeSpark {
+  0%,
+  100% {
+    opacity: 0.3;
+    transform: translateY(0) scale(0.65);
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(-7px) scale(1);
+  }
+}
+.touch-feel-layer.reduced .touch-feel-spark {
+  animation: none;
+  opacity: 0.7;
+}
+.feel-drag {
+  transition: rotate 140ms ease-out;
+}
+.feel-edge {
+  transition: translate 180ms ease-out;
+}
+@media (prefers-reduced-motion: reduce) {
+  .touch-feel-spark {
+    animation: none;
+  }
+  .feel-drag,
+  .feel-edge {
+    transition: none;
+  }
+}
+.reaction-star {
+  position: absolute;
+  left: 50%;
+  top: 20%;
+  color: #f7df9d;
+  font-size: 16px;
+  text-shadow: 0 0 8px #b6a5ff;
+  animation: reactionOrbit 1400ms linear infinite;
+  animation-delay: calc(var(--index) * -280ms);
+}
+@keyframes reactionOrbit {
+  from {
+    transform: rotate(0deg) translateX(32px) rotate(0deg) scaleY(0.8);
+  }
+  to {
+    transform: rotate(360deg) translateX(32px) rotate(-360deg) scaleY(0.8);
+  }
+}
+.reaction-edge {
+  position: absolute;
+  top: 30%;
+  color: #c7dfff;
+  font-size: 28px;
+  text-shadow: 0 0 14px #a99bff;
+  animation: reactionEdge 2200ms ease-out both;
+}
+[data-effect="left"] .reaction-edge {
+  left: 72%;
+}
+[data-effect="right"] .reaction-edge {
+  right: 72%;
+}
+@keyframes reactionEdge {
+  0% {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  25% {
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-16px);
+  }
+}
+.pet-reactions.reduced .reaction-star {
+  animation: none;
+  left: calc(32% + var(--index) * 9%);
+}
+.pet-reactions.reduced .reaction-edge {
+  animation: none;
+  opacity: 0.7;
+}
+@media (prefers-reduced-motion: reduce) {
+  .reaction-star {
+    animation: none;
+    left: calc(32% + var(--index) * 9%);
+  }
+  .reaction-edge {
+    animation: none;
+  }
+}

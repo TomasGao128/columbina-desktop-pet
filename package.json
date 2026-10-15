@@ -1,0 +1,11 @@
+{
+  "name": "columbina-desktop-pet",
+  "version": "0.21.0",
+  "private": true,
+  "description": "独立运行的哥伦比娅桌宠核心工程",
+  "main": "app/main.js",
+  "scripts": {
+    "start": "启动桌宠.cmd",
+    "test": "tools\\verify.cmd"
+  }
+}

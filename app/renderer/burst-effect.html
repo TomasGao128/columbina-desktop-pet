@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' file:; media-src 'none'; connect-src 'none'"
+    />
+    <link rel="stylesheet" href="./burst-effect.css" />
+  </head>
+  <body>
+    <div id="stage" aria-hidden="true">
+      <div id="aura"></div>
+      <div id="halo">
+        <div class="orbit"></div>
+        <div class="orbit second"></div>
+        <i></i>
+      </div>
+      <div id="wings"><img src="./burst-wings.png" alt="" /></div>
+      <div id="wave"></div>
+      <div id="wave2"></div>
+      <div id="feathers"></div>
+      <div id="actorFloat">
+        <img id="actorPrevious" src="./burst-canonical.png" alt="" /><img
+          id="actor"
+          src="./burst-canonical.png"
+          alt=""
+        />
+      </div>
+      <div id="caption">月翼天穹<span>愿月光，温柔地拥抱你。</span></div>
+    </div>
+    <script src="./burst-effect.js"></script>
+  </body>
+</html>

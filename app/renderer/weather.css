@@ -1,0 +1,104 @@
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: transparent;
+}
+canvas {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+}
+body.panel {
+  overflow: auto;
+  background: #faf7fc;
+  color: #50405f;
+  font:
+    14px "Microsoft YaHei",
+    sans-serif;
+}
+main {
+  padding: 24px;
+  max-width: 600px;
+  margin: auto;
+}
+.eyebrow {
+  letter-spacing: 2px;
+  font-size: 10px;
+  color: #a086b3;
+}
+h1 {
+  font-size: 25px;
+  font-weight: 500;
+  margin: 13px 0;
+}
+.intro,
+.note {
+  color: #97839f;
+  line-height: 1.8;
+}
+.themes {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 10px;
+  margin: 20px 0;
+}
+button {
+  font: inherit;
+  cursor: pointer;
+  background: white;
+  border: 1px solid #e3d9eb;
+  border-radius: 13px;
+  padding: 15px 9px;
+  color: inherit;
+}
+button:hover,
+button[data-active="true"] {
+  background: #eee5f5;
+  border-color: #aa8abb;
+}
+button strong,
+button span {
+  display: block;
+}
+button span {
+  font-size: 10px;
+  margin-top: 8px;
+  color: #9a859f;
+}
+label {
+  display: flex;
+  justify-content: space-between;
+  margin: 16px 0 9px;
+}
+output {
+  color: #9980a8;
+  font-size: 12px;
+}
+input {
+  width: 100%;
+  accent-color: #9474ae;
+}
+#off {
+  width: 100%;
+  margin-top: 25px;
+  background: #89709d;
+  color: white;
+}
+.note,
+#status {
+  font-size: 11px;
+}
+button:focus-visible,
+input:focus-visible {
+  outline: 2px solid #9474ae;
+  outline-offset: 3px;
+}
+[hidden] {
+  display: none !important;
+}

@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'none';script-src 'self';style-src 'self';connect-src 'none';object-src 'none';base-uri 'none'"
+    />
+    <title>天气氛围</title>
+    <link rel="stylesheet" href="weather.css" />
+  </head>
+  <body>
+    <canvas id="sky" aria-hidden="true"></canvas>
+    <main id="controls" hidden>
+      <p class="eyebrow">COLUMBINA / ATMOSPHERE</p>
+      <h1>为她添一片天气</h1>
+      <p class="intro">只在角色周围，轻轻地发生。</p>
+      <div class="themes">
+        <button data-theme="rain">
+          <strong>细雨</strong><span>雨丝与涟漪</span></button
+        ><button data-theme="wind">
+          <strong>微风</strong><span>花瓣与羽毛</span></button
+        ><button data-theme="night">
+          <strong>晴夜</strong><span>新月与流星</span></button
+        ><button data-theme="snow">
+          <strong>落雪</strong><span>轻盈六角雪</span></button
+        ><button data-theme="fireflies">
+          <strong>萤火</strong><span>暖光缓缓游</span></button
+        ><button data-theme="maple">
+          <strong>枫叶</strong><span>秋叶翻旋落</span></button
+        ><button data-theme="blossom">
+          <strong>花雨</strong><span>粉白花瓣雨</span></button
+        ><button data-theme="butterflies">
+          <strong>蝶舞</strong><span>轻蝶与花粉</span>
+        </button>
+      </div>
+      <label for="range">特效范围 <output id="rangeValue"></output></label
+      ><input id="range" type="range" min="360" max="1200" step="20" />
+      <label for="density">疏密 <output id="densityValue"></output></label
+      ><input id="density" type="range" min="10" max="100" />
+      <label for="brightness">亮度 <output id="brightnessValue"></output></label
+      ><input id="brightness" type="range" min="10" max="100" />
+      <button id="off">关闭氛围</button>
+      <p class="note">
+        效果穿透鼠标。专注和拖动时暂停，减弱动画时显示静态氛围。设置在本机保存，不获取真实天气。
+      </p>
+      <p id="status" role="status"></p>
+    </main>
+    <script src="weather.js"></script>
+  </body>
+</html>

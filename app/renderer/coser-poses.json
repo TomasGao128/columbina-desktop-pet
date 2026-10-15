@@ -1,0 +1,198 @@
+[
+  {
+    "id": "01",
+    "label": "战术黑装",
+    "frame": "./coser/coser-01.png",
+    "source": "1000025963.png",
+    "widthRatio": 1
+  },
+  {
+    "id": "02",
+    "label": "月白礼服",
+    "frame": "./coser/coser-02.png",
+    "source": "1000025964.png",
+    "widthRatio": 1
+  },
+  {
+    "id": "03",
+    "label": "轻舞纱裙",
+    "frame": "./coser/coser-03.png",
+    "source": "1000025965.png",
+    "widthRatio": 1
+  },
+  {
+    "id": "04",
+    "label": "浅蓝和服",
+    "frame": "./coser/coser-04.png",
+    "source": "1000025966.png",
+    "widthRatio": 1
+  },
+  {
+    "id": "05",
+    "label": "疾影忍装",
+    "frame": "./coser/coser-05.png",
+    "source": "1000025967.png",
+    "widthRatio": 1
+  },
+  {
+    "id": "06",
+    "label": "紫夜魔女",
+    "frame": "./coser/coser-06.png",
+    "source": "1000025968.png",
+    "widthRatio": 1
+  },
+  {
+    "id": "07",
+    "label": "学院制服",
+    "frame": "./coser/coser-07.png",
+    "source": "1000025969.png",
+    "widthRatio": 1
+  },
+  {
+    "id": "08",
+    "label": "沙海旅装",
+    "frame": "./coser/coser-08.png",
+    "source": "1000025970.png",
+    "widthRatio": 1
+  },
+  {
+    "id": "09",
+    "label": "冰蓝披风",
+    "frame": "./coser/coser-09.png",
+    "source": "1000025971.png",
+    "widthRatio": 1
+  },
+  {
+    "id": "10",
+    "label": "银甲骑士",
+    "frame": "./coser/coser-10.png",
+    "source": "1000025972.png",
+    "widthRatio": 1
+  },
+  {
+    "id": "11",
+    "label": "绯红海盗",
+    "frame": "./coser/coser-11.png",
+    "source": "1000025973.png",
+    "widthRatio": 1
+  },
+  {
+    "id": "12",
+    "label": "黑衣特工",
+    "frame": "./coser/coser-12.png",
+    "source": "1000025974.png",
+    "widthRatio": 1
+  },
+  {
+    "id": "13",
+    "label": "林间弓手",
+    "frame": "./coser/coser-13.png",
+    "source": "1000025975.png",
+    "widthRatio": 1
+  },
+  {
+    "id": "14",
+    "label": "摇滚舞台",
+    "frame": "./coser/coser-14.png",
+    "source": "1000025976.png",
+    "widthRatio": 1
+  },
+  {
+    "id": "15",
+    "label": "慵懒卫衣",
+    "frame": "./coser/coser-15.png",
+    "source": "1000025977.png",
+    "widthRatio": 0.6666666666666666
+  },
+  {
+    "id": "16",
+    "label": "蒸汽旅人",
+    "frame": "./coser/coser-16.png",
+    "source": "1000025978.png",
+    "widthRatio": 1
+  },
+  {
+    "id": "17",
+    "label": "白羽剑装",
+    "frame": "./coser/coser-17.png",
+    "source": "1000025979.png",
+    "widthRatio": 1
+  },
+  {
+    "id": "18",
+    "label": "星辉法裙",
+    "frame": "./coser/coser-18.png",
+    "source": "1000025980.png",
+    "widthRatio": 1
+  },
+  {
+    "id": "19",
+    "label": "星际旅装",
+    "frame": "./coser/coser-19.png",
+    "source": "1000025981.png",
+    "widthRatio": 1
+  },
+  {
+    "id": "20",
+    "label": "绯色旗袍",
+    "frame": "./coser/coser-20.png",
+    "source": "1000025982.png",
+    "widthRatio": 1
+  },
+  {
+    "id": "21",
+    "label": "猫耳女仆",
+    "frame": "./coser/coser-21.png",
+    "source": "1000025983.png",
+    "widthRatio": 1
+  },
+  {
+    "id": "22",
+    "label": "藏蓝警服",
+    "frame": "./coser/coser-22.png",
+    "source": "1000025984.png",
+    "widthRatio": 1
+  },
+  {
+    "id": "23",
+    "label": "海风船长",
+    "frame": "./coser/coser-23.png",
+    "source": "1000025985.png",
+    "widthRatio": 1
+  },
+  {
+    "id": "24",
+    "label": "绯樱巫女",
+    "frame": "./coser/coser-24.png",
+    "source": "1000025986.png",
+    "widthRatio": 1
+  },
+  {
+    "id": "25",
+    "label": "粉白兔装",
+    "frame": "./coser/coser-25.png",
+    "source": "1000025987.png",
+    "widthRatio": 1
+  },
+  {
+    "id": "26",
+    "label": "紫夜礼裙",
+    "frame": "./coser/coser-26.png",
+    "source": "1000025988.png",
+    "widthRatio": 1
+  },
+  {
+    "id": "27",
+    "label": "暮夜披风",
+    "frame": "./coser/coser-27.png",
+    "source": "1000025989.png",
+    "widthRatio": 1
+  },
+  {
+    "id": "28",
+    "label": "翠羽游侠",
+    "frame": "./coser/coser-28.png",
+    "source": "1000025990.png",
+    "widthRatio": 1
+  }
+]

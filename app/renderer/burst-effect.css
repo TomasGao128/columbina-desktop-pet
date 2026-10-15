@@ -1,0 +1,637 @@
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: transparent;
+  pointer-events: none;
+}
+#stage {
+  position: absolute;
+  left: var(--cx);
+  top: var(--cy);
+  width: 0;
+  height: 0;
+  opacity: 0;
+}
+.casting {
+  animation: journey 7.8s cubic-bezier(0.22, 0.68, 0.16, 1) forwards;
+}
+#actorFloat {
+  position: absolute;
+  left: calc(var(--size) * -0.5);
+  top: calc(var(--size) * -0.5);
+  width: var(--size);
+  height: var(--size);
+  z-index: 5;
+}
+#actorFloat {
+  opacity: var(--opacity);
+}
+#actor,
+#actorPrevious {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  filter: drop-shadow(0 0 5px rgba(190, 225, 255, 0.42));
+}
+#actorPrevious {
+  opacity: 0;
+}
+.casting #actorFloat {
+  animation: levitate 7.8s ease-in-out forwards;
+}
+#wings {
+  position: absolute;
+  width: var(--span);
+  left: calc(var(--span) * -0.5);
+  top: calc(var(--size) * -0.25 - var(--span) * 0.21);
+  height: calc(var(--span) * 0.42);
+  transform-origin: 50% 58%;
+  opacity: 0;
+  z-index: 3;
+}
+#wings img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  filter: drop-shadow(0 0 9px rgba(140, 202, 255, 0.5));
+}
+.casting #wings {
+  animation: unfurl 7.8s cubic-bezier(0.2, 0.7, 0.1, 1) forwards;
+}
+#halo {
+  position: absolute;
+  width: calc(var(--size) * 1.65);
+  height: calc(var(--size) * 1.65);
+  left: calc(var(--size) * -0.825);
+  top: calc(var(--size) * -0.96);
+  border: 1px solid rgba(205, 235, 255, 0.5);
+  border-radius: 50%;
+  box-shadow:
+    0 0 14px rgba(140, 205, 255, 0.35),
+    inset 0 0 14px rgba(180, 220, 255, 0.14);
+  opacity: 0;
+  z-index: 2;
+}
+.orbit {
+  position: absolute;
+  inset: 14px;
+  border: 2px dashed rgba(200, 227, 255, 0.62);
+  border-radius: 50%;
+  transform: rotate(25deg);
+}
+.orbit.second {
+  inset: -12px;
+  border: 1px solid rgba(180, 203, 255, 0.28);
+  transform: rotateX(56deg) rotateZ(-14deg);
+}
+#halo i {
+  position: absolute;
+  left: calc(50% - 18px);
+  top: -18px;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 35% 30%, #f2fbff, #bbd9ff 60%, rgba(149, 181, 255, 0.1));
+  box-shadow: 0 0 14px rgba(199, 230, 255, 0.7);
+}
+.casting #halo {
+  animation: haloRise 7.8s ease-in-out forwards;
+}
+.casting .orbit {
+  animation: orbit 7.8s linear forwards;
+}
+#aura {
+  position: absolute;
+  left: calc(var(--size) * -1.2);
+  top: calc(var(--size) * -1);
+  width: calc(var(--size) * 2.4);
+  height: calc(var(--size) * 2);
+  background: radial-gradient(
+    ellipse,
+    rgba(167, 208, 255, 0.28) 0%,
+    rgba(174, 209, 255, 0.09) 35%,
+    transparent 70%
+  );
+  opacity: 0;
+  z-index: 1;
+}
+.casting #aura {
+  animation: aura 7.8s ease-in-out forwards;
+}
+#wave,
+#wave2 {
+  position: absolute;
+  left: calc(var(--size) * -0.55);
+  top: calc(var(--size) * -0.55);
+  width: calc(var(--size) * 1.1);
+  height: calc(var(--size) * 1.1);
+  border: 2px solid rgba(205, 238, 255, 0.8);
+  border-radius: 50%;
+  box-shadow: 0 0 12px rgba(173, 216, 255, 0.5);
+  opacity: 0;
+  z-index: 4;
+}
+.casting #wave {
+  animation: moonWave 2.2s 2.5s ease-out forwards;
+}
+.casting #wave2 {
+  animation: moonWave 2.2s 2.9s ease-out forwards;
+}
+.feather {
+  position: absolute;
+  width: var(--w);
+  height: calc(var(--w) * 3.5);
+  left: var(--x);
+  top: var(--y);
+  border-radius: 90% 10% 80% 20%;
+  background: linear-gradient(
+    110deg,
+    transparent,
+    rgba(225, 247, 255, 0.8),
+    rgba(172, 202, 255, 0.2),
+    transparent
+  );
+  opacity: 0;
+  z-index: 6;
+}
+.casting .feather {
+  animation: feather 4.1s var(--delay) ease-out forwards;
+}
+#caption {
+  position: absolute;
+  top: calc(var(--size) * 0.6);
+  left: -180px;
+  width: 360px;
+  text-align: center;
+  color: #dcefff;
+  font:
+    18px/1.5 'Microsoft YaHei',
+    sans-serif;
+  letter-spacing: 5px;
+  text-shadow: 0 0 8px #5483ca;
+  opacity: 0;
+  z-index: 7;
+}
+#caption span {
+  display: block;
+  font-size: 11px;
+  letter-spacing: 2px;
+  opacity: 0.85;
+}
+.casting #caption {
+  animation: caption 7.8s ease-in-out forwards;
+}
+@keyframes journey {
+  0% {
+    opacity: 0;
+    transform: translate(var(--dx), var(--dy));
+  }
+  4% {
+    opacity: 1;
+  }
+  14%,
+  81% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+  96% {
+    opacity: 1;
+    transform: translate(var(--dx), var(--dy));
+  }
+  100% {
+    opacity: 0;
+    transform: translate(var(--dx), var(--dy));
+  }
+}
+@keyframes levitate {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  18% {
+    transform: translateY(-6px);
+  }
+  40%,
+  60% {
+    transform: translateY(-18px);
+  }
+  78% {
+    transform: translateY(-8px);
+  }
+}
+@keyframes unfurl {
+  0%,
+  12% {
+    opacity: 0;
+    transform: scale(0.18, 0.65);
+  }
+  22% {
+    opacity: 0.6;
+    transform: scale(0.7, 0.94);
+  }
+  37% {
+    opacity: 0.94;
+    transform: scale(1, 1);
+  }
+  48% {
+    opacity: 0.86;
+    transform: scale(1.035, 1.02);
+  }
+  62% {
+    opacity: 0.88;
+    transform: scale(1, 1);
+  }
+  82%,
+  100% {
+    opacity: 0;
+    transform: scale(1.08, 0.95);
+  }
+}
+@keyframes haloRise {
+  0% {
+    opacity: 0;
+    transform: scale(0.3);
+  }
+  14% {
+    opacity: 0.5;
+    transform: scale(0.8);
+  }
+  33%,
+  62% {
+    opacity: 0.85;
+    transform: scale(1);
+  }
+  82%,
+  100% {
+    opacity: 0;
+    transform: scale(1.15);
+  }
+}
+@keyframes orbit {
+  to {
+    transform: rotate(155deg);
+  }
+}
+@keyframes aura {
+  0%,
+  100% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0.3;
+  }
+  38% {
+    opacity: 0.9;
+  }
+  60% {
+    opacity: 0.6;
+  }
+  80% {
+    opacity: 0;
+  }
+}
+@keyframes moonWave {
+  0% {
+    opacity: 0.8;
+    transform: scale(0.4) rotateX(40deg);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(2.5) rotateX(40deg);
+  }
+}
+@keyframes feather {
+  0% {
+    opacity: 0;
+    transform: translate(0, 0) rotate(var(--angle)) scale(0.3);
+  }
+  15% {
+    opacity: 0.85;
+  }
+  70% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 0;
+    transform: translate(var(--tx), var(--ty)) rotate(calc(var(--angle) + 55deg)) scale(0.85);
+  }
+}
+@keyframes caption {
+  0%,
+  24%,
+  100% {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  34%,
+  64% {
+    opacity: 0.85;
+    transform: translateY(0);
+  }
+  80% {
+    opacity: 0;
+  }
+}
+/* Effect intensity never changes character visibility or animation ownership. */
+#stage[data-intensity='0'] :is(#wings, #halo, #aura, #wave, #wave2, #feathers, #caption) {
+  display: none;
+}
+#stage[data-intensity='0'] :is(#actor, #actorPrevious) {
+  filter: none;
+}
+#stage[data-intensity='1'] :is(#wings, #halo, #aura, #feathers) {
+  filter: opacity(0.25);
+}
+#stage[data-intensity='1'] #wings {
+  width: calc(var(--span) * 0.6);
+  left: calc(var(--span) * -0.3);
+  height: calc(var(--span) * 0.252);
+  top: calc(var(--size) * -0.25 - var(--span) * 0.126);
+}
+#stage[data-intensity='1'] #halo {
+  width: var(--size);
+  height: var(--size);
+  left: calc(var(--size) * -0.5);
+  top: calc(var(--size) * -0.65);
+}
+#stage[data-intensity='1'] :is(#wave, #wave2, #caption) {
+  display: none;
+}
+#stage[data-reduced-motion='true'].casting {
+  animation-name: reducedJourney;
+}
+#stage[data-reduced-motion='true'] #actorFloat {
+  animation: none;
+}
+#stage[data-reduced-motion='true'] .orbit {
+  animation: none;
+}
+#stage[data-reduced-motion='true'] :is(#wings, #halo) {
+  transform: none !important;
+}
+#stage[data-reduced-motion='true'] :is(#wave, #wave2, #feathers) {
+  display: none;
+}
+#stage[data-reduced-motion='true'].casting #wings {
+  animation: reducedWings 7.8s ease-in-out forwards;
+}
+#stage[data-reduced-motion='true'] #halo {
+  width: var(--size);
+  height: var(--size);
+  left: calc(var(--size) * -0.5);
+  top: calc(var(--size) * -0.65);
+}
+@keyframes reducedJourney {
+  0%,
+  100% {
+    opacity: 0;
+  }
+  4%,
+  96% {
+    opacity: 1;
+  }
+}
+@keyframes reducedWings {
+  0%,
+  100% {
+    opacity: 0;
+  }
+  10%,
+  85% {
+    opacity: 0.9;
+  }
+}
+/* Celestial palette: ice blue silhouette, violet depth and restrained gold accents. */
+#wings img {
+  filter: drop-shadow(0 0 4px #e9faff) drop-shadow(0 0 15px #7596ff);
+}
+#halo {
+  border: 2px solid #84dfff;
+  box-shadow:
+    0 0 12px #7acfff,
+    inset 0 0 8px #9b89e7;
+}
+#halo:before {
+  content: '';
+  position: absolute;
+  inset: -8px;
+  border: 1px solid #b898ff;
+  border-radius: 50%;
+  box-shadow: 0 0 4px #cc9dff;
+}
+#halo:after {
+  content: '';
+  position: absolute;
+  inset: 8%;
+  border: 2px dashed #f4d78f;
+  border-radius: 50%;
+  opacity: 0.72;
+  transform: rotate(14deg);
+}
+.orbit {
+  border-color: #ac8eff;
+  border-width: 2px;
+}
+.orbit.second {
+  border-color: #ffdf9b;
+}
+#halo i {
+  background: radial-gradient(circle at 30% 28%, #fffbe1, #b9eaff 50%, #8483d0);
+  box-shadow:
+    0 0 10px #fff0bd,
+    0 0 23px #969dff;
+}
+#aura {
+  background: radial-gradient(ellipse, #6b78cc60 0%, #9d80e82b 38%, transparent 70%);
+}
+#wave,
+#wave2 {
+  border: 3px solid #99e6ff;
+  box-shadow:
+    0 0 10px #83caff,
+    inset 0 0 8px #ae82e8;
+}
+#wave2 {
+  border-color: #ffe2a1;
+  box-shadow: 0 0 8px #b88ffd;
+}
+.feather {
+  background: linear-gradient(
+    115deg,
+    transparent 6%,
+    #ebffff 35%,
+    #9fdfff 55%,
+    #a39afc 75%,
+    transparent
+  );
+  filter: drop-shadow(0 0 3px #a3c6ff);
+}
+#caption {
+  color: #fff0c8;
+  font-weight: 600;
+  text-shadow:
+    0 1px 2px #5265a7,
+    0 0 10px #8496ff;
+  letter-spacing: 6px;
+}
+#moonbeam {
+  position: absolute;
+  left: calc(var(--size) * -0.22);
+  top: calc(var(--size) * -0.95);
+  width: calc(var(--size) * 0.44);
+  height: calc(var(--size) * 1.7);
+  z-index: 1;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    #a4dfff45 30%,
+    #fff1c470 50%,
+    #b19fff40 70%,
+    transparent
+  );
+  opacity: 0;
+  mask-image: linear-gradient(transparent, #000 24% 70%, transparent);
+}
+.casting #moonbeam {
+  animation: beamReveal 7.8s ease-out both;
+}
+#sigils {
+  position: absolute;
+  z-index: 2;
+  opacity: 0;
+}
+.casting #sigils {
+  animation: sigilReveal 7.8s ease-out both;
+}
+.sigil-sign {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  font:
+    18px Georgia,
+    serif;
+  font-style: normal;
+  color: #ffe1a0;
+  text-shadow: 0 0 6px #92b3ff;
+}
+#stardust,
+#charge-streaks {
+  position: absolute;
+  z-index: 4;
+  pointer-events: none;
+}
+.burst-star {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: var(--star-size);
+  height: var(--star-size);
+  font-size: var(--star-size);
+  font-style: normal;
+  line-height: 1;
+  color: var(--star-color);
+  border-radius: 50%;
+  background: radial-gradient(circle, #fff 0 18%, var(--star-color) 35% 60%, transparent 74%);
+  box-shadow: 0 0 4px var(--star-color);
+  opacity: 0;
+}
+.casting .burst-star {
+  animation: celestialScatter 4.8s ease-out var(--delay) both;
+}
+.charge-streak {
+  position: absolute;
+  width: 3px;
+  height: 32px;
+  background: linear-gradient(transparent, #f8e8b7, #94dfff, transparent);
+  box-shadow: 0 0 4px #86c5ff;
+  opacity: 0;
+}
+.casting .charge-streak {
+  animation: inwardCharge 1.65s ease-in var(--delay) both;
+}
+@keyframes beamReveal {
+  0%,
+  100% {
+    opacity: 0;
+    transform: scaleX(0.4);
+  }
+  16% {
+    opacity: 0.4;
+  }
+  37%,
+  60% {
+    opacity: 0.85;
+    transform: scaleX(1);
+  }
+  82% {
+    opacity: 0;
+  }
+}
+@keyframes sigilReveal {
+  0%,
+  14%,
+  100% {
+    opacity: 0;
+    transform: scale(0.65);
+  }
+  30%,
+  63% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  84% {
+    opacity: 0;
+    transform: scale(1.08);
+  }
+}
+@keyframes celestialScatter {
+  0% {
+    opacity: 0;
+    transform: translate(var(--sx), var(--sy)) scale(0.2);
+  }
+  12%,
+  44% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translate(var(--ex), var(--ey)) scale(0.45);
+  }
+}
+@keyframes inwardCharge {
+  0% {
+    opacity: 0;
+    transform: translate(var(--sx), var(--sy)) rotate(var(--angle)) scaleY(0.3);
+  }
+  28% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translate(0, calc(var(--size) * -0.18)) rotate(var(--angle)) scaleY(1.4);
+  }
+}
+#stage[data-intensity='0'] :is(#moonbeam, #sigils, #stardust, #charge-streaks) {
+  display: none;
+}
+#stage[data-intensity='1'] :is(#moonbeam, #sigils) {
+  opacity: 0.5;
+  filter: opacity(0.6);
+}
+#stage[data-reduced-motion='true'] #moonbeam {
+  display: none;
+}
+#stage[data-reduced-motion='true'] .casting {
+  animation: none;
+}
+#stage[data-reduced-motion='true'].casting #sigils {
+  animation: reducedWings 7.8s ease-in-out both;
+  transform: none;
+}

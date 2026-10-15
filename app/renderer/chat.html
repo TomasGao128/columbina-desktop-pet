@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' file:; connect-src 'none'; object-src 'none'; base-uri 'none'"
+    />
+    <title>哥伦比娅 · 聊天与文字助手</title>
+    <link rel="stylesheet" href="./chat.css" />
+  </head>
+  <body>
+    <aside>
+      <div class="brand">
+        <span class="portrait"
+          ><img src="./user-gaze-00.webp" alt="哥伦比娅"
+        /></span>
+        <div><strong>月光来信</strong><small>哥伦比娅陪着你</small></div>
+      </div>
+      <nav aria-label="助手模式">
+        <button data-mode="chat">
+          陪伴聊天<span>聊日常，也听听她的小心事</span></button
+        ><button data-mode="polish">
+          文字润色<span>让表达自然、清楚</span></button
+        ><button data-mode="paper">
+          论文修改<span>保留数据与研究结论</span></button
+        ><button data-mode="summary">
+          提炼摘要<span>抓住长文的核心观点</span>
+        </button>
+      </nav>
+      <div class="aside-bottom">
+        <button id="settingsToggle">连接设置</button
+        ><button id="memoryToggle">陪伴记忆</button
+        ><button id="clearHistory">清空聊天记录</button
+        ><small>消息会发送到你配置的 API。<br />调用费用由服务商收取。</small>
+      </div>
+    </aside>
+    <main>
+      <header>
+        <div>
+          <small>写给你的 / COLUMBINA</small>
+          <h1 id="modeTitle">陪伴聊天</h1>
+        </div>
+        <span id="connectionBadge">尚未配置</span>
+      </header>
+      <section id="settingsPanel" hidden aria-label="API 连接设置">
+        <div class="settings-title">
+          <h2>连接设置</h2>
+          <button id="closeSettings" aria-label="关闭连接设置">×</button>
+        </div>
+        <div class="fields">
+          <label
+            >API 地址<input
+              id="baseUrl"
+              type="url"
+              placeholder="https://api.deepseek.com"
+              autocomplete="off" /></label
+          ><label
+            >模型名称<input
+              id="model"
+              placeholder="deepseek-flash"
+              autocomplete="off" /></label
+          ><label class="key-field"
+            >API 密钥<input
+              id="apiKey"
+              type="password"
+              placeholder="输入密钥；留空保留已保存的密钥"
+              autocomplete="off"
+          /></label>
+        </div>
+        <p id="keyInfo">密钥使用本机加密保存，不写入普通设置或聊天记录。</p>
+        <div class="options">
+          <label
+            ><input id="saveHistory" type="checkbox" />在本机保存聊天记录</label
+          >
+        </div>
+        <p class="local-sharing-note">
+          陪伴与文字助手分别保存记录。主动分享已关闭。
+        </p>
+        <div class="setting-actions">
+          <button id="saveConfig">保存设置</button
+          ><button id="testConnection">测试已保存的连接</button
+          ><button id="forgetKey">删除已保存密钥</button>
+        </div>
+        <p id="configStatus" role="status"></p>
+      </section>
+      <section id="memoryPanel" hidden aria-label="陪伴记忆">
+        <div class="settings-title">
+          <h2>她记得的事</h2>
+          <button id="closeMemory" aria-label="关闭陪伴记忆">×</button>
+        </div>
+        <p class="memory-note">
+          只记住你指定的称呼、喜好和近况。不会读取论文记录，也不会主动提醒。清空聊天不会删除这里的记忆。
+        </p>
+        <div id="memoryList"></div>
+        <form id="memoryForm">
+          <label for="memoryKind">类型</label
+          ><select id="memoryKind">
+            <option value="nickname">称呼</option>
+            <option value="preference">喜好</option>
+            <option value="topic">近况</option>
+          </select>
+          <label for="memoryText">希望她记住的内容</label
+          ><textarea
+            id="memoryText"
+            maxlength="240"
+            rows="2"
+            placeholder="例如：喜欢安静的雨天"
+          ></textarea>
+          <div class="setting-actions">
+            <button id="saveMemory" class="primary" type="submit">记住</button
+            ><button id="cancelMemoryEdit" type="button" hidden>取消修改</button
+            ><button id="forgetAllMemory" type="button">忘记全部</button>
+          </div>
+        </form>
+        <p id="memoryStatus" role="status"></p>
+      </section>
+      <section id="messages" aria-label="聊天记录" aria-live="polite"></section>
+      <section class="composer">
+        <div id="suggestions">
+          <button data-suggestion="今天想和你聊聊天。">聊聊今天</button
+          ><button data-suggestion="分享一件你最近的小烦恼或趣事吧。">
+            听听她的故事
+          </button>
+        </div>
+        <label class="input-label" for="messageInput"
+          >想说的话或需要修改的文本</label
+        ><textarea
+          id="messageInput"
+          maxlength="20000"
+          rows="4"
+          placeholder="写下想说的话…"
+        ></textarea>
+        <div class="composer-foot">
+          <span id="status" role="status">Enter 发送 · Shift + Enter 换行</span>
+          <div>
+            <button id="stop" hidden>停止生成</button
+            ><button id="send" class="primary">发送</button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="./chat-ui.js"></script>
+  </body>
+</html>

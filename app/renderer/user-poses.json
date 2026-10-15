@@ -1,0 +1,265 @@
+[
+  {
+    "id": 0,
+    "label": "侧首拈发",
+    "frame": "./user-pose-00.webp",
+    "source": "1000025206.png",
+    "effect": null,
+    "holdMs": 7200,
+    "icon": "🤍"
+  },
+  {
+    "id": 1,
+    "label": "指尖轻思",
+    "frame": "./user-pose-01.webp",
+    "source": "1000025209.png",
+    "effect": null,
+    "holdMs": 7200,
+    "icon": "🤍"
+  },
+  {
+    "id": 2,
+    "label": "双手拢袖",
+    "frame": "./user-pose-02.webp",
+    "source": "1000025211.png",
+    "effect": null,
+    "holdMs": 7200,
+    "icon": "🤍"
+  },
+  {
+    "id": 3,
+    "label": "双手叉腰",
+    "frame": "./user-pose-03.webp",
+    "source": "1000025214.png",
+    "effect": null,
+    "holdMs": 7200,
+    "icon": "🤍"
+  },
+  {
+    "id": 4,
+    "label": "抬手托腮",
+    "frame": "./user-pose-04.webp",
+    "source": "1000025215.png",
+    "effect": null,
+    "holdMs": 7200,
+    "icon": "🤍"
+  },
+  {
+    "id": 5,
+    "label": "合掌轻祈",
+    "frame": "./user-pose-05.webp",
+    "source": "1000025216.png",
+    "effect": "pose-notes",
+    "holdMs": 7200,
+    "icon": "🤍"
+  },
+  {
+    "id": 8,
+    "label": "摊手轻问",
+    "frame": "./user-pose-08.webp",
+    "source": "1000025226.png",
+    "effect": null,
+    "holdMs": 7200,
+    "icon": "🤍"
+  },
+  {
+    "id": 9,
+    "label": "拈发侧望",
+    "frame": "./user-pose-09.webp",
+    "source": "1000025227.png",
+    "effect": null,
+    "holdMs": 7200,
+    "icon": "🤍"
+  },
+  {
+    "id": 10,
+    "label": "掩唇轻笑",
+    "frame": "./user-pose-10.webp",
+    "source": "1000025228.png",
+    "effect": null,
+    "holdMs": 7200,
+    "icon": "🤍"
+  },
+  {
+    "id": 12,
+    "label": "展袖相迎",
+    "frame": "./user-pose-12.webp",
+    "source": "1000025237.png",
+    "effect": "pose-feather",
+    "holdMs": 7200,
+    "icon": "🪽"
+  },
+  {
+    "id": 14,
+    "label": "侧卧小憩",
+    "frame": "./user-pose-14.webp",
+    "source": "1000025757.png",
+    "effect": "pose-moon",
+    "holdMs": 7200,
+    "icon": "🌙"
+  },
+  {
+    "id": 15,
+    "label": "轻盈踮步",
+    "frame": "./user-pose-15.webp",
+    "source": "1000025759.png",
+    "effect": "pose-feather",
+    "holdMs": 7200,
+    "icon": "🪽"
+  },
+  {
+    "id": 16,
+    "label": "抱膝而坐",
+    "frame": "./user-pose-16.webp",
+    "source": "1000025761.png",
+    "effect": "pose-moon",
+    "holdMs": 7200,
+    "icon": "🌙"
+  },
+  {
+    "id": 18,
+    "label": "展袖起舞",
+    "frame": "./user-pose-18.webp",
+    "source": "1000025768.png",
+    "effect": "pose-feather",
+    "holdMs": 7200,
+    "icon": "🪽"
+  },
+  {
+    "id": 19,
+    "label": "倚坐伸腿",
+    "frame": "./user-pose-19.webp",
+    "source": "1000025776.png",
+    "effect": "pose-moon",
+    "holdMs": 7200,
+    "icon": "🌙"
+  },
+  {
+    "id": 20,
+    "label": "侧坐舒腿",
+    "frame": "./user-pose-20.webp",
+    "source": "1000025778.png",
+    "effect": "pose-moon",
+    "holdMs": 7200,
+    "icon": "🌙"
+  },
+  {
+    "id": 21,
+    "label": "交腿静坐",
+    "frame": "./user-pose-21.webp",
+    "source": "1000025780.png",
+    "effect": "pose-moon",
+    "holdMs": 7200,
+    "icon": "🌙"
+  },
+  {
+    "id": 22,
+    "label": "望月轻立",
+    "frame": "./poses/pose-22.png",
+    "source": "1000025991.png",
+    "effect": "pose-moon",
+    "holdMs": 7200,
+    "icon": "✧",
+    "widthRatio": 1
+  },
+  {
+    "id": 23,
+    "label": "高椅交腿",
+    "frame": "./poses/pose-23.png",
+    "source": "1000025992.png",
+    "effect": "pose-moon",
+    "holdMs": 7200,
+    "icon": "✧",
+    "widthRatio": 1
+  },
+  {
+    "id": 24,
+    "label": "迎风展袖",
+    "frame": "./poses/pose-24.png",
+    "source": "1000025993.png",
+    "effect": "pose-moon",
+    "holdMs": 7200,
+    "icon": "✧",
+    "widthRatio": 1
+  },
+  {
+    "id": 25,
+    "label": "俯身相望",
+    "frame": "./poses/pose-25.png",
+    "source": "1000025994.png",
+    "effect": "pose-moon",
+    "holdMs": 7200,
+    "icon": "✧",
+    "widthRatio": 1
+  },
+  {
+    "id": 26,
+    "label": "侧跪凝望",
+    "frame": "./poses/pose-26.png",
+    "source": "1000025995.png",
+    "effect": "pose-moon",
+    "holdMs": 7200,
+    "icon": "✧",
+    "widthRatio": 1
+  },
+  {
+    "id": 27,
+    "label": "伏身回眸",
+    "frame": "./poses/pose-27.png",
+    "source": "1000025996.png",
+    "effect": "pose-moon",
+    "holdMs": 7200,
+    "icon": "✧",
+    "widthRatio": 1
+  },
+  {
+    "id": 28,
+    "label": "掌心托光",
+    "frame": "./poses/pose-28.png",
+    "source": "1000025997.png",
+    "effect": "pose-moon",
+    "holdMs": 7200,
+    "icon": "✧",
+    "widthRatio": 1
+  },
+  {
+    "id": 29,
+    "label": "轻展双袖",
+    "frame": "./poses/pose-29.png",
+    "source": "1000025998.png",
+    "effect": "pose-moon",
+    "holdMs": 7200,
+    "icon": "✧",
+    "widthRatio": 1
+  },
+  {
+    "id": 30,
+    "label": "提裙回望",
+    "frame": "./poses/pose-30.png",
+    "source": "1000025999.png",
+    "effect": "pose-moon",
+    "holdMs": 7200,
+    "icon": "✧",
+    "widthRatio": 1
+  },
+  {
+    "id": 31,
+    "label": "侧身远眺",
+    "frame": "./poses/pose-31.png",
+    "source": "1000026000.png",
+    "effect": "pose-moon",
+    "holdMs": 7200,
+    "icon": "✧",
+    "widthRatio": 1
+  },
+  {
+    "id": 32,
+    "label": "轻抚发梢",
+    "frame": "./poses/pose-32.png",
+    "source": "1000026001.png",
+    "effect": "pose-moon",
+    "holdMs": 7200,
+    "icon": "✧",
+    "widthRatio": 1
+  }
+]

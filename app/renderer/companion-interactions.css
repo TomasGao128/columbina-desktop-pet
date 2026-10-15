@@ -1,0 +1,168 @@
+.companion-props {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 2;
+  opacity: var(--companion-opacity, 1);
+}
+.gaze-eyes {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1;
+  display: none;
+}
+.companion-prop {
+  position: absolute;
+  font-size: clamp(14px, calc(23px * var(--pet-scale, 1)), 60px);
+  transform: translate(-50%, -50%);
+  color: #a69bdf;
+  filter: drop-shadow(0 1px 2px #fff9);
+}
+.companion-prop.soft-ball {
+  width: calc(20px * var(--pet-scale, 1));
+  height: calc(20px * var(--pet-scale, 1));
+  background: radial-gradient(circle at 30% 25%, #fff5fc, #eacdf4 48%, #aa8acc);
+  border-radius: 50%;
+  border: 1px solid #f9ecff;
+}
+.companion-prop.song-note {
+  font-family: serif;
+  color: #aa96dc;
+}
+.companion-prop.shoulder-ring {
+  width: calc(16px * var(--pet-scale, 1));
+  height: calc(16px * var(--pet-scale, 1));
+  border: 2px solid #d5c7ef;
+  border-radius: 50%;
+  opacity: 0.7;
+}
+.badminton-shuttle {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: calc(18px * var(--pet-scale, 1));
+  height: calc(22px * var(--pet-scale, 1));
+  filter: drop-shadow(0 0 3px #d7d0f0);
+  will-change: transform;
+  pointer-events: none;
+}
+.badminton-shuttle svg {
+  width: 100%;
+  height: 100%;
+}
+.badminton-hit {
+  position: absolute;
+  width: calc(16px * var(--pet-scale, 1));
+  height: calc(16px * var(--pet-scale, 1));
+  border: 1px solid #dfd8ff;
+  border-radius: 50%;
+  box-shadow: 0 0 5px #ddd4f7;
+  pointer-events: none;
+}
+@keyframes poseSoftBreath {
+  0%,
+  100% {
+    transform: translateY(0) scale(var(--pose-scale, 1));
+  }
+  50% {
+    transform: translateY(-1px) scale(calc(var(--pose-scale, 1) * 1.004));
+  }
+}
+#pet.pose-soft-breathe {
+  transform-origin: bottom center;
+  animation: poseSoftBreath 5.6s ease-in-out infinite;
+}
+.pose-aura {
+  position: absolute;
+  pointer-events: none;
+  color: #b9a9df;
+  font-size: calc(16px * var(--pet-scale, 1));
+  opacity: 0.5;
+}
+.pose-notes {
+  left: 65%;
+  top: 25%;
+  animation: poseFloat 4s ease-in-out infinite;
+}
+.pose-feather {
+  left: 18%;
+  right: 18%;
+  top: 28%;
+  text-align: center;
+  letter-spacing: calc(26px * var(--pet-scale, 1));
+  animation: poseFloat 5s ease-in-out infinite;
+}
+@keyframes poseAura {
+  50% {
+    opacity: 0.25;
+    transform: scale(1.04);
+  }
+}
+@keyframes poseFloat {
+  50% {
+    opacity: 0.25;
+    transform: translateY(-5px);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  #pet.pose-soft-breathe,
+  .pose-aura {
+    animation: none;
+  }
+}
+.badminton-trail {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background: #d5c9e7;
+  pointer-events: none;
+  opacity: 0.2;
+}
+
+/* A short landing mark, independent of the body image and its click mask. */
+.drop-glow {
+  position: absolute;
+  left: 50%;
+  top: 98.5%;
+  width: 22%;
+  height: 3.5%;
+  border: 1px solid rgba(222, 206, 255, 0.8);
+  border-radius: 50%;
+  background: radial-gradient(
+    ellipse,
+    rgba(235, 219, 255, 0.35),
+    transparent 72%
+  );
+  box-shadow: 0 0 9px rgba(207, 182, 255, 0.4);
+  pointer-events: none;
+  animation: dropGlow 420ms ease-out both;
+}
+@keyframes dropGlow {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.6);
+  }
+  25% {
+    opacity: 0.85;
+    transform: translate(-50%, -50%) scale(0.85);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(1.45);
+  }
+}
+body.companion-reduced .drop-glow {
+  display: none;
+}
+@media (prefers-reduced-motion: reduce) {
+  .drop-glow {
+    display: none;
+    animation: none;
+  }
+}

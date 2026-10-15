@@ -1,0 +1,724 @@
+{
+  "study": {
+    "frames": [
+      "./activity-study.png",
+      "./activity-study-think.png",
+      "./activity-study-cheer.png"
+    ],
+    "source": "1000024697.jpg",
+    "label": "一起做题",
+    "processing": {
+      "tool": "built-in imagegen",
+      "background": "transparent alpha",
+      "referenceRule": "preserve face, hair, feather ornaments, costume and full visible body",
+      "anatomyRule": "exactly two arms, two hands, two matching sleeves, two legs and two feet",
+      "edit": "use supplied front-view reference; both hands at open notebook and pencil; seated front view, no supporting arm behind or beside seat",
+      "seatedPreference": "Preserve the previously generated seated sprites as explicitly requested; do not replace them with the later foot-only edits.",
+      "prompts": [
+        {
+          "file": "./activity-study-think.png",
+          "prompt": "Precise desktop pet expression/action variant of supplied sprite. Keep the same seated front pose and stool. Change ONLY arms and expression: right hand lightly touching her chin in thought, left hand holding the open notebook on her lap. Exactly two arms and hands, no writing hand remains, no third sleeve. Eyes attentive, small thoughtful frown. Preserve the exact face identity, magenta hair, feather ornaments, costume, full-body scale, head and feet placement, canvas, white-purple palette and detailed anime rendering. All head feathers and toes uncut. Genuine transparent alpha, transparent gaps, no backdrop or floor or text. Carefully trace exactly two shoulders through two arms to two hands, no duplicated sleeves or limbs."
+        },
+        {
+          "file": "./activity-study-cheer.png",
+          "prompt": "Precise desktop pet expression/action variant of supplied sprite. Keep the same seated front pose and stool. Change ONLY arms and expression: right hand giving a small thumbs-up near her chest, left hand holding the open notebook on her lap. Exactly two arms and hands, no writing hand remains, no extra sleeve. Warm happy smile with open eyes. Preserve the exact face identity, magenta hair, feather ornaments, costume, full-body scale, head and feet placement, canvas, white-purple palette and detailed anime rendering. All head feathers and toes uncut. Genuine transparent alpha, transparent gaps, no backdrop or floor or text. Carefully trace exactly two shoulders through two arms to two hands, no duplicated sleeves or limbs."
+        }
+      ]
+    }
+  },
+  "gaming": {
+    "frames": [
+      "./activity-gaming.png",
+      "./activity-gaming-win.png",
+      "./activity-gaming-miss.png"
+    ],
+    "source": "1000024697.jpg",
+    "label": "节奏游戏",
+    "processing": {
+      "tool": "built-in imagegen",
+      "background": "transparent alpha",
+      "referenceRule": "preserve face, hair, feather ornaments, costume and full visible body",
+      "anatomyRule": "exactly two arms, two hands, two matching sleeves, two legs and two feet",
+      "edit": "use supplied front-view reference; both hands at one purple game controller; seated front view, no supporting arm behind or beside seat",
+      "seatedPreference": "Preserve the previously generated seated sprites as explicitly requested; do not replace them with the later foot-only edits.",
+      "prompts": [
+        {
+          "file": "./activity-gaming-win.png",
+          "prompt": "Precise desktop pet expression/action variant of supplied sprite. Keep the same seated front pose and stool. Both hands holding the SAME ONE purple game controller raised in front of her chest. Elbows naturally bent, exactly two arms and two hands and two matching wide sleeves. Joyful smile, excited open purple eyes. No additional hands at the old lap position. Preserve the exact face identity, magenta hair, feather ornaments, costume, full-body scale, head and feet placement, canvas, white-purple palette and detailed anime rendering. All head feathers and toes uncut. Genuine transparent alpha, transparent gaps, no backdrop or floor or text. Carefully trace exactly two shoulders through two arms to two hands, no duplicated sleeves or limbs."
+        },
+        {
+          "file": "./activity-gaming-miss.png",
+          "prompt": "Precise desktop pet expression/action variant of supplied sprite. Keep same seated front pose and stool, both hands holding one purple game controller at the lap exactly as original. Change facial expression only to a cute small pout with slightly raised brows, eyes open; gentle disappointed expression, no crying. Exactly two hands and two sleeves. Preserve the exact face identity, magenta hair, feather ornaments, costume, full-body scale, head and feet placement, canvas, white-purple palette and detailed anime rendering. All head feathers and toes uncut. Genuine transparent alpha, transparent gaps, no backdrop or floor or text. Carefully trace exactly two shoulders through two arms to two hands, no duplicated sleeves or limbs."
+        }
+      ]
+    }
+  },
+  "basketball": {
+    "frames": [
+      "./activity-basket-ready.png",
+      "./activity-basket-dribble-up.png",
+      "./activity-basket-dribble.png",
+      "./activity-basket-cross.png",
+      "./activity-basket-crouch.png",
+      "./activity-basket-rise.png",
+      "./activity-basket-shoot.png",
+      "./activity-basket-follow.png",
+      "./activity-basket-land.png",
+      "./activity-basket-win.png",
+      "./activity-basket-miss.png",
+      "./activity-basket-layup.png",
+      "./activity-basket-dribble-mid.png",
+      "./activity-basket-gather.png",
+      "./activity-basket-extend.png",
+      "./activity-basket-recover.png",
+      "./activity-basket-layup-step.png"
+    ],
+    "source": ["1000024697.jpg"],
+    "label": "月光篮球",
+    "processing": {
+      "tool": "built-in imagegen",
+      "background": "transparent alpha",
+      "referenceRule": "preserve face, hair, feather ornaments, costume and full visible body",
+      "anatomyRule": "exactly two arms, two hands, two matching sleeves, two legs and two feet",
+      "edit": "Right-facing coordinated basketball poses, exactly two arms/hands/sleeves and two legs; feet fully barefoot, remove ankle shoe-like ornaments; empty hands receive an independent textured basketball.",
+      "prompts": [
+        {
+          "file": "./activity-basket-ready.png",
+          "prompt": "Precise FOOT-ONLY edit of supplied desktop pet sprite. User explicitly requires bare feet. Keep BOTH feet completely barefoot with natural skin, distinct anatomically correct toes, instep, heel and sole; remove ankle feather ornaments, shoe-like outlines, straps, anklebands, footwear, and white patterns drawn ON the feet. Calf/shin costume patterns above the ankles may stay. Preserve EXACTLY everything else: face and eye expression, pose, all hand and arm locations, sleeves, hair, head feathers, dress, objects, framing, canvas dimensions, character scale and placement. Two arms/hands/sleeves and two legs/feet only. DO NOT add legs, slippers, socks or shoes. Preserve genuinely transparent alpha and all gaps. Keep all toes within the canvas; do not crop. Only change the feet/ankle decoration, never redesign the sprite."
+        },
+        {
+          "file": "./activity-basket-dribble.png",
+          "prompt": "Precise FOOT-ONLY edit of supplied desktop pet sprite. User explicitly requires bare feet. Keep BOTH feet completely barefoot with natural skin, distinct anatomically correct toes, instep, heel and sole; remove ankle feather ornaments, shoe-like outlines, straps, anklebands, footwear, and white patterns drawn ON the feet. Calf/shin costume patterns above the ankles may stay. Preserve EXACTLY everything else: face and eye expression, pose, all hand and arm locations, sleeves, hair, head feathers, dress, objects, framing, canvas dimensions, character scale and placement. Two arms/hands/sleeves and two legs/feet only. DO NOT add legs, slippers, socks or shoes. Preserve genuinely transparent alpha and all gaps. Keep all toes within the canvas; do not crop. Only change the feet/ankle decoration, never redesign the sprite."
+        },
+        {
+          "file": "./activity-basket-dribble-up.png",
+          "prompt": "Precise FOOT-ONLY edit of supplied desktop pet sprite. User explicitly requires bare feet. Keep BOTH feet completely barefoot with natural skin, distinct anatomically correct toes, instep, heel and sole; remove ankle feather ornaments, shoe-like outlines, straps, anklebands, footwear, and white patterns drawn ON the feet. Calf/shin costume patterns above the ankles may stay. Preserve EXACTLY everything else: face and eye expression, pose, all hand and arm locations, sleeves, hair, head feathers, dress, objects, framing, canvas dimensions, character scale and placement. Two arms/hands/sleeves and two legs/feet only. DO NOT add legs, slippers, socks or shoes. Preserve genuinely transparent alpha and all gaps. Keep all toes within the canvas; do not crop. Only change the feet/ankle decoration, never redesign the sprite."
+        },
+        {
+          "file": "./activity-basket-cross.png",
+          "prompt": "Precise FOOT-ONLY edit of supplied desktop pet sprite. User explicitly requires bare feet. Keep BOTH feet completely barefoot with natural skin, distinct anatomically correct toes, instep, heel and sole; remove ankle feather ornaments, shoe-like outlines, straps, anklebands, footwear, and white patterns drawn ON the feet. Calf/shin costume patterns above the ankles may stay. Preserve EXACTLY everything else: face and eye expression, pose, all hand and arm locations, sleeves, hair, head feathers, dress, objects, framing, canvas dimensions, character scale and placement. Two arms/hands/sleeves and two legs/feet only. DO NOT add legs, slippers, socks or shoes. Preserve genuinely transparent alpha and all gaps. Keep all toes within the canvas; do not crop. Only change the feet/ankle decoration, never redesign the sprite."
+        },
+        {
+          "file": "./activity-basket-crouch.png",
+          "prompt": "Precise FOOT-ONLY edit of supplied desktop pet sprite. User explicitly requires bare feet. Keep BOTH feet completely barefoot with natural skin, distinct anatomically correct toes, instep, heel and sole; remove ankle feather ornaments, shoe-like outlines, straps, anklebands, footwear, and white patterns drawn ON the feet. Calf/shin costume patterns above the ankles may stay. Preserve EXACTLY everything else: face and eye expression, pose, all hand and arm locations, sleeves, hair, head feathers, dress, objects, framing, canvas dimensions, character scale and placement. Two arms/hands/sleeves and two legs/feet only. DO NOT add legs, slippers, socks or shoes. Preserve genuinely transparent alpha and all gaps. Keep all toes within the canvas; do not crop. Only change the feet/ankle decoration, never redesign the sprite."
+        },
+        {
+          "file": "./activity-basket-rise.png",
+          "prompt": "Precise FOOT-ONLY edit of supplied desktop pet sprite. User explicitly requires bare feet. Keep BOTH feet completely barefoot with natural skin, distinct anatomically correct toes, instep, heel and sole; remove ankle feather ornaments, shoe-like outlines, straps, anklebands, footwear, and white patterns drawn ON the feet. Calf/shin costume patterns above the ankles may stay. Preserve EXACTLY everything else: face and eye expression, pose, all hand and arm locations, sleeves, hair, head feathers, dress, objects, framing, canvas dimensions, character scale and placement. Two arms/hands/sleeves and two legs/feet only. DO NOT add legs, slippers, socks or shoes. Preserve genuinely transparent alpha and all gaps. Keep all toes within the canvas; do not crop. Only change the feet/ankle decoration, never redesign the sprite."
+        },
+        {
+          "file": "./activity-basket-shoot.png",
+          "prompt": "Precise FOOT-ONLY edit of supplied desktop pet sprite. User explicitly requires bare feet. Keep BOTH feet completely barefoot with natural skin, distinct anatomically correct toes, instep, heel and sole; remove ankle feather ornaments, shoe-like outlines, straps, anklebands, footwear, and white patterns drawn ON the feet. Calf/shin costume patterns above the ankles may stay. Preserve EXACTLY everything else: face and eye expression, pose, all hand and arm locations, sleeves, hair, head feathers, dress, objects, framing, canvas dimensions, character scale and placement. Two arms/hands/sleeves and two legs/feet only. DO NOT add legs, slippers, socks or shoes. Preserve genuinely transparent alpha and all gaps. Keep all toes within the canvas; do not crop. Only change the feet/ankle decoration, never redesign the sprite."
+        },
+        {
+          "file": "./activity-basket-follow.png",
+          "prompt": "Precise FOOT-ONLY edit of supplied desktop pet sprite. User explicitly requires bare feet. Keep BOTH feet completely barefoot with natural skin, distinct anatomically correct toes, instep, heel and sole; remove ankle feather ornaments, shoe-like outlines, straps, anklebands, footwear, and white patterns drawn ON the feet. Calf/shin costume patterns above the ankles may stay. Preserve EXACTLY everything else: face and eye expression, pose, all hand and arm locations, sleeves, hair, head feathers, dress, objects, framing, canvas dimensions, character scale and placement. Two arms/hands/sleeves and two legs/feet only. DO NOT add legs, slippers, socks or shoes. Preserve genuinely transparent alpha and all gaps. Keep all toes within the canvas; do not crop. Only change the feet/ankle decoration, never redesign the sprite."
+        },
+        {
+          "file": "./activity-basket-land.png",
+          "prompt": "Precise FOOT-ONLY edit of supplied desktop pet sprite. User explicitly requires bare feet. Keep BOTH feet completely barefoot with natural skin, distinct anatomically correct toes, instep, heel and sole; remove ankle feather ornaments, shoe-like outlines, straps, anklebands, footwear, and white patterns drawn ON the feet. Calf/shin costume patterns above the ankles may stay. Preserve EXACTLY everything else: face and eye expression, pose, all hand and arm locations, sleeves, hair, head feathers, dress, objects, framing, canvas dimensions, character scale and placement. Two arms/hands/sleeves and two legs/feet only. DO NOT add legs, slippers, socks or shoes. Preserve genuinely transparent alpha and all gaps. Keep all toes within the canvas; do not crop. Only change the feet/ankle decoration, never redesign the sprite."
+        },
+        {
+          "file": "./activity-basket-win.png",
+          "prompt": "Precise FOOT-ONLY edit of supplied desktop pet sprite. User explicitly requires bare feet. Keep BOTH feet completely barefoot with natural skin, distinct anatomically correct toes, instep, heel and sole; remove ankle feather ornaments, shoe-like outlines, straps, anklebands, footwear, and white patterns drawn ON the feet. Calf/shin costume patterns above the ankles may stay. Preserve EXACTLY everything else: face and eye expression, pose, all hand and arm locations, sleeves, hair, head feathers, dress, objects, framing, canvas dimensions, character scale and placement. Two arms/hands/sleeves and two legs/feet only. DO NOT add legs, slippers, socks or shoes. Preserve genuinely transparent alpha and all gaps. Keep all toes within the canvas; do not crop. Only change the feet/ankle decoration, never redesign the sprite."
+        },
+        {
+          "file": "./activity-basket-miss.png",
+          "prompt": "Precise FOOT-ONLY edit of supplied desktop pet sprite. User explicitly requires bare feet. Keep BOTH feet completely barefoot with natural skin, distinct anatomically correct toes, instep, heel and sole; remove ankle feather ornaments, shoe-like outlines, straps, anklebands, footwear, and white patterns drawn ON the feet. Calf/shin costume patterns above the ankles may stay. Preserve EXACTLY everything else: face and eye expression, pose, all hand and arm locations, sleeves, hair, head feathers, dress, objects, framing, canvas dimensions, character scale and placement. Two arms/hands/sleeves and two legs/feet only. DO NOT add legs, slippers, socks or shoes. Preserve genuinely transparent alpha and all gaps. Keep all toes within the canvas; do not crop. Only change the feet/ankle decoration, never redesign the sprite."
+        },
+        {
+          "file": "./activity-basket-layup.png",
+          "prompt": "Precise FOOT-ONLY edit of supplied desktop pet sprite. User explicitly requires bare feet. Keep BOTH feet completely barefoot with natural skin, distinct anatomically correct toes, instep, heel and sole; remove ankle feather ornaments, shoe-like outlines, straps, anklebands, footwear, and white patterns drawn ON the feet. Calf/shin costume patterns above the ankles may stay. Preserve EXACTLY everything else: face and eye expression, pose, all hand and arm locations, sleeves, hair, head feathers, dress, objects, framing, canvas dimensions, character scale and placement. Two arms/hands/sleeves and two legs/feet only. DO NOT add legs, slippers, socks or shoes. Preserve genuinely transparent alpha and all gaps. Keep all toes within the canvas; do not crop. Only change the feet/ankle decoration, never redesign the sprite."
+        },
+        {
+          "file": "./activity-ball-material.png",
+          "prompt": "One exquisitely detailed orange basketball isolated on true transparent alpha. Production game prop texture, front-facing perfectly circular sphere centered in a square canvas. Real standard eight-panel basketball, correct dark recessed rubber channel layout: central curved horizontal channel, curved vertical channel and curved arcs wrapping the sphere, recognizable professional basketball topology. Fine dense pebbled leather/rubber grain, warm orange material with natural subtle shading, crisp physically round silhouette. Soft neutral highlight upper-left, no lens flare, no colored glow, no floor, no cast shadow, no lettering or logo, no hands or character. High-quality detailed stylized realism suitable for an anime desktop pet, clear when reduced to 36-60 pixels."
+        },
+        {
+          "file": "./activity-basket-dribble-mid.png",
+          "prompt": "Production transparent PNG sprite for the existing Columbina desktop pet. Match supplied character identity EXACTLY: face, purple eyes, burgundy hair, white feather headdress, white/lavender moon dress, TWO arms, TWO hands, TWO sleeves, TWO legs. Natural bare feet, visible toes, no shoes, straps or ankle feather ornaments. Same square canvas, full body with 3% clear margin, baseline near 96%, same scale and placement as reference. Truly transparent alpha including all gaps. Clean crisp edges, no colored fringes, no loose floating debris, no text, no basketball painted into the image. Animation inbetween only, not a redesign. Facing RIGHT, gentle bend knees; rightward dribbling arm halfway lowered, right-facing palm centered at normalized x=.83,y=.57, other hand calmly in front of chest. Hair and both sleeves follow the arm movement subtly. Empty palm. Keep feet baseline and head identity.",
+          "initialPrompt": "Production transparent PNG sprite for the existing Columbina desktop pet. Match supplied character identity EXACTLY: face, purple eyes, burgundy hair, white feather headdress, white/lavender moon dress, TWO arms, TWO hands, TWO sleeves, TWO legs. Natural bare feet, visible toes, no shoes, straps or ankle feather ornaments. Same square canvas, full body with 3% clear margin, baseline near 96%, same scale and placement as reference. Truly transparent alpha including all gaps. Clean crisp edges, no colored fringes, no loose floating debris, no text, no basketball painted into the image. Animation inbetween only, not a redesign. Facing RIGHT, gentle bend knees; rightward dribbling arm halfway lowered, right-facing palm centered at normalized x=.83,y=.57, other hand calmly in front of chest. Hair and both sleeves follow the arm movement subtly. Empty palm. Keep feet baseline and head identity."
+        },
+        {
+          "file": "./activity-basket-gather.png",
+          "prompt": "Precise intermediate animation pose correction. Keep same face/hair/body/costume/two barefoot legs and full framing. LOWER BOTH forearms and hands from above head to immediately IN FRONT OF FOREHEAD, hands together at forehead/eye height slightly to the RIGHT, elbows bent and lowered. This is BEFORE raising arms for the jump; upper arms should be much LOWER than current pose. Replace the current high arms/hands, absolutely no duplicate limbs. Exactly two arms/hands/sleeves. Preserve full fingers, transparent alpha.",
+          "initialPrompt": "Production transparent PNG sprite for the existing Columbina desktop pet. Match supplied character identity EXACTLY: face, purple eyes, burgundy hair, white feather headdress, white/lavender moon dress, TWO arms, TWO hands, TWO sleeves, TWO legs. Natural bare feet, visible toes, no shoes, straps or ankle feather ornaments. Same square canvas, full body with 3% clear margin, baseline near 96%, same scale and placement as reference. Truly transparent alpha including all gaps. Clean crisp edges, no colored fringes, no loose floating debris, no text, no basketball painted into the image. Animation inbetween only, not a redesign. Inbetween supplied crouch and rise. Preserve reference ONE face and full body. Knees starting to extend, BOTH hands lifting toward forehead at normalized x=.77,y=.18; elbows still bent. Only two forearms, two hands, two sleeves. No raised spare hands from previous poses. Facing RIGHT. Full fingers visible."
+        },
+        {
+          "file": "./activity-basket-extend.png",
+          "prompt": "Precise intermediate animation pose correction. Keep same face/hair/body/costume/airborne barefoot legs and canvas. BEND BOTH elbows more, shorten their forward reach so both hands move LEFTWARD closer to forehead but stay slightly above it. Hands should be roughly one head width to the right of face, not at far right edge. This is midway between overhead rise and fully extended shooting followthrough. Replace old arm/hand locations, exactly two hands/two sleeves, no duplicate limb ghost. Preserve transparency.",
+          "initialPrompt": "Production transparent PNG sprite for the existing Columbina desktop pet. Match supplied character identity EXACTLY: face, purple eyes, burgundy hair, white feather headdress, white/lavender moon dress, TWO arms, TWO hands, TWO sleeves, TWO legs. Natural bare feet, visible toes, no shoes, straps or ankle feather ornaments. Same square canvas, full body with 3% clear margin, baseline near 96%, same scale and placement as reference. Truly transparent alpha including all gaps. Clean crisp edges, no colored fringes, no loose floating debris, no text, no basketball painted into the image. Animation inbetween only, not a redesign. Inbetween supplied rise and release. Facing RIGHT, arms beginning to extend diagonally upper RIGHT, hands together around x=.81,y=.075. Small airborne jump, both legs from rise reference, hair and sleeve tips flowing left. Keep fingertips >=3% below canvas top and entire feet visible. TWO hands only, erase old arm locations."
+        },
+        {
+          "file": "./activity-basket-recover.png",
+          "prompt": "Production transparent PNG sprite for the existing Columbina desktop pet. Match supplied character identity EXACTLY: face, purple eyes, burgundy hair, white feather headdress, white/lavender moon dress, TWO arms, TWO hands, TWO sleeves, TWO legs. Natural bare feet, visible toes, no shoes, straps or ankle feather ornaments. Same square canvas, full body with 3% clear margin, baseline near 96%, same scale and placement as reference. Truly transparent alpha including all gaps. Clean crisp edges, no colored fringes, no loose floating debris, no text, no basketball painted into the image. Animation inbetween only, not a redesign. After follow-through, facing RIGHT: lower both arms halfway toward waist, right hand at x=.81,y=.34 and left hand x=.68,y=.43. Knees bending to absorb landing, both bare feet on ground at same baseline. Hair and sleeve tips relaxing. Exactly two arms and no old high hands.",
+          "initialPrompt": "Production transparent PNG sprite for the existing Columbina desktop pet. Match supplied character identity EXACTLY: face, purple eyes, burgundy hair, white feather headdress, white/lavender moon dress, TWO arms, TWO hands, TWO sleeves, TWO legs. Natural bare feet, visible toes, no shoes, straps or ankle feather ornaments. Same square canvas, full body with 3% clear margin, baseline near 96%, same scale and placement as reference. Truly transparent alpha including all gaps. Clean crisp edges, no colored fringes, no loose floating debris, no text, no basketball painted into the image. Animation inbetween only, not a redesign. After follow-through, facing RIGHT: lower both arms halfway toward waist, right hand at x=.81,y=.34 and left hand x=.68,y=.43. Knees bending to absorb landing, both bare feet on ground at same baseline. Hair and sleeve tips relaxing. Exactly two arms and no old high hands."
+        },
+        {
+          "file": "./activity-basket-layup-step.png",
+          "prompt": "Production transparent PNG sprite for the existing Columbina desktop pet. Match supplied character identity EXACTLY: face, purple eyes, burgundy hair, white feather headdress, white/lavender moon dress, TWO arms, TWO hands, TWO sleeves, TWO legs. Natural bare feet, visible toes, no shoes, straps or ankle feather ornaments. Same square canvas, full body with 3% clear margin, baseline near 96%, same scale and placement as reference. Truly transparent alpha including all gaps. Clean crisp edges, no colored fringes, no loose floating debris, no text, no basketball painted into the image. Animation inbetween only, not a redesign. Inbetween approach and high layup: facing RIGHT with one knee only beginning to lift, other foot low near floor. Shooting arm bent before extending, right hand x=.80,y=.24; guide hand near chest. Same costume/hair/face, subtly trailing sleeves. No old high reaching arm.",
+          "initialPrompt": "Production transparent PNG sprite for the existing Columbina desktop pet. Match supplied character identity EXACTLY: face, purple eyes, burgundy hair, white feather headdress, white/lavender moon dress, TWO arms, TWO hands, TWO sleeves, TWO legs. Natural bare feet, visible toes, no shoes, straps or ankle feather ornaments. Same square canvas, full body with 3% clear margin, baseline near 96%, same scale and placement as reference. Truly transparent alpha including all gaps. Clean crisp edges, no colored fringes, no loose floating debris, no text, no basketball painted into the image. Animation inbetween only, not a redesign. Inbetween approach and high layup: facing RIGHT with one knee only beginning to lift, other foot low near floor. Shooting arm bent before extending, right hand x=.80,y=.24; guide hand near chest. Same costume/hair/face, subtly trailing sleeves. No old high reaching arm."
+        }
+      ],
+      "generationPrompts": [
+        {
+          "file": "./activity-basket-ready.png",
+          "prompt": "Use this front reference as exact Columbina identity and costume. Create a full-body transparent desktop-pet basketball sprite. STRICT DIRECTION: character torso, face, nose, eyes and feet face SCREEN RIGHT in three-quarter side view (toward a hoop off the RIGHT edge). Balanced athletic ready stance with knees slightly bent, both empty hands cupped together in front of the waist, to the RIGHT of the torso as if holding a separate basketball. Exactly two arms, two hands with natural fingers, two matching white-purple wide sleeves, two legs and feet. Do not paint any ball. Match delicate original anime art, long magenta hair, purple eyes, feather crown and white-purple gold-moon costume. Character centered around x=.43, head feather top y=.04, feet at y=.95 on a square canvas with generous margin; all feet and feathers fully visible. A real transparent alpha cutout, no scenery, floor, shadow, text or watermark. This is the master pose used to align the other animation keyframes; keep recognizable face and coherent limb anatomy."
+        },
+        {
+          "file": "./activity-basket-dribble.png",
+          "prompt": "Create one production animation keyframe variant of supplied master Columbina basketball sprite. Low right-hand dribble: bent knees, torso leaning slightly forward toward screen RIGHT, right palm facing DOWN at the right side around x=.70,y=.66, left arm naturally balancing in front of chest. Empty hands. The hoop is to SCREEN RIGHT. Preserve master character identity, purple eyes, magenta hair, feather ornaments, exact white-purple moon costume and delicate anime render. Preserve SAME square canvas, SAME character full-body scale and hip placement, feet baseline about y=.95 except airborne poses. Keep all head feathers, hands, toes inside canvas with breathing margins. Anatomy audit: exactly TWO arms, TWO wrists, TWO hands and TWO corresponding wide sleeve openings, TWO legs and TWO feet, natural fingers, trace shoulders to elbows to wrists. No basketball painted into character (code renders a separate ball), no extra arms hidden in sleeves, no scenery, text, floor, glow or cast shadow. REAL transparent alpha, including hair gaps. Do not mirror the costume; physically turn pose as specified. Strong directional continuity with master."
+        },
+        {
+          "file": "./activity-basket-dribble-up.png",
+          "prompt": "Create one production animation keyframe variant of supplied master Columbina basketball sprite. Upper part of right-hand dribble: same stance and feet as master, right hand near right waist around x=.71,y=.53 palm down to meet a returning separate ball, left arm balancing. Empty hands. The hoop is to SCREEN RIGHT. Preserve master character identity, purple eyes, magenta hair, feather ornaments, exact white-purple moon costume and delicate anime render. Preserve SAME square canvas, SAME character full-body scale and hip placement, feet baseline about y=.95 except airborne poses. Keep all head feathers, hands, toes inside canvas with breathing margins. Anatomy audit: exactly TWO arms, TWO wrists, TWO hands and TWO corresponding wide sleeve openings, TWO legs and TWO feet, natural fingers, trace shoulders to elbows to wrists. No basketball painted into character (code renders a separate ball), no extra arms hidden in sleeves, no scenery, text, floor, glow or cast shadow. REAL transparent alpha, including hair gaps. Do not mirror the costume; physically turn pose as specified. Strong directional continuity with master."
+        },
+        {
+          "file": "./activity-basket-cross.png",
+          "prompt": "Create one production animation keyframe variant of supplied master Columbina basketball sprite. Crossover dribble: low athletic stance, shoulders and face still looking screen RIGHT, right forearm crossing across waist toward screen LEFT and its palm down around x=.37,y=.62; left arm balances. Keep exactly two arms; no painted ball. The hoop is to SCREEN RIGHT. Preserve master character identity, purple eyes, magenta hair, feather ornaments, exact white-purple moon costume and delicate anime render. Preserve SAME square canvas, SAME character full-body scale and hip placement, feet baseline about y=.95 except airborne poses. Keep all head feathers, hands, toes inside canvas with breathing margins. Anatomy audit: exactly TWO arms, TWO wrists, TWO hands and TWO corresponding wide sleeve openings, TWO legs and TWO feet, natural fingers, trace shoulders to elbows to wrists. No basketball painted into character (code renders a separate ball), no extra arms hidden in sleeves, no scenery, text, floor, glow or cast shadow. REAL transparent alpha, including hair gaps. Do not mirror the costume; physically turn pose as specified. Strong directional continuity with master."
+        },
+        {
+          "file": "./activity-basket-crouch.png",
+          "prompt": "Create one production animation keyframe variant of supplied master Columbina basketball sprite. Gather and loading crouch before a jump shot: knees deeper bent, torso forward but face looking up toward screen RIGHT, both empty hands cupped together to the right of chest around x=.70,y=.40. Feet same ground baseline as master. The hoop is to SCREEN RIGHT. Preserve master character identity, purple eyes, magenta hair, feather ornaments, exact white-purple moon costume and delicate anime render. Preserve SAME square canvas, SAME character full-body scale and hip placement, feet baseline about y=.95 except airborne poses. Keep all head feathers, hands, toes inside canvas with breathing margins. Anatomy audit: exactly TWO arms, TWO wrists, TWO hands and TWO corresponding wide sleeve openings, TWO legs and TWO feet, natural fingers, trace shoulders to elbows to wrists. No basketball painted into character (code renders a separate ball), no extra arms hidden in sleeves, no scenery, text, floor, glow or cast shadow. REAL transparent alpha, including hair gaps. Do not mirror the costume; physically turn pose as specified. Strong directional continuity with master."
+        },
+        {
+          "file": "./activity-basket-rise.png",
+          "prompt": "Create one production animation keyframe variant of supplied master Columbina basketball sprite. Upward jumping shot preparation: body rising, both empty hands raised in front of and slightly RIGHT of forehead around x=.76,y=.19, elbows pointing forward toward screen RIGHT. Face and eyes looking up/right; feet slightly off baseline, both toes visible. The hoop is to SCREEN RIGHT. Preserve master character identity, purple eyes, magenta hair, feather ornaments, exact white-purple moon costume and delicate anime render. Preserve SAME square canvas, SAME character full-body scale and hip placement, feet baseline about y=.95 except airborne poses. Keep all head feathers, hands, toes inside canvas with breathing margins. Anatomy audit: exactly TWO arms, TWO wrists, TWO hands and TWO corresponding wide sleeve openings, TWO legs and TWO feet, natural fingers, trace shoulders to elbows to wrists. No basketball painted into character (code renders a separate ball), no extra arms hidden in sleeves, no scenery, text, floor, glow or cast shadow. REAL transparent alpha, including hair gaps. Do not mirror the costume; physically turn pose as specified. Strong directional continuity with master."
+        },
+        {
+          "file": "./activity-basket-shoot.png",
+          "prompt": "Precise repair of supplied right-facing basketball release sprite. The fingertips touch/cross the top canvas edge. Lower ONLY both extended forearms and hands slightly and bend shoulders/elbows naturally so EVERY fingertip has at least 4% empty transparent margin above it. Arms must still extend forward-UP toward SCREEN RIGHT, wrist following through toward RIGHT hoop. Keep exactly two arms, two hands, two sleeves. Preserve the original face, eyes, head ornaments, body, costume, legs, feet, full square canvas and original scale. No basketball painted in, no backdrop, real transparent alpha. Do not rotate the character to left. Keep unchanged the rest of the sprite."
+        },
+        {
+          "file": "./activity-basket-follow.png",
+          "prompt": "Create one production animation keyframe variant of supplied master Columbina basketball sprite. Follow-through after a RIGHTWARD shot: torso and face point screen RIGHT; shooting right forearm extends upward-forward to RIGHT, relaxed wrist and fingers curve down toward the offscreen RIGHT hoop, guide left arm slightly lowered forward. Hands empty, no ball. Feet landing naturally. The hoop is to SCREEN RIGHT. Preserve master character identity, purple eyes, magenta hair, feather ornaments, exact white-purple moon costume and delicate anime render. Preserve SAME square canvas, SAME character full-body scale and hip placement, feet baseline about y=.95 except airborne poses. Keep all head feathers, hands, toes inside canvas with breathing margins. Anatomy audit: exactly TWO arms, TWO wrists, TWO hands and TWO corresponding wide sleeve openings, TWO legs and TWO feet, natural fingers, trace shoulders to elbows to wrists. No basketball painted into character (code renders a separate ball), no extra arms hidden in sleeves, no scenery, text, floor, glow or cast shadow. REAL transparent alpha, including hair gaps. Do not mirror the costume; physically turn pose as specified. Strong directional continuity with master."
+        },
+        {
+          "file": "./activity-basket-land.png",
+          "prompt": "Create one production animation keyframe variant of supplied master Columbina basketball sprite. Soft landing after jump shot: knees slightly bent, both feet touching original ground baseline, face looking to SCREEN RIGHT watching the hoop, both arms lowered naturally forward, hands empty. Relaxed costume folds. The hoop is to SCREEN RIGHT. Preserve master character identity, purple eyes, magenta hair, feather ornaments, exact white-purple moon costume and delicate anime render. Preserve SAME square canvas, SAME character full-body scale and hip placement, feet baseline about y=.95 except airborne poses. Keep all head feathers, hands, toes inside canvas with breathing margins. Anatomy audit: exactly TWO arms, TWO wrists, TWO hands and TWO corresponding wide sleeve openings, TWO legs and TWO feet, natural fingers, trace shoulders to elbows to wrists. No basketball painted into character (code renders a separate ball), no extra arms hidden in sleeves, no scenery, text, floor, glow or cast shadow. REAL transparent alpha, including hair gaps. Do not mirror the costume; physically turn pose as specified. Strong directional continuity with master."
+        },
+        {
+          "file": "./activity-basket-win.png",
+          "prompt": "Create one production animation keyframe variant of supplied master Columbina basketball sprite. Made-basket celebration: same three-quarter body orientation to RIGHT, eyes smiling and looking toward right hoop, right hand making a small cheerful fist near shoulder, left hand lightly open in front of waist. Exactly two arms and two sleeve cuffs, both feet grounded. Happy expression. The hoop is to SCREEN RIGHT. Preserve master character identity, purple eyes, magenta hair, feather ornaments, exact white-purple moon costume and delicate anime render. Preserve SAME square canvas, SAME character full-body scale and hip placement, feet baseline about y=.95 except airborne poses. Keep all head feathers, hands, toes inside canvas with breathing margins. Anatomy audit: exactly TWO arms, TWO wrists, TWO hands and TWO corresponding wide sleeve openings, TWO legs and TWO feet, natural fingers, trace shoulders to elbows to wrists. No basketball painted into character (code renders a separate ball), no extra arms hidden in sleeves, no scenery, text, floor, glow or cast shadow. REAL transparent alpha, including hair gaps. Do not mirror the costume; physically turn pose as specified. Strong directional continuity with master."
+        },
+        {
+          "file": "./activity-basket-miss.png",
+          "prompt": "Create one production animation keyframe variant of supplied master Columbina basketball sprite. Missed-basket recovery: same three-quarter RIGHT-facing posture and baseline, a cute small pout, eyebrows slightly raised, right hand scratching back of head, left hand at waist ready to try again. Exactly two arms and two sleeves, no phantom hands. The hoop is to SCREEN RIGHT. Preserve master character identity, purple eyes, magenta hair, feather ornaments, exact white-purple moon costume and delicate anime render. Preserve SAME square canvas, SAME character full-body scale and hip placement, feet baseline about y=.95 except airborne poses. Keep all head feathers, hands, toes inside canvas with breathing margins. Anatomy audit: exactly TWO arms, TWO wrists, TWO hands and TWO corresponding wide sleeve openings, TWO legs and TWO feet, natural fingers, trace shoulders to elbows to wrists. No basketball painted into character (code renders a separate ball), no extra arms hidden in sleeves, no scenery, text, floor, glow or cast shadow. REAL transparent alpha, including hair gaps. Do not mirror the costume; physically turn pose as specified. Strong directional continuity with master."
+        },
+        {
+          "file": "./activity-basket-layup.png",
+          "prompt": "Create one production animation keyframe variant of supplied master Columbina basketball sprite. One-handed RIGHTWARD layup: running jump toward screen RIGHT, right knee raised, left foot trailing but fully visible, RIGHT arm reaching forward-up toward the RIGHT hoop with open empty hand around x=.80,y=.14, LEFT arm bent naturally across chest, exactly two arms/hands/sleeves. Eyes look up/right, not backwards. The hoop is to SCREEN RIGHT. Preserve master character identity, purple eyes, magenta hair, feather ornaments, exact white-purple moon costume and delicate anime render. Preserve SAME square canvas, SAME character full-body scale and hip placement, feet baseline about y=.95 except airborne poses. Keep all head feathers, hands, toes inside canvas with breathing margins. Anatomy audit: exactly TWO arms, TWO wrists, TWO hands and TWO corresponding wide sleeve openings, TWO legs and TWO feet, natural fingers, trace shoulders to elbows to wrists. No basketball painted into character (code renders a separate ball), no extra arms hidden in sleeves, no scenery, text, floor, glow or cast shadow. REAL transparent alpha, including hair gaps. Do not mirror the costume; physically turn pose as specified. Strong directional continuity with master."
+        }
+      ]
+    },
+    "props": {
+      "ball": "./activity-ball-material.png"
+    },
+    "poses": {
+      "ready": {
+        "frame": "./activity-basket-ready.png",
+        "facing": "right",
+        "ball": {
+          "x": 0.73,
+          "y": 0.425
+        }
+      },
+      "dribble-up": {
+        "frame": "./activity-basket-dribble-up.png",
+        "facing": "right",
+        "ball": {
+          "x": 0.82,
+          "y": 0.48
+        }
+      },
+      "dribble": {
+        "frame": "./activity-basket-dribble.png",
+        "facing": "right",
+        "ball": {
+          "x": 0.84,
+          "y": 0.68
+        }
+      },
+      "cross": {
+        "frame": "./activity-basket-cross.png",
+        "facing": "right",
+        "ball": {
+          "x": 0.46,
+          "y": 0.61
+        }
+      },
+      "crouch": {
+        "frame": "./activity-basket-crouch.png",
+        "facing": "right",
+        "ball": {
+          "x": 0.815,
+          "y": 0.25
+        }
+      },
+      "rise": {
+        "frame": "./activity-basket-rise.png",
+        "facing": "right",
+        "ball": {
+          "x": 0.7,
+          "y": 0.04
+        }
+      },
+      "shoot": {
+        "frame": "./activity-basket-shoot.png",
+        "facing": "right",
+        "ball": {
+          "x": 0.9,
+          "y": 0.1
+        }
+      },
+      "follow": {
+        "frame": "./activity-basket-follow.png",
+        "facing": "right",
+        "ball": {
+          "x": 0.89,
+          "y": 0.12
+        }
+      },
+      "land": {
+        "frame": "./activity-basket-land.png",
+        "facing": "right",
+        "ball": {
+          "x": 0.75,
+          "y": 0.55
+        }
+      },
+      "win": {
+        "frame": "./activity-basket-win.png",
+        "facing": "right",
+        "ball": {
+          "x": 0.72,
+          "y": 0.4
+        }
+      },
+      "miss": {
+        "frame": "./activity-basket-miss.png",
+        "facing": "right",
+        "ball": {
+          "x": 0.72,
+          "y": 0.4
+        }
+      },
+      "layup": {
+        "frame": "./activity-basket-layup.png",
+        "facing": "right",
+        "ball": {
+          "x": 0.92,
+          "y": 0.1
+        }
+      },
+      "dribble-mid": {
+        "frame": "./activity-basket-dribble-mid.png",
+        "facing": "right",
+        "ball": {
+          "x": 0.8,
+          "y": 0.57
+        }
+      },
+      "gather": {
+        "frame": "./activity-basket-gather.png",
+        "facing": "right",
+        "ball": {
+          "x": 0.68,
+          "y": 0.12
+        }
+      },
+      "extend": {
+        "frame": "./activity-basket-extend.png",
+        "facing": "right",
+        "ball": {
+          "x": 0.77,
+          "y": 0.08
+        }
+      },
+      "recover": {
+        "frame": "./activity-basket-recover.png",
+        "facing": "right",
+        "ball": {
+          "x": 0.84,
+          "y": 0.4
+        }
+      },
+      "layup-step": {
+        "frame": "./activity-basket-layup-step.png",
+        "facing": "right",
+        "ball": {
+          "x": 0.88,
+          "y": 0.17
+        }
+      }
+    }
+  },
+  "cat": {
+    "label": "路边逗小黑",
+    "frames": [
+      "./activity-scene-cat-ready.png",
+      "./activity-scene-cat-stroke.png",
+      "./activity-scene-cat-look.png",
+      "./activity-scene-cat-lift.png",
+      "./activity-scene-cat-hug.png",
+      "./activity-scene-cat-nuzzle.png",
+      "./activity-scene-cat-lap.png",
+      "./activity-scene-cat-lower.png"
+    ],
+    "poses": {
+      "idle": "./activity-scene-cat-ready.png",
+      "stroke": "./activity-scene-cat-stroke.png",
+      "look": "./activity-scene-cat-look.png",
+      "lift": "./activity-scene-cat-lift.png",
+      "hug": "./activity-scene-cat-hug.png",
+      "nuzzle": "./activity-scene-cat-nuzzle.png",
+      "lap": "./activity-scene-cat-lap.png",
+      "lower": "./activity-scene-cat-lower.png"
+    },
+    "props": {
+      "idle": "./activity-scene-kitten-idle.png",
+      "play": "./activity-scene-kitten-play.png",
+      "purr": "./activity-scene-kitten-purr.png",
+      "run-right": "./activity-scene-kitten-run-right.png",
+      "run-left": "./activity-scene-kitten-run-left.png",
+      "roll": "./activity-scene-kitten-roll.png",
+      "stretch": "./activity-scene-kitten-stretch.png",
+      "curled": "./activity-scene-kitten-curled.png",
+      "garden-background": "./activity-scene-landscape-garden.png"
+    },
+    "processing": {
+      "tool": "built-in imagegen",
+      "background": "transparent alpha",
+      "source": [
+        "1000025880.png",
+        "1000025882.png",
+        "1000025886.png",
+        "activity-basket-ready.png"
+      ],
+      "anatomyRule": "Columbina: two arms/hands/sleeves and two bare feet; Luo Xiaohei black flat cartoon cat with full round eyes, four limbs and one tail.",
+      "prompts": [
+        {
+          "file": "./activity-scene-cat-ready.png",
+          "prompt": "Production transparent PNG sprite for the existing Columbina desktop pet. Match supplied character identity EXACTLY: face, purple eyes, burgundy hair, white feather headdress, white/lavender moon dress, TWO arms, TWO hands, TWO sleeves, TWO legs. Natural bare feet, visible toes, no shoes, straps or ankle feather ornaments. Same square canvas, full body with 3% clear margin, baseline near 96%, same scale and placement as reference. Truly transparent alpha including all gaps. Clean crisp edges, no colored fringes, no loose floating debris, no text, no basketball painted into the image. Animation inbetween only, not a redesign. New gentle roadside kitten interaction pose. Character crouches low facing RIGHT, both bare feet visible naturally; ONE hand rests on own knee, the other reaches softly RIGHT toward an external kitten (do not draw kitten), palm at x=.80,y=.66. Warm relaxed face looking toward lower RIGHT. Compact low crouch, dress drapes naturally. No ball, no ground, no chair. Full character and hair within canvas.",
+          "initialPrompt": "Production transparent PNG sprite for the existing Columbina desktop pet. Match supplied character identity EXACTLY: face, purple eyes, burgundy hair, white feather headdress, white/lavender moon dress, TWO arms, TWO hands, TWO sleeves, TWO legs. Natural bare feet, visible toes, no shoes, straps or ankle feather ornaments. Same square canvas, full body with 3% clear margin, baseline near 96%, same scale and placement as reference. Truly transparent alpha including all gaps. Clean crisp edges, no colored fringes, no loose floating debris, no text, no basketball painted into the image. Animation inbetween only, not a redesign. New gentle roadside kitten interaction pose. Character crouches low facing RIGHT, both bare feet visible naturally; ONE hand rests on own knee, the other reaches softly RIGHT toward an external kitten (do not draw kitten), palm at x=.80,y=.66. Warm relaxed face looking toward lower RIGHT. Compact low crouch, dress drapes naturally. No ball, no ground, no chair. Full character and hair within canvas."
+        },
+        {
+          "file": "./activity-scene-cat-stroke.png",
+          "prompt": "Precise animation variation of the supplied crouching Columbina sprite. Keep face identity, FULL body placement, hair, costume, two arms and two bare feet exactly aligned to original. Change ONLY her rightward extended hand and elbow slightly: lower the palm a little and curve fingers softly as she strokes the top of an unseen kitten's head. Her other hand stays on her own knee. Tiny affectionate smile. No kitten embedded, no objects/background. Exactly two hands/sleeves. Preserve transparent alpha and canvas dimensions; no extra hands, no clipping."
+        },
+        {
+          "file": "./activity-scene-cat-look.png",
+          "prompt": "Precise animation reaction variation of supplied crouching character. Keep the exact crouching body, two feet, costume, hair length and framing. Head turns only slightly toward viewer with warm curious smile while her rightward arm bends upward so that its SAME one hand lifts a little as if holding an unseen feather (do not draw feather), the other hand remains on knee. Remove previous extended hand location rather than duplicating it. Exactly two arms/hands/sleeves and two bare feet. Preserve clear transparent gaps, full canvas."
+        },
+        {
+          "file": "./activity-scene-kitten-idle.png",
+          "source": "1000025880.png",
+          "prompt": "Precise transparent desktop sprite edit of the user's supplied LUO XIAOHEI black cartoon cat. Preserve EXACT original simple flat cartoon identity and drawing style: almost-black body, huge pale cream circular eyes with dark pupils and one highlight, light green inner ears, tiny blue mouth, brown clean linework, four cat limbs and ONE tail. No realistic fur, no white/gray coat, no purple eyes, no costume, no collar. Preserve original pose unless explicitly requested. Clean genuinely transparent alpha; remove stray light/green matte fringe outside brown contours. Fit ENTIRE cat, ears, paws, tail in square canvas with 5% transparent padding, occupying about 85% height, align floor at 94%, same body scale across frames. No shadows/background/text/objects. Use supplied seated wide-eyed pose exactly. Only reframe uniformly and clean transparent edge, do not redesign."
+        },
+        {
+          "file": "./activity-scene-kitten-purr.png",
+          "source": "1000025882.png",
+          "prompt": "EYES-ONLY correction of supplied Luo Xiaohei black cartoon cat sprite. Remove the TWO brown eyelid lines drawn ACROSS INSIDE the eyes. Each eye must be a complete unobstructed pale-cream round ring, an intact dark oval pupil, and one white highlight, exactly like user's original open-round-eye Luo Xiaohei reference. NO horizontal lines, eyebrow strokes or eyelids inside either eye, no closed or squinting eyes. Preserve EXACTLY all other pixels/design: paws-together seated pose, ears, blue tiny mouth, black body, tail, framing, size and transparent alpha. Only erase inner-eye strokes and restore underlying clean cream/pupil shape."
+        },
+        {
+          "file": "./activity-scene-kitten-play.png",
+          "source": "1000025886.png",
+          "prompt": "Precise transparent desktop sprite edit of the user's supplied LUO XIAOHEI black cartoon cat. Preserve EXACT original simple flat cartoon identity and drawing style: almost-black body, huge pale cream circular eyes with dark pupils and one highlight, light green inner ears, tiny blue mouth, brown clean linework, four cat limbs and ONE tail. No realistic fur, no white/gray coat, no purple eyes, no costume, no collar. Preserve original pose unless explicitly requested. Clean genuinely transparent alpha; remove stray light/green matte fringe outside brown contours. Fit ENTIRE cat, ears, paws, tail in square canvas with 5% transparent padding, occupying about 85% height, align floor at 94%, same body scale across frames. No shadows/background/text/objects. Keep supplied joyful raised-front-paws pose, REMOVE ONLY the floating blue ball completely, retain cat watching toward upper LEFT as if reaching for an external feather. No ball or feather embedded. Four paws and one tail. Full ears and paws in margins."
+        },
+        {
+          "file": "./activity-scene-cat-lift.png",
+          "prompt": "Framing-only repair of this exact desktop pet sprite. Preserve exactly this pose, character identity, expression, costume, barefoot feet, both hands, and the single Luo Xiaohei black cat with full round eyes without horizontal marks. Fit the ENTIRE existing subject into the same square canvas by uniformly reducing it to 90% size and centering it, leaving at least 4% fully transparent clear margin on ALL FOUR sides. Restore any clipped tips of white feather ornaments and toes naturally. Do not zoom in. No new objects, no extra arms, sleeves, legs, cats, text or background. Genuine transparent alpha everywhere outside the illustration.",
+          "initialPrompt": "Transparent production PNG for existing Columbina desktop pet. Preserve supplied character identity: same attractive anime face, purple eyes, burgundy hair, white feather headdress, white/lavender moon dress. Exactly TWO human arms, TWO hands, TWO sleeves, TWO legs and natural BARE feet with visible toes, no footwear. Preserve Luo Xiaohei from second reference EXACTLY as flat black cartoon cat: huge complete cream round eye rings, dark pupils with highlights, light green inner ears, tiny blue mouth, brown linework, FOUR cat limbs and ONE tail. NO eyelid/horizontal strokes inside cat eyes, no realistic fur, no white cat. Keep one human and one cat only. Square canvas full human body at consistent scale, floor at 95%, 4% margin all sides, all hair, feathers, fingers and toes inside. No background/ground/text. Truly transparent alpha including all gaps and clean edges. Columbina halfway standing up from a gentle crouch, both knees still bent, lifting Luo Xiaohei with BOTH hands supporting under belly and hindquarters at her waist. Cat looks up happily, paws gathered safely, body nestled between her forearms. Exactly two hands visible, no hands left on knees. Face gazes affectionately down at cat, sleeves fall naturally, no other cat.",
+          "reference": "C:\\Users\\Thomas Gao\\.codex\\generated_images\\01a12baa-b38e-73c3-b8c3-df524f8bb206\\exec-f52ab597-d719-46c6-89d2-4f99d1fd155f.png"
+        },
+        {
+          "file": "./activity-scene-cat-hug.png",
+          "prompt": "Framing-only repair of this exact desktop pet sprite. Preserve exactly this pose, character identity, expression, costume, barefoot feet, both hands, and the single Luo Xiaohei black cat with full round eyes without horizontal marks. Fit the ENTIRE existing subject into the same square canvas by uniformly reducing it to 90% size and centering it, leaving at least 4% fully transparent clear margin on ALL FOUR sides. Restore any clipped tips of white feather ornaments and toes naturally. Do not zoom in. No new objects, no extra arms, sleeves, legs, cats, text or background. Genuine transparent alpha everywhere outside the illustration.",
+          "initialPrompt": "Transparent production PNG for existing Columbina desktop pet. Preserve supplied character identity: same attractive anime face, purple eyes, burgundy hair, white feather headdress, white/lavender moon dress. Exactly TWO human arms, TWO hands, TWO sleeves, TWO legs and natural BARE feet with visible toes, no footwear. Preserve Luo Xiaohei from second reference EXACTLY as flat black cartoon cat: huge complete cream round eye rings, dark pupils with highlights, light green inner ears, tiny blue mouth, brown linework, FOUR cat limbs and ONE tail. NO eyelid/horizontal strokes inside cat eyes, no realistic fur, no white cat. Keep one human and one cat only. Square canvas full human body at consistent scale, floor at 95%, 4% margin all sides, all hair, feathers, fingers and toes inside. No background/ground/text. Truly transparent alpha including all gaps and clean edges. Columbina stands relaxed in three-quarter view, gently cradles Luo Xiaohei against upper chest in BOTH arms, one hand supporting bottom and other hand along cat back. Affectionate warm smile looking down at cat. Cat faces slightly toward viewer, full round eyes, green ears, tiny blue mouth, tail curled. Comfortable wholesome pet cuddle, no old crouch hands or spare arms. Full bare feet on ground.",
+          "reference": "C:\\Users\\Thomas Gao\\.codex\\generated_images\\01a12baa-b38e-73c3-b8c3-df524f8bb206\\exec-65e84697-760a-490b-9faf-1766129fc9a6.png"
+        },
+        {
+          "file": "./activity-scene-cat-nuzzle.png",
+          "prompt": "Framing-only repair of this exact desktop pet sprite. Preserve exactly this pose, character identity, expression, costume, barefoot feet, both hands, and the single Luo Xiaohei black cat with full round eyes without horizontal marks. Fit the ENTIRE existing subject into the same square canvas by uniformly reducing it to 90% size and centering it, leaving at least 4% fully transparent clear margin on ALL FOUR sides. Restore any clipped tips of white feather ornaments and toes naturally. Do not zoom in. No new objects, no extra arms, sleeves, legs, cats, text or background. Genuine transparent alpha everywhere outside the illustration.",
+          "initialPrompt": "Transparent production PNG for existing Columbina desktop pet. Preserve supplied character identity: same attractive anime face, purple eyes, burgundy hair, white feather headdress, white/lavender moon dress. Exactly TWO human arms, TWO hands, TWO sleeves, TWO legs and natural BARE feet with visible toes, no footwear. Preserve Luo Xiaohei from second reference EXACTLY as flat black cartoon cat: huge complete cream round eye rings, dark pupils with highlights, light green inner ears, tiny blue mouth, brown linework, FOUR cat limbs and ONE tail. NO eyelid/horizontal strokes inside cat eyes, no realistic fur, no white cat. Keep one human and one cat only. Square canvas full human body at consistent scale, floor at 95%, 4% margin all sides, all hair, feathers, fingers and toes inside. No background/ground/text. Truly transparent alpha including all gaps and clean edges. Full-body Columbina standing, BOTH hands safely support Luo Xiaohei at shoulder height, cat cheek nestles gently against her cheek. Columbina soft delighted smile, head tilted slightly toward cat. Cat keeps full open round eyes with no internal horizontal lines. ONE sleeve/arm on each side only, no third hand supporting head. Elegant relaxed bare-foot stance.",
+          "reference": "C:\\Users\\Thomas Gao\\.codex\\generated_images\\01a12baa-b38e-73c3-b8c3-df524f8bb206\\exec-1daec755-095a-4057-b7ee-6104e8af5dbb.png"
+        },
+        {
+          "file": "./activity-scene-cat-lap.png",
+          "prompt": "Framing-only repair of this exact desktop pet sprite. Preserve exactly this pose, character identity, expression, costume, barefoot feet, both hands, and the single Luo Xiaohei black cat with full round eyes without horizontal marks. Fit the ENTIRE existing subject into the same square canvas by uniformly reducing it to 90% size and centering it, leaving at least 4% fully transparent clear margin on ALL FOUR sides. Restore any clipped tips of white feather ornaments and toes naturally. Do not zoom in. No new objects, no extra arms, sleeves, legs, cats, text or background. Genuine transparent alpha everywhere outside the illustration.",
+          "initialPrompt": "Transparent production PNG for existing Columbina desktop pet. Preserve supplied character identity: same attractive anime face, purple eyes, burgundy hair, white feather headdress, white/lavender moon dress. Exactly TWO human arms, TWO hands, TWO sleeves, TWO legs and natural BARE feet with visible toes, no footwear. Preserve Luo Xiaohei from second reference EXACTLY as flat black cartoon cat: huge complete cream round eye rings, dark pupils with highlights, light green inner ears, tiny blue mouth, brown linework, FOUR cat limbs and ONE tail. NO eyelid/horizontal strokes inside cat eyes, no realistic fur, no white cat. Keep one human and one cat only. Square canvas full human body at consistent scale, floor at 95%, 4% margin all sides, all hair, feathers, fingers and toes inside. No background/ground/text. Truly transparent alpha including all gaps and clean edges. Keep approved front seated chair posture, same beautiful face and chair dimensions. Luo Xiaohei sits curled comfortably on her lap facing viewer, BOTH of her hands rest lovingly around its back and belly, two sleeves only. Head gazes down warmly. Cat ONE tail curls to side, its four paws tucked naturally; full round open eyes. Two visible bare feet, calf decorative markings may stay. Original chair fully visible, no controller/book/background.",
+          "reference": "C:\\Users\\Thomas Gao\\.codex\\generated_images\\01a12baa-b38e-73c3-b8c3-df524f8bb206\\exec-003270b1-361a-45c6-a37c-b8bcfaf668dd.png"
+        },
+        {
+          "file": "./activity-scene-cat-lower.png",
+          "prompt": "Framing-only repair of this exact desktop pet sprite. Preserve exactly this pose, character identity, expression, costume, barefoot feet, both hands, and the single Luo Xiaohei black cat with full round eyes without horizontal marks. Fit the ENTIRE existing subject into the same square canvas by uniformly reducing it to 90% size and centering it, leaving at least 4% fully transparent clear margin on ALL FOUR sides. Restore any clipped tips of white feather ornaments and toes naturally. Do not zoom in. No new objects, no extra arms, sleeves, legs, cats, text or background. Genuine transparent alpha everywhere outside the illustration.",
+          "initialPrompt": "Transparent production PNG for existing Columbina desktop pet. Preserve supplied character identity: same attractive anime face, purple eyes, burgundy hair, white feather headdress, white/lavender moon dress. Exactly TWO human arms, TWO hands, TWO sleeves, TWO legs and natural BARE feet with visible toes, no footwear. Preserve Luo Xiaohei from second reference EXACTLY as flat black cartoon cat: huge complete cream round eye rings, dark pupils with highlights, light green inner ears, tiny blue mouth, brown linework, FOUR cat limbs and ONE tail. NO eyelid/horizontal strokes inside cat eyes, no realistic fur, no white cat. Keep one human and one cat only. Square canvas full human body at consistent scale, floor at 95%, 4% margin all sides, all hair, feathers, fingers and toes inside. No background/ground/text. Truly transparent alpha including all gaps and clean edges. Columbina low crouching as in first reference, BOTH hands holding Luo Xiaohei gently just above ground to her RIGHT, about normalized x=.84,y=.78, ready to set it down. Cat upright with paws stretching downward, complete round eyes. One hand under cat belly and one at back, no hand remaining on her knee, no duplicate cat. Same crouching face and bare feet, dress flowing on left, no ground.",
+          "reference": "C:\\Users\\Thomas Gao\\.codex\\generated_images\\01a12baa-b38e-73c3-b8c3-df524f8bb206\\exec-d8907ead-4af0-4ec9-b364-341c9a9a6885.png"
+        },
+        {
+          "file": "./activity-scene-kitten-run-right.png",
+          "prompt": "Precise Luo Xiaohei cat sprite based on supplied running reference. Preserve exact flat black cartoon body, huge full round cream eyes, green inner ears, tiny blue mouth, brown outlines and four cat limbs/one tail. Full body bounding in square canvas at 85% height with 6% clear transparent padding on all sides. Playful running/jogging toward RIGHT, paws extended and tail trails LEFT. Clean alpha, no pale matte fringe, no ground/objects/text, no realistic fur, no eyelid lines inside eyes.",
+          "initialPrompt": "Precise Luo Xiaohei cat sprite based on supplied running reference. Preserve exact flat black cartoon body, huge full round cream eyes, green inner ears, tiny blue mouth, brown outlines and four cat limbs/one tail. Full body bounding in square canvas at 85% height with 6% clear transparent padding on all sides. Playful running/jogging toward RIGHT, paws extended and tail trails LEFT. Clean alpha, no pale matte fringe, no ground/objects/text, no realistic fur, no eyelid lines inside eyes.",
+          "reference": ["E:\\uu远程\\GameViewer\\Download\\1000025884.png"]
+        },
+        {
+          "file": "./activity-scene-kitten-roll.png",
+          "prompt": "Same exact Luo Xiaohei from supplied black cartoon reference, no redesign. Playfully rolls on its back on the ground, soft rounded black belly facing viewer, four small paws visible upward, ONE curled tail. Huge COMPLETE round cream eyes and dark pupils with highlight, green inner ears, tiny blue mouth, no horizontal lines inside eyes. Flat clean brown linework, no realistic fur. Full cat in square transparent canvas at about 82% body size, 6% margins, floor at94%, no objects/shadow/ground.",
+          "initialPrompt": "Same exact Luo Xiaohei from supplied black cartoon reference, no redesign. Playfully rolls on its back on the ground, soft rounded black belly facing viewer, four small paws visible upward, ONE curled tail. Huge COMPLETE round cream eyes and dark pupils with highlight, green inner ears, tiny blue mouth, no horizontal lines inside eyes. Flat clean brown linework, no realistic fur. Full cat in square transparent canvas at about 82% body size, 6% margins, floor at94%, no objects/shadow/ground.",
+          "reference": [
+            "D:\\桌宠\\app\\renderer\\activity-scene-kitten-idle.png"
+          ]
+        },
+        {
+          "file": "./activity-scene-kitten-stretch.png",
+          "prompt": "Same exact Luo Xiaohei flat black cartoon identity. Cute stretch pose: two front paws extend along ground toward LEFT, body gently arched, hind paws supporting, one tail curves upwards, huge full round cream eyes looking toward viewer, green inner ears, tiny blue mouth, dark pupils and highlights with NO eyelid lines inside. Exactly four paws and one tail. Full cat with 6% margins on square transparent canvas, same scale about82% height, no background/ground/objects/text.",
+          "initialPrompt": "Same exact Luo Xiaohei flat black cartoon identity. Cute stretch pose: two front paws extend along ground toward LEFT, body gently arched, hind paws supporting, one tail curves upwards, huge full round cream eyes looking toward viewer, green inner ears, tiny blue mouth, dark pupils and highlights with NO eyelid lines inside. Exactly four paws and one tail. Full cat with 6% margins on square transparent canvas, same scale about82% height, no background/ground/objects/text.",
+          "reference": [
+            "D:\\桌宠\\app\\renderer\\activity-scene-kitten-idle.png"
+          ]
+        },
+        {
+          "file": "./activity-scene-kitten-curled.png",
+          "prompt": "Same exact Luo Xiaohei flat black cartoon identity, curled up comfortably for a quiet rest: rounded black body, hind paws tucked, two front paws under chin, ONE tail curling around side. Keep full unobstructed round cream eyes, dark pupils and one highlight each, green ears, tiny blue mouth, NO horizontal strokes inside eyes, no realistic fur. Friendly dozy body posture rather than changing eye design. Full cat square transparent sprite, 6% margins, floor94%, no ground/objects/text.",
+          "initialPrompt": "Same exact Luo Xiaohei flat black cartoon identity, curled up comfortably for a quiet rest: rounded black body, hind paws tucked, two front paws under chin, ONE tail curling around side. Keep full unobstructed round cream eyes, dark pupils and one highlight each, green ears, tiny blue mouth, NO horizontal strokes inside eyes, no realistic fur. Friendly dozy body posture rather than changing eye design. Full cat square transparent sprite, 6% margins, floor94%, no ground/objects/text.",
+          "reference": [
+            "D:\\桌宠\\app\\renderer\\activity-scene-kitten-idle.png"
+          ]
+        },
+        {
+          "file": "./activity-scene-kitten-run-left.png",
+          "prompt": "Create the matching opposite-direction running pose of this exact Luo Xiaohei black kitten: head, nose and gaze face LEFT, tail trails to the RIGHT. Four paws in a lively bounding running pose. Same flat black silhouette, green inner ears, two large FULL round cream eyes with black pupils and tiny highlights; absolutely NO horizontal strokes inside either eye. Complete tail and paws, 5% clear canvas margins, genuine transparent background, no scene, text or objects.",
+          "initialPrompt": null,
+          "reference": "C:\\Users\\Thomas Gao\\.codex\\generated_images\\01a12baa-b38e-73c3-b8c3-df524f8bb206\\exec-c900727d-581e-485a-bb01-afb732ff1d0d.png"
+        },
+        {
+          "file": "./activity-scene-cat-ready.png",
+          "prompt": "Production desktop-pet identity correction. FIRST reference is the USER'S REQUIRED Columbina character model and art style: preserve her exact mature delicate face, slender body proportions, purple eyes, straight dark burgundy hair with magenta ends, X hair ribbons, white feather headdress, layered white/lavender moon costume, moon brooch, large draping sleeves. Use the clean soft shaded anime LINEART style of FIRST reference; NOT chibi, not huge doll head, not photorealistic, no costume redesign. SECOND reference supplies ONLY the exact action pose and canvas registration. Redraw SECOND pose with FIRST identity/style. Preserve exact chair/thigh/knee positions if seated. Exactly two arms, two hands and corresponding sleeves, two legs and TWO BARE feet with natural exposed toes and skin on feet; no shoes or patterns on instep. Keep the SAME single Luo Xiaohei cat in the SECOND if present, with flat black body, light-green inner ears, full round cream eyes and intact dark pupils with no horizontal lines. If SECOND has NO cat, draw NO cat. Maintain the same emotional expression and eye direction as SECOND, full body/art within canvas, full feather tips and toes with at least 3% clear margins. Keep EXACT scale and placement of torso/chair/knees/hands from SECOND so animation layers register. GENUINE transparent alpha background and gaps, no white background, no scenery, no text, no floating debris.",
+          "identityPrompt": "Production desktop-pet identity correction. FIRST reference is the USER'S REQUIRED Columbina character model and art style: preserve her exact mature delicate face, slender body proportions, purple eyes, straight dark burgundy hair with magenta ends, X hair ribbons, white feather headdress, layered white/lavender moon costume, moon brooch, large draping sleeves. Use the clean soft shaded anime LINEART style of FIRST reference; NOT chibi, not huge doll head, not photorealistic, no costume redesign. SECOND reference supplies ONLY the exact action pose and canvas registration. Redraw SECOND pose with FIRST identity/style. Preserve exact chair/thigh/knee positions if seated. Exactly two arms, two hands and corresponding sleeves, two legs and TWO BARE feet with natural exposed toes and skin on feet; no shoes or patterns on instep. Keep the SAME single Luo Xiaohei cat in the SECOND if present, with flat black body, light-green inner ears, full round cream eyes and intact dark pupils with no horizontal lines. If SECOND has NO cat, draw NO cat. Maintain the same emotional expression and eye direction as SECOND, full body/art within canvas, full feather tips and toes with at least 3% clear margins. Keep EXACT scale and placement of torso/chair/knees/hands from SECOND so animation layers register. GENUINE transparent alpha background and gaps, no white background, no scenery, no text, no floating debris.",
+          "source": "64533d9abc779d61b7cb07ff22f3418a.jpg"
+        },
+        {
+          "file": "./activity-scene-cat-stroke.png",
+          "prompt": "Framing correction ONLY. Keep the exact character, action, face, clothing and illustration style. Uniformly SHRINK the entire artwork to 88% of its current size, center it with at least 5% EMPTY TRANSPARENT margin on all sides. Restore complete white head feather tip if cut. Do not fill the margin, do not zoom in. No new limbs, feet, cat, chair or background. Preserve the intentionally missing lower legs in the torso layer. True transparent alpha. This is a whole-canvas scale-down and padding edit, NOT a pose change.",
+          "identityPrompt": "Production desktop-pet identity correction. FIRST reference is the USER'S REQUIRED Columbina character model and art style: preserve her exact mature delicate face, slender body proportions, purple eyes, straight dark burgundy hair with magenta ends, X hair ribbons, white feather headdress, layered white/lavender moon costume, moon brooch, large draping sleeves. Use the clean soft shaded anime LINEART style of FIRST reference; NOT chibi, not huge doll head, not photorealistic, no costume redesign. SECOND reference supplies ONLY the exact action pose and canvas registration. Redraw SECOND pose with FIRST identity/style. Preserve exact chair/thigh/knee positions if seated. Exactly two arms, two hands and corresponding sleeves, two legs and TWO BARE feet with natural exposed toes and skin on feet; no shoes or patterns on instep. Keep the SAME single Luo Xiaohei cat in the SECOND if present, with flat black body, light-green inner ears, full round cream eyes and intact dark pupils with no horizontal lines. If SECOND has NO cat, draw NO cat. Maintain the same emotional expression and eye direction as SECOND, full body/art within canvas, full feather tips and toes with at least 3% clear margins. Keep EXACT scale and placement of torso/chair/knees/hands from SECOND so animation layers register. GENUINE transparent alpha background and gaps, no white background, no scenery, no text, no floating debris.",
+          "source": "64533d9abc779d61b7cb07ff22f3418a.jpg"
+        },
+        {
+          "file": "./activity-scene-cat-look.png",
+          "prompt": "Production desktop-pet identity correction. FIRST reference is the USER'S REQUIRED Columbina character model and art style: preserve her exact mature delicate face, slender body proportions, purple eyes, straight dark burgundy hair with magenta ends, X hair ribbons, white feather headdress, layered white/lavender moon costume, moon brooch, large draping sleeves. Use the clean soft shaded anime LINEART style of FIRST reference; NOT chibi, not huge doll head, not photorealistic, no costume redesign. SECOND reference supplies ONLY the exact action pose and canvas registration. Redraw SECOND pose with FIRST identity/style. Preserve exact chair/thigh/knee positions if seated. Exactly two arms, two hands and corresponding sleeves, two legs and TWO BARE feet with natural exposed toes and skin on feet; no shoes or patterns on instep. Keep the SAME single Luo Xiaohei cat in the SECOND if present, with flat black body, light-green inner ears, full round cream eyes and intact dark pupils with no horizontal lines. If SECOND has NO cat, draw NO cat. Maintain the same emotional expression and eye direction as SECOND, full body/art within canvas, full feather tips and toes with at least 3% clear margins. Keep EXACT scale and placement of torso/chair/knees/hands from SECOND so animation layers register. GENUINE transparent alpha background and gaps, no white background, no scenery, no text, no floating debris.",
+          "identityPrompt": "Production desktop-pet identity correction. FIRST reference is the USER'S REQUIRED Columbina character model and art style: preserve her exact mature delicate face, slender body proportions, purple eyes, straight dark burgundy hair with magenta ends, X hair ribbons, white feather headdress, layered white/lavender moon costume, moon brooch, large draping sleeves. Use the clean soft shaded anime LINEART style of FIRST reference; NOT chibi, not huge doll head, not photorealistic, no costume redesign. SECOND reference supplies ONLY the exact action pose and canvas registration. Redraw SECOND pose with FIRST identity/style. Preserve exact chair/thigh/knee positions if seated. Exactly two arms, two hands and corresponding sleeves, two legs and TWO BARE feet with natural exposed toes and skin on feet; no shoes or patterns on instep. Keep the SAME single Luo Xiaohei cat in the SECOND if present, with flat black body, light-green inner ears, full round cream eyes and intact dark pupils with no horizontal lines. If SECOND has NO cat, draw NO cat. Maintain the same emotional expression and eye direction as SECOND, full body/art within canvas, full feather tips and toes with at least 3% clear margins. Keep EXACT scale and placement of torso/chair/knees/hands from SECOND so animation layers register. GENUINE transparent alpha background and gaps, no white background, no scenery, no text, no floating debris.",
+          "source": "64533d9abc779d61b7cb07ff22f3418a.jpg"
+        },
+        {
+          "file": "./activity-scene-cat-lift.png",
+          "prompt": "Production desktop-pet identity correction. FIRST reference is the USER'S REQUIRED Columbina character model and art style: preserve her exact mature delicate face, slender body proportions, purple eyes, straight dark burgundy hair with magenta ends, X hair ribbons, white feather headdress, layered white/lavender moon costume, moon brooch, large draping sleeves. Use the clean soft shaded anime LINEART style of FIRST reference; NOT chibi, not huge doll head, not photorealistic, no costume redesign. SECOND reference supplies ONLY the exact action pose and canvas registration. Redraw SECOND pose with FIRST identity/style. Preserve exact chair/thigh/knee positions if seated. Exactly two arms, two hands and corresponding sleeves, two legs and TWO BARE feet with natural exposed toes and skin on feet; no shoes or patterns on instep. Keep the SAME single Luo Xiaohei cat in the SECOND if present, with flat black body, light-green inner ears, full round cream eyes and intact dark pupils with no horizontal lines. If SECOND has NO cat, draw NO cat. Maintain the same emotional expression and eye direction as SECOND, full body/art within canvas, full feather tips and toes with at least 3% clear margins. Keep EXACT scale and placement of torso/chair/knees/hands from SECOND so animation layers register. GENUINE transparent alpha background and gaps, no white background, no scenery, no text, no floating debris.",
+          "identityPrompt": "Production desktop-pet identity correction. FIRST reference is the USER'S REQUIRED Columbina character model and art style: preserve her exact mature delicate face, slender body proportions, purple eyes, straight dark burgundy hair with magenta ends, X hair ribbons, white feather headdress, layered white/lavender moon costume, moon brooch, large draping sleeves. Use the clean soft shaded anime LINEART style of FIRST reference; NOT chibi, not huge doll head, not photorealistic, no costume redesign. SECOND reference supplies ONLY the exact action pose and canvas registration. Redraw SECOND pose with FIRST identity/style. Preserve exact chair/thigh/knee positions if seated. Exactly two arms, two hands and corresponding sleeves, two legs and TWO BARE feet with natural exposed toes and skin on feet; no shoes or patterns on instep. Keep the SAME single Luo Xiaohei cat in the SECOND if present, with flat black body, light-green inner ears, full round cream eyes and intact dark pupils with no horizontal lines. If SECOND has NO cat, draw NO cat. Maintain the same emotional expression and eye direction as SECOND, full body/art within canvas, full feather tips and toes with at least 3% clear margins. Keep EXACT scale and placement of torso/chair/knees/hands from SECOND so animation layers register. GENUINE transparent alpha background and gaps, no white background, no scenery, no text, no floating debris.",
+          "source": "64533d9abc779d61b7cb07ff22f3418a.jpg"
+        },
+        {
+          "file": "./activity-scene-cat-hug.png",
+          "prompt": "Production desktop-pet identity correction. FIRST reference is the USER'S REQUIRED Columbina character model and art style: preserve her exact mature delicate face, slender body proportions, purple eyes, straight dark burgundy hair with magenta ends, X hair ribbons, white feather headdress, layered white/lavender moon costume, moon brooch, large draping sleeves. Use the clean soft shaded anime LINEART style of FIRST reference; NOT chibi, not huge doll head, not photorealistic, no costume redesign. SECOND reference supplies ONLY the exact action pose and canvas registration. Redraw SECOND pose with FIRST identity/style. Preserve exact chair/thigh/knee positions if seated. Exactly two arms, two hands and corresponding sleeves, two legs and TWO BARE feet with natural exposed toes and skin on feet; no shoes or patterns on instep. Keep the SAME single Luo Xiaohei cat in the SECOND if present, with flat black body, light-green inner ears, full round cream eyes and intact dark pupils with no horizontal lines. If SECOND has NO cat, draw NO cat. Maintain the same emotional expression and eye direction as SECOND, full body/art within canvas, full feather tips and toes with at least 3% clear margins. Keep EXACT scale and placement of torso/chair/knees/hands from SECOND so animation layers register. GENUINE transparent alpha background and gaps, no white background, no scenery, no text, no floating debris.",
+          "identityPrompt": "Production desktop-pet identity correction. FIRST reference is the USER'S REQUIRED Columbina character model and art style: preserve her exact mature delicate face, slender body proportions, purple eyes, straight dark burgundy hair with magenta ends, X hair ribbons, white feather headdress, layered white/lavender moon costume, moon brooch, large draping sleeves. Use the clean soft shaded anime LINEART style of FIRST reference; NOT chibi, not huge doll head, not photorealistic, no costume redesign. SECOND reference supplies ONLY the exact action pose and canvas registration. Redraw SECOND pose with FIRST identity/style. Preserve exact chair/thigh/knee positions if seated. Exactly two arms, two hands and corresponding sleeves, two legs and TWO BARE feet with natural exposed toes and skin on feet; no shoes or patterns on instep. Keep the SAME single Luo Xiaohei cat in the SECOND if present, with flat black body, light-green inner ears, full round cream eyes and intact dark pupils with no horizontal lines. If SECOND has NO cat, draw NO cat. Maintain the same emotional expression and eye direction as SECOND, full body/art within canvas, full feather tips and toes with at least 3% clear margins. Keep EXACT scale and placement of torso/chair/knees/hands from SECOND so animation layers register. GENUINE transparent alpha background and gaps, no white background, no scenery, no text, no floating debris.",
+          "source": "64533d9abc779d61b7cb07ff22f3418a.jpg"
+        },
+        {
+          "file": "./activity-scene-cat-nuzzle.png",
+          "prompt": "Production desktop-pet identity correction. FIRST reference is the USER'S REQUIRED Columbina character model and art style: preserve her exact mature delicate face, slender body proportions, purple eyes, straight dark burgundy hair with magenta ends, X hair ribbons, white feather headdress, layered white/lavender moon costume, moon brooch, large draping sleeves. Use the clean soft shaded anime LINEART style of FIRST reference; NOT chibi, not huge doll head, not photorealistic, no costume redesign. SECOND reference supplies ONLY the exact action pose and canvas registration. Redraw SECOND pose with FIRST identity/style. Preserve exact chair/thigh/knee positions if seated. Exactly two arms, two hands and corresponding sleeves, two legs and TWO BARE feet with natural exposed toes and skin on feet; no shoes or patterns on instep. Keep the SAME single Luo Xiaohei cat in the SECOND if present, with flat black body, light-green inner ears, full round cream eyes and intact dark pupils with no horizontal lines. If SECOND has NO cat, draw NO cat. Maintain the same emotional expression and eye direction as SECOND, full body/art within canvas, full feather tips and toes with at least 3% clear margins. Keep EXACT scale and placement of torso/chair/knees/hands from SECOND so animation layers register. GENUINE transparent alpha background and gaps, no white background, no scenery, no text, no floating debris.",
+          "identityPrompt": "Production desktop-pet identity correction. FIRST reference is the USER'S REQUIRED Columbina character model and art style: preserve her exact mature delicate face, slender body proportions, purple eyes, straight dark burgundy hair with magenta ends, X hair ribbons, white feather headdress, layered white/lavender moon costume, moon brooch, large draping sleeves. Use the clean soft shaded anime LINEART style of FIRST reference; NOT chibi, not huge doll head, not photorealistic, no costume redesign. SECOND reference supplies ONLY the exact action pose and canvas registration. Redraw SECOND pose with FIRST identity/style. Preserve exact chair/thigh/knee positions if seated. Exactly two arms, two hands and corresponding sleeves, two legs and TWO BARE feet with natural exposed toes and skin on feet; no shoes or patterns on instep. Keep the SAME single Luo Xiaohei cat in the SECOND if present, with flat black body, light-green inner ears, full round cream eyes and intact dark pupils with no horizontal lines. If SECOND has NO cat, draw NO cat. Maintain the same emotional expression and eye direction as SECOND, full body/art within canvas, full feather tips and toes with at least 3% clear margins. Keep EXACT scale and placement of torso/chair/knees/hands from SECOND so animation layers register. GENUINE transparent alpha background and gaps, no white background, no scenery, no text, no floating debris.",
+          "source": "64533d9abc779d61b7cb07ff22f3418a.jpg"
+        },
+        {
+          "file": "./activity-scene-cat-lap.png",
+          "prompt": "Production desktop-pet identity correction. FIRST reference is the USER'S REQUIRED Columbina character model and art style: preserve her exact mature delicate face, slender body proportions, purple eyes, straight dark burgundy hair with magenta ends, X hair ribbons, white feather headdress, layered white/lavender moon costume, moon brooch, large draping sleeves. Use the clean soft shaded anime LINEART style of FIRST reference; NOT chibi, not huge doll head, not photorealistic, no costume redesign. SECOND reference supplies ONLY the exact action pose and canvas registration. Redraw SECOND pose with FIRST identity/style. Preserve exact chair/thigh/knee positions if seated. Exactly two arms, two hands and corresponding sleeves, two legs and TWO BARE feet with natural exposed toes and skin on feet; no shoes or patterns on instep. Keep the SAME single Luo Xiaohei cat in the SECOND if present, with flat black body, light-green inner ears, full round cream eyes and intact dark pupils with no horizontal lines. If SECOND has NO cat, draw NO cat. Maintain the same emotional expression and eye direction as SECOND, full body/art within canvas, full feather tips and toes with at least 3% clear margins. Keep EXACT scale and placement of torso/chair/knees/hands from SECOND so animation layers register. GENUINE transparent alpha background and gaps, no white background, no scenery, no text, no floating debris.",
+          "identityPrompt": "Production desktop-pet identity correction. FIRST reference is the USER'S REQUIRED Columbina character model and art style: preserve her exact mature delicate face, slender body proportions, purple eyes, straight dark burgundy hair with magenta ends, X hair ribbons, white feather headdress, layered white/lavender moon costume, moon brooch, large draping sleeves. Use the clean soft shaded anime LINEART style of FIRST reference; NOT chibi, not huge doll head, not photorealistic, no costume redesign. SECOND reference supplies ONLY the exact action pose and canvas registration. Redraw SECOND pose with FIRST identity/style. Preserve exact chair/thigh/knee positions if seated. Exactly two arms, two hands and corresponding sleeves, two legs and TWO BARE feet with natural exposed toes and skin on feet; no shoes or patterns on instep. Keep the SAME single Luo Xiaohei cat in the SECOND if present, with flat black body, light-green inner ears, full round cream eyes and intact dark pupils with no horizontal lines. If SECOND has NO cat, draw NO cat. Maintain the same emotional expression and eye direction as SECOND, full body/art within canvas, full feather tips and toes with at least 3% clear margins. Keep EXACT scale and placement of torso/chair/knees/hands from SECOND so animation layers register. GENUINE transparent alpha background and gaps, no white background, no scenery, no text, no floating debris.",
+          "source": "64533d9abc779d61b7cb07ff22f3418a.jpg"
+        },
+        {
+          "file": "./activity-scene-cat-lower.png",
+          "prompt": "Production desktop-pet identity correction. FIRST reference is the USER'S REQUIRED Columbina character model and art style: preserve her exact mature delicate face, slender body proportions, purple eyes, straight dark burgundy hair with magenta ends, X hair ribbons, white feather headdress, layered white/lavender moon costume, moon brooch, large draping sleeves. Use the clean soft shaded anime LINEART style of FIRST reference; NOT chibi, not huge doll head, not photorealistic, no costume redesign. SECOND reference supplies ONLY the exact action pose and canvas registration. Redraw SECOND pose with FIRST identity/style. Preserve exact chair/thigh/knee positions if seated. Exactly two arms, two hands and corresponding sleeves, two legs and TWO BARE feet with natural exposed toes and skin on feet; no shoes or patterns on instep. Keep the SAME single Luo Xiaohei cat in the SECOND if present, with flat black body, light-green inner ears, full round cream eyes and intact dark pupils with no horizontal lines. If SECOND has NO cat, draw NO cat. Maintain the same emotional expression and eye direction as SECOND, full body/art within canvas, full feather tips and toes with at least 3% clear margins. Keep EXACT scale and placement of torso/chair/knees/hands from SECOND so animation layers register. GENUINE transparent alpha background and gaps, no white background, no scenery, no text, no floating debris.",
+          "identityPrompt": "Production desktop-pet identity correction. FIRST reference is the USER'S REQUIRED Columbina character model and art style: preserve her exact mature delicate face, slender body proportions, purple eyes, straight dark burgundy hair with magenta ends, X hair ribbons, white feather headdress, layered white/lavender moon costume, moon brooch, large draping sleeves. Use the clean soft shaded anime LINEART style of FIRST reference; NOT chibi, not huge doll head, not photorealistic, no costume redesign. SECOND reference supplies ONLY the exact action pose and canvas registration. Redraw SECOND pose with FIRST identity/style. Preserve exact chair/thigh/knee positions if seated. Exactly two arms, two hands and corresponding sleeves, two legs and TWO BARE feet with natural exposed toes and skin on feet; no shoes or patterns on instep. Keep the SAME single Luo Xiaohei cat in the SECOND if present, with flat black body, light-green inner ears, full round cream eyes and intact dark pupils with no horizontal lines. If SECOND has NO cat, draw NO cat. Maintain the same emotional expression and eye direction as SECOND, full body/art within canvas, full feather tips and toes with at least 3% clear margins. Keep EXACT scale and placement of torso/chair/knees/hands from SECOND so animation layers register. GENUINE transparent alpha background and gaps, no white background, no scenery, no text, no floating debris.",
+          "source": "64533d9abc779d61b7cb07ff22f3418a.jpg"
+        }
+      ],
+      "identityReference": "64533d9abc779d61b7cb07ff22f3418a.jpg"
+    },
+    "environments": {
+      "garden": "./activity-scene-landscape-garden.png"
+    }
+  },
+  "scenery": {
+    "label": "坐椅子看风景",
+    "frames": [
+      "./activity-scene-chair-full-idle.png",
+      "./activity-scene-chair-full-idle-01.png",
+      "./activity-scene-chair-full-idle-02.png",
+      "./activity-scene-chair-full-idle-04.png",
+      "./activity-scene-chair-full-idle-05.png",
+      "./activity-scene-chair-full-idle-06.png",
+      "./activity-scene-chair-full-stars-00.png",
+      "./activity-scene-chair-full-stars-01.png",
+      "./activity-scene-chair-full-stars-02.png",
+      "./activity-scene-chair-full-stars-04.png",
+      "./activity-scene-chair-full-stars-05.png",
+      "./activity-scene-chair-full-stars-06.png",
+      "./activity-scene-chair-full-breeze-00.png",
+      "./activity-scene-chair-full-breeze-01.png",
+      "./activity-scene-chair-full-breeze-02.png",
+      "./activity-scene-chair-full-breeze-04.png",
+      "./activity-scene-chair-full-breeze-05.png",
+      "./activity-scene-chair-full-breeze-06.png"
+    ],
+    "poses": {
+      "idle": "./activity-scene-chair-full-idle.png",
+      "stargaze": "./activity-scene-chair-full-stars-00.png",
+      "breeze": "./activity-scene-chair-full-breeze-00.png"
+    },
+    "processing": {
+      "tool": "built-in imagegen",
+      "background": "transparent alpha",
+      "identityReference": "64533d9abc779d61b7cb07ff22f3418a.jpg",
+      "animation": "18 complete full-body PNG sprites, six per character state; 260 ms per frame, one elapsed-time clock; no separated limbs or overlapping sprites",
+      "anatomyRule": "Every frame contains complete continuous thighs/knees/calves/feet and chair, exactly two hands and two bare feet",
+      "prompts": [
+        {
+          "file": "./activity-scene-landscape-lake.png",
+          "prompt": "Beautiful polished anime desktop-pet scenic vignette, wide landscape composition about 3:2. Lakeside at golden sunset: luminous amber/pink layered sky, distant misty blue mountains, rippling lake reflections, delicate reeds, flowering grass and warm wooden lakeside railing/boardwalk. LEFT foreground has open level space for a separately drawn seated character/chair, horizon about 40% height, scenic lake vista on RIGHT. Rich fine painterly linework, calm soft lighting, no people/animals/chair/text. Entire scene island has genuinely TRANSPARENT background OUTSIDE an organic softly feathered vignette silhouette, all perimeter edges fade smoothly to alpha zero; absolutely no rectangular frame or opaque full-canvas sky. Detailed but readable when scaled small; flowers and shoreline integrated, no geometric polygon placeholder.",
+          "initialPrompt": "Beautiful polished anime desktop-pet scenic vignette, wide landscape composition about 3:2. Lakeside at golden sunset: luminous amber/pink layered sky, distant misty blue mountains, rippling lake reflections, delicate reeds, flowering grass and warm wooden lakeside railing/boardwalk. LEFT foreground has open level space for a separately drawn seated character/chair, horizon about 40% height, scenic lake vista on RIGHT. Rich fine painterly linework, calm soft lighting, no people/animals/chair/text. Entire scene island has genuinely TRANSPARENT background OUTSIDE an organic softly feathered vignette silhouette, all perimeter edges fade smoothly to alpha zero; absolutely no rectangular frame or opaque full-canvas sky. Detailed but readable when scaled small; flowers and shoreline integrated, no geometric polygon placeholder.",
+          "reference": []
+        },
+        {
+          "file": "./activity-scene-landscape-stars.png",
+          "prompt": "Beautiful polished anime desktop-pet scenic vignette, wide landscape 3:2. Stargazing on a grassy hill: deep indigo/lavender sky with delicate Milky Way, many tiny varying stars, crescent moon, distant rolling illuminated valley and misty mountain silhouettes, tiny warm town lights, fine foreground meadow flowers, rustic quiet viewing rail. LEFT foreground open level place for separately drawn seated character/chair, unobstructed star vista on RIGHT. Rich fine painterly illustration, graceful natural curved shapes, no people/animals/chair/text. Genuinely transparent alpha OUTSIDE organic scene island; smooth feathered alpha falloff on ALL perimeter edges, no hard rectangular scene panel, no full-canvas opaque backdrop.",
+          "initialPrompt": "Beautiful polished anime desktop-pet scenic vignette, wide landscape 3:2. Stargazing on a grassy hill: deep indigo/lavender sky with delicate Milky Way, many tiny varying stars, crescent moon, distant rolling illuminated valley and misty mountain silhouettes, tiny warm town lights, fine foreground meadow flowers, rustic quiet viewing rail. LEFT foreground open level place for separately drawn seated character/chair, unobstructed star vista on RIGHT. Rich fine painterly illustration, graceful natural curved shapes, no people/animals/chair/text. Genuinely transparent alpha OUTSIDE organic scene island; smooth feathered alpha falloff on ALL perimeter edges, no hard rectangular scene panel, no full-canvas opaque backdrop.",
+          "reference": []
+        },
+        {
+          "file": "./activity-scene-landscape-garden.png",
+          "prompt": "Beautiful polished anime desktop-pet scenic vignette, wide landscape 3:2. Refined spring cherry-blossom garden with arching pink flowering branches at upper RIGHT, clear little stream with stone path and arched footbridge in distance, layered lush flowers and sun-dappled grasses, warm lantern beside path. LEFT foreground open flat resting spot for separately drawn seated girl/chair, beautiful garden view toward RIGHT. Soft delicate anime painterly details, light drifting petals in still image, no people/animals/chair/text. Organic vignette cutout with genuinely TRANSPARENT alpha outside landscape; softly feathered ALL outer edges, no visible rectangular frame or opaque entire canvas.",
+          "initialPrompt": "Beautiful polished anime desktop-pet scenic vignette, wide landscape 3:2. Refined spring cherry-blossom garden with arching pink flowering branches at upper RIGHT, clear little stream with stone path and arched footbridge in distance, layered lush flowers and sun-dappled grasses, warm lantern beside path. LEFT foreground open flat resting spot for separately drawn seated girl/chair, beautiful garden view toward RIGHT. Soft delicate anime painterly details, light drifting petals in still image, no people/animals/chair/text. Organic vignette cutout with genuinely TRANSPARENT alpha outside landscape; softly feathered ALL outer edges, no visible rectangular frame or opaque entire canvas.",
+          "reference": []
+        },
+        {
+          "file": "./activity-scene-landscape-lake.png",
+          "prompt": "Edge cleanup only of this painterly landscape vignette. Preserve every detail of the beautiful interior scene, exact colors, composition and size. Remove ALL vivid red, magenta, cyan, yellow matte fringes, stray colored pixels, rectangular remnants and detached fragments outside the natural boundary. Outer edges must fade smoothly to genuine transparent alpha with clean softly feathered foliage and mist, no colored halo, no black or white backdrop, no hard rectangle. Keep clear transparent margin all around, especially corners. No people, cats, chairs, text or added objects."
+        },
+        {
+          "file": "./activity-scene-landscape-stars.png",
+          "prompt": "Edge cleanup only of this painterly landscape vignette. Preserve every detail of the beautiful interior scene, exact colors, composition and size. Remove ALL vivid red, magenta, cyan, yellow matte fringes, stray colored pixels, rectangular remnants and detached fragments outside the natural boundary. Outer edges must fade smoothly to genuine transparent alpha with clean softly feathered foliage and mist, no colored halo, no black or white backdrop, no hard rectangle. Keep clear transparent margin all around, especially corners. No people, cats, chairs, text or added objects."
+        },
+        {
+          "file": "./activity-scene-landscape-garden.png",
+          "prompt": "Edge cleanup only of this painterly landscape vignette. Preserve every detail of the beautiful interior scene, exact colors, composition and size. Remove ALL vivid red, magenta, cyan, yellow matte fringes, stray colored pixels, rectangular remnants and detached fragments outside the natural boundary. Outer edges must fade smoothly to genuine transparent alpha with clean softly feathered foliage and mist, no colored halo, no black or white backdrop, no hard rectangle. Keep clear transparent margin all around, especially corners. No people, cats, chairs, text or added objects."
+        },
+        {
+          "file": "./activity-scene-chair-full-idle.png",
+          "prompt": "Create a COMPLETE full-body seated Columbina desktop-pet sprite, genuine transparent alpha. FIRST reference is required identity/style: delicate mature purple-eyed face, straight burgundy/magenta hair, feather headdress, white/lavender moon costume, long draped sleeves, clean soft anime lineart. SECOND reference supplies the exact seated chair pose/placement, but REMOVE THE CAT COMPLETELY, BOTH hands rest together on lap. Gaze softly to upper RIGHT. Two complete legs from thighs through knees to calves to TWO naturally bare feet/toes with clean skin on feet; calf ornament ABOVE ankles can stay. No detached body parts: continuous anatomically correct legs and knees, complete chair. Feet relaxed under knees, side-by-side with a small gap, not fused. Preserve second's chair, dress, framing and canvas registration. Full headdress and every toe inside canvas with 4% transparent margin. No background, floor, text, shadows or extra limbs."
+        },
+        {
+          "file": "./activity-scene-chair-full-idle-01.png",
+          "prompt": "ONE COMPLETE FULL-BODY animation frame, transparent PNG. FIRST reference is the exact registered master seated Columbina sprite. SECOND is user's required identity. Preserve face, mature proportions, white/lavender costume, burgundy hair and head feathers. Crucial: retain SAME square canvas, SAME full-body scale, SAME chair position, SAME torso/thigh/knee/hand locations as FIRST. Draw the COMPLETE continuous character, exactly TWO full legs connected naturally to thighs and knees, TWO feet with natural exposed toes, exactly two hands resting on lap, exactly two arms/sleeves. NO missing calves, NO detached body layers, NO cat, no extra limbs, no shoes. Early left-forward swing: viewer-LEFT calf inclines gently 4 degrees outward, left bare foot slightly higher; RIGHT calf relaxes slightly back. Knees remain fixed. Head gaze softly to RIGHT into the distance, same warm expression as master. This is a modest inbetween frame for a slow graceful eight-frame leg swing; don't wildly kick legs, don't move chair or torso, don't crop. Entire feather tips, chair legs and toes within 3% clear margins. Genuine transparent alpha background and all gaps, no floor, scenery, text, colored fringe or floating fragments. Match original clean anime lineart and soft shading."
+        },
+        {
+          "file": "./activity-scene-chair-full-idle-02.png",
+          "prompt": "ONE COMPLETE FULL-BODY animation frame, transparent PNG. FIRST reference is the exact registered master seated Columbina sprite. SECOND is user's required identity. Preserve face, mature proportions, white/lavender costume, burgundy hair and head feathers. Crucial: retain SAME square canvas, SAME full-body scale, SAME chair position, SAME torso/thigh/knee/hand locations as FIRST. Draw the COMPLETE continuous character, exactly TWO full legs connected naturally to thighs and knees, TWO feet with natural exposed toes, exactly two hands resting on lap, exactly two arms/sleeves. NO missing calves, NO detached body layers, NO cat, no extra limbs, no shoes. Maximum gentle left-forward swing: viewer-LEFT complete leg below knee angles 8 degrees outward to LEFT, left foot subtly lifted forward; viewer-RIGHT leg angles 4 degrees back/inward without crossing. Continuous natural knee-to-foot anatomy. Head gaze softly to RIGHT into the distance, same warm expression as master. This is a modest inbetween frame for a slow graceful eight-frame leg swing; don't wildly kick legs, don't move chair or torso, don't crop. Entire feather tips, chair legs and toes within 3% clear margins. Genuine transparent alpha background and all gaps, no floor, scenery, text, colored fringe or floating fragments. Match original clean anime lineart and soft shading."
+        },
+        {
+          "file": "./activity-scene-chair-full-idle-04.png",
+          "prompt": "ONE COMPLETE FULL-BODY animation frame, transparent PNG. FIRST reference is the exact registered master seated Columbina sprite. SECOND is user's required identity. Preserve face, mature proportions, white/lavender costume, burgundy hair and head feathers. Crucial: retain SAME square canvas, SAME full-body scale, SAME chair position, SAME torso/thigh/knee/hand locations as FIRST. Draw the COMPLETE continuous character, exactly TWO full legs connected naturally to thighs and knees, TWO feet with natural exposed toes, exactly two hands resting on lap, exactly two arms/sleeves. NO missing calves, NO detached body layers, NO cat, no extra limbs, no shoes. Passing through neutral: both lower legs hang relaxed below fixed seated knees, LEFT foot slightly behind RIGHT, clear gap between feet. Head gaze softly to RIGHT into the distance, same warm expression as master. This is a modest inbetween frame for a slow graceful eight-frame leg swing; don't wildly kick legs, don't move chair or torso, don't crop. Entire feather tips, chair legs and toes within 3% clear margins. Genuine transparent alpha background and all gaps, no floor, scenery, text, colored fringe or floating fragments. Match original clean anime lineart and soft shading."
+        },
+        {
+          "file": "./activity-scene-chair-full-idle-05.png",
+          "prompt": "ONE COMPLETE FULL-BODY animation frame, transparent PNG. FIRST reference is the exact registered master seated Columbina sprite. SECOND is user's required identity. Preserve face, mature proportions, white/lavender costume, burgundy hair and head feathers. Crucial: retain SAME square canvas, SAME full-body scale, SAME chair position, SAME torso/thigh/knee/hand locations as FIRST. Draw the COMPLETE continuous character, exactly TWO full legs connected naturally to thighs and knees, TWO feet with natural exposed toes, exactly two hands resting on lap, exactly two arms/sleeves. NO missing calves, NO detached body layers, NO cat, no extra limbs, no shoes. Early right-forward swing: viewer-RIGHT complete calf inclines 4 degrees outward, right bare foot slightly raised forward; LEFT calf relaxes back. Fixed seated knees. Head gaze softly to RIGHT into the distance, same warm expression as master. This is a modest inbetween frame for a slow graceful eight-frame leg swing; don't wildly kick legs, don't move chair or torso, don't crop. Entire feather tips, chair legs and toes within 3% clear margins. Genuine transparent alpha background and all gaps, no floor, scenery, text, colored fringe or floating fragments. Match original clean anime lineart and soft shading."
+        },
+        {
+          "file": "./activity-scene-chair-full-idle-06.png",
+          "prompt": "ONE COMPLETE FULL-BODY animation frame, transparent PNG. FIRST reference is the exact registered master seated Columbina sprite. SECOND is user's required identity. Preserve face, mature proportions, white/lavender costume, burgundy hair and head feathers. Crucial: retain SAME square canvas, SAME full-body scale, SAME chair position, SAME torso/thigh/knee/hand locations as FIRST. Draw the COMPLETE continuous character, exactly TWO full legs connected naturally to thighs and knees, TWO feet with natural exposed toes, exactly two hands resting on lap, exactly two arms/sleeves. NO missing calves, NO detached body layers, NO cat, no extra limbs, no shoes. Maximum gentle right-forward swing: viewer-RIGHT complete leg below knee angles 8 degrees outward to RIGHT, right foot subtly lifted; viewer-LEFT leg inclines 4 degrees back/inward without crossing. Full continuous knee-to-foot anatomy. Head gaze softly to RIGHT into the distance, same warm expression as master. This is a modest inbetween frame for a slow graceful eight-frame leg swing; don't wildly kick legs, don't move chair or torso, don't crop. Entire feather tips, chair legs and toes within 3% clear margins. Genuine transparent alpha background and all gaps, no floor, scenery, text, colored fringe or floating fragments. Match original clean anime lineart and soft shading."
+        },
+        {
+          "file": "./activity-scene-chair-full-stars-00.png",
+          "prompt": "ONE COMPLETE FULL-BODY animation frame, transparent PNG. FIRST reference is the exact registered master seated Columbina sprite. SECOND is user's required identity. Preserve face, mature proportions, white/lavender costume, burgundy hair and head feathers. Crucial: retain SAME square canvas, SAME full-body scale, SAME chair position, SAME torso/thigh/knee/hand locations as FIRST. Draw the COMPLETE continuous character, exactly TWO full legs connected naturally to thighs and knees, TWO feet with natural exposed toes, exactly two hands resting on lap, exactly two arms/sleeves. NO missing calves, NO detached body layers, NO cat, no extra limbs, no shoes. Neutral relaxed legs: both complete bare feet hang naturally below their own knees, a small visible gap between feet. Head and eyes gaze upward-right at stars with a delighted gentle smile, keep same head center, purple eyes. This is a modest inbetween frame for a slow graceful eight-frame leg swing; don't wildly kick legs, don't move chair or torso, don't crop. Entire feather tips, chair legs and toes within 3% clear margins. Genuine transparent alpha background and all gaps, no floor, scenery, text, colored fringe or floating fragments. Match original clean anime lineart and soft shading."
+        },
+        {
+          "file": "./activity-scene-chair-full-stars-01.png",
+          "prompt": "ONE COMPLETE FULL-BODY animation frame, transparent PNG. FIRST reference is the exact registered master seated Columbina sprite. SECOND is user's required identity. Preserve face, mature proportions, white/lavender costume, burgundy hair and head feathers. Crucial: retain SAME square canvas, SAME full-body scale, SAME chair position, SAME torso/thigh/knee/hand locations as FIRST. Draw the COMPLETE continuous character, exactly TWO full legs connected naturally to thighs and knees, TWO feet with natural exposed toes, exactly two hands resting on lap, exactly two arms/sleeves. NO missing calves, NO detached body layers, NO cat, no extra limbs, no shoes. Early left-forward swing: viewer-LEFT calf inclines gently 4 degrees outward, left bare foot slightly higher; RIGHT calf relaxes slightly back. Knees remain fixed. Head and eyes gaze upward-right at stars with a delighted gentle smile, keep same head center, purple eyes. This is a modest inbetween frame for a slow graceful eight-frame leg swing; don't wildly kick legs, don't move chair or torso, don't crop. Entire feather tips, chair legs and toes within 3% clear margins. Genuine transparent alpha background and all gaps, no floor, scenery, text, colored fringe or floating fragments. Match original clean anime lineart and soft shading."
+        },
+        {
+          "file": "./activity-scene-chair-full-stars-02.png",
+          "prompt": "ONE COMPLETE FULL-BODY animation frame, transparent PNG. FIRST reference is the exact registered master seated Columbina sprite. SECOND is user's required identity. Preserve face, mature proportions, white/lavender costume, burgundy hair and head feathers. Crucial: retain SAME square canvas, SAME full-body scale, SAME chair position, SAME torso/thigh/knee/hand locations as FIRST. Draw the COMPLETE continuous character, exactly TWO full legs connected naturally to thighs and knees, TWO feet with natural exposed toes, exactly two hands resting on lap, exactly two arms/sleeves. NO missing calves, NO detached body layers, NO cat, no extra limbs, no shoes. Maximum gentle left-forward swing: viewer-LEFT complete leg below knee angles 8 degrees outward to LEFT, left foot subtly lifted forward; viewer-RIGHT leg angles 4 degrees back/inward without crossing. Continuous natural knee-to-foot anatomy. Head and eyes gaze upward-right at stars with a delighted gentle smile, keep same head center, purple eyes. This is a modest inbetween frame for a slow graceful eight-frame leg swing; don't wildly kick legs, don't move chair or torso, don't crop. Entire feather tips, chair legs and toes within 3% clear margins. Genuine transparent alpha background and all gaps, no floor, scenery, text, colored fringe or floating fragments. Match original clean anime lineart and soft shading."
+        },
+        {
+          "file": "./activity-scene-chair-full-stars-04.png",
+          "prompt": "ONE COMPLETE FULL-BODY animation frame, transparent PNG. FIRST reference is the exact registered master seated Columbina sprite. SECOND is user's required identity. Preserve face, mature proportions, white/lavender costume, burgundy hair and head feathers. Crucial: retain SAME square canvas, SAME full-body scale, SAME chair position, SAME torso/thigh/knee/hand locations as FIRST. Draw the COMPLETE continuous character, exactly TWO full legs connected naturally to thighs and knees, TWO feet with natural exposed toes, exactly two hands resting on lap, exactly two arms/sleeves. NO missing calves, NO detached body layers, NO cat, no extra limbs, no shoes. Passing through neutral: both lower legs hang relaxed below fixed seated knees, LEFT foot slightly behind RIGHT, clear gap between feet. Head and eyes gaze upward-right at stars with a delighted gentle smile, keep same head center, purple eyes. This is a modest inbetween frame for a slow graceful eight-frame leg swing; don't wildly kick legs, don't move chair or torso, don't crop. Entire feather tips, chair legs and toes within 3% clear margins. Genuine transparent alpha background and all gaps, no floor, scenery, text, colored fringe or floating fragments. Match original clean anime lineart and soft shading."
+        },
+        {
+          "file": "./activity-scene-chair-full-stars-05.png",
+          "prompt": "ONE COMPLETE FULL-BODY animation frame, transparent PNG. FIRST reference is the exact registered master seated Columbina sprite. SECOND is user's required identity. Preserve face, mature proportions, white/lavender costume, burgundy hair and head feathers. Crucial: retain SAME square canvas, SAME full-body scale, SAME chair position, SAME torso/thigh/knee/hand locations as FIRST. Draw the COMPLETE continuous character, exactly TWO full legs connected naturally to thighs and knees, TWO feet with natural exposed toes, exactly two hands resting on lap, exactly two arms/sleeves. NO missing calves, NO detached body layers, NO cat, no extra limbs, no shoes. Early right-forward swing: viewer-RIGHT complete calf inclines 4 degrees outward, right bare foot slightly raised forward; LEFT calf relaxes back. Fixed seated knees. Head and eyes gaze upward-right at stars with a delighted gentle smile, keep same head center, purple eyes. This is a modest inbetween frame for a slow graceful eight-frame leg swing; don't wildly kick legs, don't move chair or torso, don't crop. Entire feather tips, chair legs and toes within 3% clear margins. Genuine transparent alpha background and all gaps, no floor, scenery, text, colored fringe or floating fragments. Match original clean anime lineart and soft shading."
+        },
+        {
+          "file": "./activity-scene-chair-full-stars-06.png",
+          "prompt": "ONE COMPLETE FULL-BODY animation frame, transparent PNG. FIRST reference is the exact registered master seated Columbina sprite. SECOND is user's required identity. Preserve face, mature proportions, white/lavender costume, burgundy hair and head feathers. Crucial: retain SAME square canvas, SAME full-body scale, SAME chair position, SAME torso/thigh/knee/hand locations as FIRST. Draw the COMPLETE continuous character, exactly TWO full legs connected naturally to thighs and knees, TWO feet with natural exposed toes, exactly two hands resting on lap, exactly two arms/sleeves. NO missing calves, NO detached body layers, NO cat, no extra limbs, no shoes. Maximum gentle right-forward swing: viewer-RIGHT complete leg below knee angles 8 degrees outward to RIGHT, right foot subtly lifted; viewer-LEFT leg inclines 4 degrees back/inward without crossing. Full continuous knee-to-foot anatomy. Head and eyes gaze upward-right at stars with a delighted gentle smile, keep same head center, purple eyes. This is a modest inbetween frame for a slow graceful eight-frame leg swing; don't wildly kick legs, don't move chair or torso, don't crop. Entire feather tips, chair legs and toes within 3% clear margins. Genuine transparent alpha background and all gaps, no floor, scenery, text, colored fringe or floating fragments. Match original clean anime lineart and soft shading."
+        },
+        {
+          "file": "./activity-scene-chair-full-breeze-00.png",
+          "prompt": "ONE COMPLETE FULL-BODY animation frame, transparent PNG. FIRST reference is the exact registered master seated Columbina sprite. SECOND is user's required identity. Preserve face, mature proportions, white/lavender costume, burgundy hair and head feathers. Crucial: retain SAME square canvas, SAME full-body scale, SAME chair position, SAME torso/thigh/knee/hand locations as FIRST. Draw the COMPLETE continuous character, exactly TWO full legs connected naturally to thighs and knees, TWO feet with natural exposed toes, exactly two hands resting on lap, exactly two arms/sleeves. NO missing calves, NO detached body layers, NO cat, no extra limbs, no shoes. Neutral relaxed legs: both complete bare feet hang naturally below their own knees, a small visible gap between feet. Eyes softly closed in a peaceful smile, hair tips drift subtly to RIGHT in a light breeze, keep same head center and body registration. This is a modest inbetween frame for a slow graceful eight-frame leg swing; don't wildly kick legs, don't move chair or torso, don't crop. Entire feather tips, chair legs and toes within 3% clear margins. Genuine transparent alpha background and all gaps, no floor, scenery, text, colored fringe or floating fragments. Match original clean anime lineart and soft shading."
+        },
+        {
+          "file": "./activity-scene-chair-full-breeze-01.png",
+          "prompt": "ONE COMPLETE FULL-BODY animation frame, transparent PNG. FIRST reference is the exact registered master seated Columbina sprite. SECOND is user's required identity. Preserve face, mature proportions, white/lavender costume, burgundy hair and head feathers. Crucial: retain SAME square canvas, SAME full-body scale, SAME chair position, SAME torso/thigh/knee/hand locations as FIRST. Draw the COMPLETE continuous character, exactly TWO full legs connected naturally to thighs and knees, TWO feet with natural exposed toes, exactly two hands resting on lap, exactly two arms/sleeves. NO missing calves, NO detached body layers, NO cat, no extra limbs, no shoes. Early left-forward swing: viewer-LEFT calf inclines gently 4 degrees outward, left bare foot slightly higher; RIGHT calf relaxes slightly back. Knees remain fixed. Eyes softly closed in a peaceful smile, hair tips drift subtly to RIGHT in a light breeze, keep same head center and body registration. This is a modest inbetween frame for a slow graceful eight-frame leg swing; don't wildly kick legs, don't move chair or torso, don't crop. Entire feather tips, chair legs and toes within 3% clear margins. Genuine transparent alpha background and all gaps, no floor, scenery, text, colored fringe or floating fragments. Match original clean anime lineart and soft shading."
+        },
+        {
+          "file": "./activity-scene-chair-full-breeze-02.png",
+          "prompt": "ONE COMPLETE FULL-BODY animation frame, transparent PNG. FIRST reference is the exact registered master seated Columbina sprite. SECOND is user's required identity. Preserve face, mature proportions, white/lavender costume, burgundy hair and head feathers. Crucial: retain SAME square canvas, SAME full-body scale, SAME chair position, SAME torso/thigh/knee/hand locations as FIRST. Draw the COMPLETE continuous character, exactly TWO full legs connected naturally to thighs and knees, TWO feet with natural exposed toes, exactly two hands resting on lap, exactly two arms/sleeves. NO missing calves, NO detached body layers, NO cat, no extra limbs, no shoes. Maximum gentle left-forward swing: viewer-LEFT complete leg below knee angles 8 degrees outward to LEFT, left foot subtly lifted forward; viewer-RIGHT leg angles 4 degrees back/inward without crossing. Continuous natural knee-to-foot anatomy. Eyes softly closed in a peaceful smile, hair tips drift subtly to RIGHT in a light breeze, keep same head center and body registration. This is a modest inbetween frame for a slow graceful eight-frame leg swing; don't wildly kick legs, don't move chair or torso, don't crop. Entire feather tips, chair legs and toes within 3% clear margins. Genuine transparent alpha background and all gaps, no floor, scenery, text, colored fringe or floating fragments. Match original clean anime lineart and soft shading."
+        },
+        {
+          "file": "./activity-scene-chair-full-breeze-04.png",
+          "prompt": "ONE COMPLETE FULL-BODY animation frame, transparent PNG. FIRST reference is the exact registered master seated Columbina sprite. SECOND is user's required identity. Preserve face, mature proportions, white/lavender costume, burgundy hair and head feathers. Crucial: retain SAME square canvas, SAME full-body scale, SAME chair position, SAME torso/thigh/knee/hand locations as FIRST. Draw the COMPLETE continuous character, exactly TWO full legs connected naturally to thighs and knees, TWO feet with natural exposed toes, exactly two hands resting on lap, exactly two arms/sleeves. NO missing calves, NO detached body layers, NO cat, no extra limbs, no shoes. Passing through neutral: both lower legs hang relaxed below fixed seated knees, LEFT foot slightly behind RIGHT, clear gap between feet. Eyes softly closed in a peaceful smile, hair tips drift subtly to RIGHT in a light breeze, keep same head center and body registration. This is a modest inbetween frame for a slow graceful eight-frame leg swing; don't wildly kick legs, don't move chair or torso, don't crop. Entire feather tips, chair legs and toes within 3% clear margins. Genuine transparent alpha background and all gaps, no floor, scenery, text, colored fringe or floating fragments. Match original clean anime lineart and soft shading."
+        },
+        {
+          "file": "./activity-scene-chair-full-breeze-05.png",
+          "prompt": "ONE COMPLETE FULL-BODY animation frame, transparent PNG. FIRST reference is the exact registered master seated Columbina sprite. SECOND is user's required identity. Preserve face, mature proportions, white/lavender costume, burgundy hair and head feathers. Crucial: retain SAME square canvas, SAME full-body scale, SAME chair position, SAME torso/thigh/knee/hand locations as FIRST. Draw the COMPLETE continuous character, exactly TWO full legs connected naturally to thighs and knees, TWO feet with natural exposed toes, exactly two hands resting on lap, exactly two arms/sleeves. NO missing calves, NO detached body layers, NO cat, no extra limbs, no shoes. Early right-forward swing: viewer-RIGHT complete calf inclines 4 degrees outward, right bare foot slightly raised forward; LEFT calf relaxes back. Fixed seated knees. Eyes softly closed in a peaceful smile, hair tips drift subtly to RIGHT in a light breeze, keep same head center and body registration. This is a modest inbetween frame for a slow graceful eight-frame leg swing; don't wildly kick legs, don't move chair or torso, don't crop. Entire feather tips, chair legs and toes within 3% clear margins. Genuine transparent alpha background and all gaps, no floor, scenery, text, colored fringe or floating fragments. Match original clean anime lineart and soft shading."
+        },
+        {
+          "file": "./activity-scene-chair-full-breeze-06.png",
+          "prompt": "ONE COMPLETE FULL-BODY animation frame, transparent PNG. FIRST reference is the exact registered master seated Columbina sprite. SECOND is user's required identity. Preserve face, mature proportions, white/lavender costume, burgundy hair and head feathers. Crucial: retain SAME square canvas, SAME full-body scale, SAME chair position, SAME torso/thigh/knee/hand locations as FIRST. Draw the COMPLETE continuous character, exactly TWO full legs connected naturally to thighs and knees, TWO feet with natural exposed toes, exactly two hands resting on lap, exactly two arms/sleeves. NO missing calves, NO detached body layers, NO cat, no extra limbs, no shoes. Maximum gentle right-forward swing: viewer-RIGHT complete leg below knee angles 8 degrees outward to RIGHT, right foot subtly lifted; viewer-LEFT leg inclines 4 degrees back/inward without crossing. Full continuous knee-to-foot anatomy. Eyes softly closed in a peaceful smile, hair tips drift subtly to RIGHT in a light breeze, keep same head center and body registration. This is a modest inbetween frame for a slow graceful eight-frame leg swing; don't wildly kick legs, don't move chair or torso, don't crop. Entire feather tips, chair legs and toes within 3% clear margins. Genuine transparent alpha background and all gaps, no floor, scenery, text, colored fringe or floating fragments. Match original clean anime lineart and soft shading."
+        }
+      ]
+    },
+    "environments": {
+      "lake": "./activity-scene-landscape-lake.png",
+      "stars": "./activity-scene-landscape-stars.png",
+      "garden": "./activity-scene-landscape-garden.png"
+    },
+    "props": {
+      "lake": "./activity-scene-landscape-lake.png",
+      "stars": "./activity-scene-landscape-stars.png",
+      "garden": "./activity-scene-landscape-garden.png"
+    },
+    "clips": {
+      "idle": [
+        "./activity-scene-chair-full-idle.png",
+        "./activity-scene-chair-full-idle-01.png",
+        "./activity-scene-chair-full-idle-02.png",
+        "./activity-scene-chair-full-idle-04.png",
+        "./activity-scene-chair-full-idle-05.png",
+        "./activity-scene-chair-full-idle-06.png"
+      ],
+      "stargaze": [
+        "./activity-scene-chair-full-stars-00.png",
+        "./activity-scene-chair-full-stars-01.png",
+        "./activity-scene-chair-full-stars-02.png",
+        "./activity-scene-chair-full-stars-04.png",
+        "./activity-scene-chair-full-stars-05.png",
+        "./activity-scene-chair-full-stars-06.png"
+      ],
+      "breeze": [
+        "./activity-scene-chair-full-breeze-00.png",
+        "./activity-scene-chair-full-breeze-01.png",
+        "./activity-scene-chair-full-breeze-02.png",
+        "./activity-scene-chair-full-breeze-04.png",
+        "./activity-scene-chair-full-breeze-05.png",
+        "./activity-scene-chair-full-breeze-06.png"
+      ]
+    }
+  }
+}

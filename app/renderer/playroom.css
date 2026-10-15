@@ -1,0 +1,229 @@
+.playroom-effects {
+  position: absolute;
+  left: -44px;
+  top: -60px;
+  pointer-events: none;
+  z-index: 3;
+  display: none;
+}
+#playroomControls {
+  position: fixed;
+  left: 12px;
+  bottom: 10px;
+  width: min(330px, calc(100vw - 24px));
+  z-index: 1200;
+  padding: 10px 12px;
+  border: 1px solid #ccb2ed;
+  border-radius: 16px;
+  background: linear-gradient(135deg, #fffaf2f5, #f1eafff5);
+  color: #5c4776;
+  font-size: 12px;
+  box-shadow: 0 4px 18px #44315d35;
+}
+#playroomControls[hidden] {
+  display: none;
+}
+.playroom-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#playroomControls button {
+  border: 1px solid #c4aedf;
+  border-radius: 10px;
+  padding: 5px 12px;
+  cursor: pointer;
+  color: #5b3c79;
+  background: #ffffffc9;
+  font-family: inherit;
+  font-size: 12px;
+}
+#playroomControls button:hover {
+  background: #e9ddfb;
+}
+#playroomControls button:focus-visible {
+  outline: 2px solid #9168be;
+  outline-offset: 2px;
+}
+.playroom-heading button {
+  padding: 0 6px !important;
+  font-size: 18px !important;
+  line-height: 22px;
+}
+.playroom-message {
+  margin: 5px 0 7px;
+  line-height: 1.5;
+}
+.playroom-buttons {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  justify-content: center;
+}
+.playroom-buttons button {
+  min-width: 48px;
+}
+.playroom-meter {
+  position: relative;
+  width: 165px;
+  flex: 1;
+  height: 14px;
+  border-radius: 10px;
+  background: linear-gradient(90deg, #cab1ed, #b6d5f3);
+  box-shadow: inset 0 1px 3px #64488540;
+  overflow: hidden;
+}
+.playroom-zone {
+  position: absolute;
+  left: 40%;
+  width: 20%;
+  height: 100%;
+  background: #ffe19a;
+  border-left: 1px solid #caa16c;
+  border-right: 1px solid #caa16c;
+}
+.playroom-marker {
+  position: absolute;
+  top: 1px;
+  width: 9px;
+  height: 12px;
+  transform: translateX(-50%);
+  border-radius: 50%;
+  background: #fff;
+  border: 1px solid #6e4b98;
+  box-shadow: 0 0 5px white;
+}
+#pet.playroom-pose {
+  animation: playroomBreathe 3s ease-in-out infinite;
+  transform-origin: bottom center;
+}
+@keyframes playroomBreathe {
+  50% {
+    transform: scale(1.007);
+  }
+}
+body.companion-reduced #pet.playroom-pose {
+  animation: none;
+}
+@media (prefers-reduced-motion: reduce) {
+  #pet.playroom-pose {
+    animation: none;
+  }
+}
+
+.playroom-tabs {
+  display: flex;
+  gap: 5px;
+  flex-wrap: wrap;
+  margin: 7px 0;
+  justify-content: center;
+}
+#playroomControls .playroom-tabs button {
+  padding: 4px 8px;
+  flex: 1;
+  white-space: nowrap;
+}
+#playroomControls button[data-active="true"] {
+  color: #fff;
+  background: linear-gradient(135deg, #8761ad, #b58abd);
+  border-color: #8960ac;
+  box-shadow: 0 2px 6px #7a519944;
+}
+.playroom-stats {
+  font-variant-numeric: tabular-nums;
+  text-align: center;
+  margin: 8px 0;
+  padding: 6px;
+  border-radius: 9px;
+  background: #e5d7f080;
+  color: #70508e;
+}
+#playroomControls .playroom-charge {
+  touch-action: none;
+  background: linear-gradient(135deg, #ffe8ad, #edc8b0);
+  font-weight: 600;
+}
+#playroomControls button:disabled {
+  opacity: 0.55;
+  cursor: default;
+}
+
+.playroom-mood {
+  color: #9b7194;
+  font-weight: normal;
+  margin-left: auto;
+  margin-right: 12px;
+}
+.scene-controls {
+  flex-wrap: wrap;
+}
+#sceneKitten {
+  position: fixed;
+  border: 0;
+  padding: 0;
+  background: transparent;
+  z-index: 4;
+  cursor: pointer;
+  outline-offset: -5px;
+  border-radius: 50%;
+}
+#sceneKitten[hidden] {
+  display: none;
+}
+#sceneKitten:focus-visible {
+  outline: 2px solid #f3c5ae;
+}
+#sceneKitten img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  user-select: none;
+  -webkit-user-drag: none;
+  transform-origin: bottom center;
+}
+#sceneKitten img.kitten-react {
+  animation: kittenNuzzle 0.85s ease-in-out infinite;
+}
+.scene-active #motes {
+  opacity: 0.35;
+}
+@keyframes kittenNuzzle {
+  50% {
+    transform: rotate(-3deg) scale(1.015);
+  }
+}
+body.companion-reduced #sceneKitten img {
+  animation: none;
+}
+@media (prefers-reduced-motion: reduce) {
+  #sceneKitten img {
+    animation: none;
+  }
+}
+
+.scene-active .moon-effects {
+  opacity: 0.3;
+}
+
+#sceneBodyCanvas {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  pointer-events: none;
+}
+#sceneBodyCanvas[hidden] {
+  display: none;
+}
+.scene-controls button {
+  flex: 1 0 27%;
+  min-width: 82px;
+}
+.scene-themes button {
+  font-weight: 600;
+}
+.scene-active .moon-effects,
+.scene-active #motes {
+  opacity: 0 !important;
+}

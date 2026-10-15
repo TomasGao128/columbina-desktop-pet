@@ -1,0 +1,298 @@
+{
+  "cake": {
+    "frames": [
+      "./companion-cake-00.webp",
+      "./companion-cake-01.webp",
+      "./companion-cake-02.webp",
+      "./companion-cake-03.webp",
+      "./companion-cake-04.webp",
+      "./companion-cake-05.webp",
+      "./companion-cake-06.webp",
+      "./companion-cake-07.webp"
+    ],
+    "frameCount": 8,
+    "frameMs": 560,
+    "holdMs": 900,
+    "frameDurations": [
+      500,
+      650,
+      700,
+      800,
+      650,
+      700,
+      800,
+      900
+    ],
+    "durationMs": 5700,
+    "fusion": false,
+    "source": "user-sports-cake-20261010",
+    "embeddedProps": true
+  },
+  "ball": {
+    "frames": [
+      "./companion-ball-00.webp",
+      "./companion-ball-01.webp",
+      "./companion-ball-02.webp",
+      "./companion-ball-03.webp",
+      "./companion-ball-04.webp",
+      "./companion-ball-05.webp",
+      "./companion-ball-06.webp",
+      "./companion-ball-07.webp",
+      "./companion-ball-08.webp"
+    ],
+    "frameMs": 190,
+    "holdMs": 400,
+    "frameCount": 9,
+    "fusion": false,
+    "frameDurations": [
+      260,
+      300,
+      330,
+      550,
+      850,
+      650,
+      420,
+      350,
+      600
+    ],
+    "durationMs": 4310
+  },
+  "sing": {
+    "frames": [
+      "./companion-sing-00.webp",
+      "./companion-sing-01.webp",
+      "./companion-sing-02.webp",
+      "./companion-sing-03.webp",
+      "./companion-sing-04.webp",
+      "./companion-sing-05.webp",
+      "./companion-sing-06.webp",
+      "./companion-sing-07.webp",
+      "./companion-sing-08.webp"
+    ],
+    "frameMs": 190,
+    "holdMs": 400,
+    "frameCount": 9,
+    "fusion": false,
+    "frameDurations": [
+      250,
+      350,
+      500,
+      700,
+      1400,
+      850,
+      600,
+      400,
+      550
+    ],
+    "durationMs": 5600
+  },
+  "pinch": {
+    "frames": [
+      "./companion-pinch-00.webp",
+      "./companion-pinch-01.webp",
+      "./companion-pinch-02.webp",
+      "./companion-pinch-03.webp",
+      "./companion-pinch-04.webp",
+      "./companion-pinch-05.webp",
+      "./companion-pinch-06.webp",
+      "./companion-pinch-07.webp",
+      "./companion-pinch-08.webp"
+    ],
+    "frameMs": 190,
+    "holdMs": 400,
+    "frameCount": 9,
+    "fusion": false,
+    "frameDurations": [
+      250,
+      350,
+      450,
+      650,
+      900,
+      650,
+      450,
+      350,
+      650
+    ],
+    "durationMs": 4700
+  },
+  "feather": {
+    "frames": [
+      "./companion-feather-00.webp",
+      "./companion-feather-01.webp",
+      "./companion-feather-02.webp",
+      "./companion-feather-03.webp",
+      "./companion-feather-04.webp",
+      "./companion-feather-05.webp",
+      "./companion-feather-06.webp",
+      "./companion-feather-07.webp",
+      "./companion-feather-08.webp"
+    ],
+    "frameMs": 190,
+    "holdMs": 400,
+    "frameCount": 9,
+    "fusion": false,
+    "frameDurations": [
+      250,
+      300,
+      450,
+      650,
+      950,
+      700,
+      500,
+      350,
+      650
+    ],
+    "durationMs": 4800
+  },
+  "shoulder": {
+    "frames": [
+      "./companion-shoulder-00.webp",
+      "./companion-shoulder-01.webp",
+      "./companion-shoulder-02.webp",
+      "./companion-shoulder-03.webp",
+      "./companion-shoulder-04.webp",
+      "./companion-shoulder-05.webp",
+      "./companion-shoulder-06.webp",
+      "./companion-shoulder-07.webp",
+      "./companion-shoulder-08.webp"
+    ],
+    "frameMs": 190,
+    "holdMs": 400,
+    "frameCount": 9,
+    "fusion": false,
+    "frameDurations": [
+      250,
+      350,
+      450,
+      650,
+      900,
+      650,
+      450,
+      350,
+      650
+    ],
+    "durationMs": 4700
+  },
+  "drag": {
+    "frames": [
+      "./companion-drag-00.webp",
+      "./companion-drag-01.webp",
+      "./companion-drag-02.webp",
+      "./companion-drag-03.webp",
+      "./companion-drag-04.webp",
+      "./companion-drag-05.webp",
+      "./companion-drag-06.webp",
+      "./companion-drag-07.webp",
+      "./companion-drag-08.webp"
+    ],
+    "frameCount": 9,
+    "frameMs": 180,
+    "holdMs": 400,
+    "fusion": false,
+    "mode": "reference-floating-drag",
+    "idleReturnMs": 320,
+    "dropMs": 420
+  },
+  "gaze": {
+    "frames": [
+      "./user-gaze-00.webp",
+      "./user-gaze-01.webp",
+      "./user-gaze-02.webp",
+      "./user-gaze-03.webp",
+      "./user-gaze-04.webp",
+      "./user-gaze-05.webp",
+      "./user-gaze-06.webp",
+      "./user-gaze-07.webp",
+      "./user-gaze-08.webp",
+      "./user-gaze-09.webp",
+      "./user-gaze-10.webp",
+      "./user-gaze-11.webp",
+      "./user-gaze-12.webp",
+      "./user-gaze-13.webp",
+      "./user-gaze-14.webp",
+      "./user-gaze-15.webp",
+      "./user-gaze-16.webp",
+      "./user-gaze-17.webp",
+      "./user-gaze-18.webp",
+      "./user-gaze-19.webp"
+    ],
+    "frameCount": 20,
+    "centerIndex": 0,
+    "wholeFigure": true,
+    "fusion": false,
+    "mode": "user-direction-poses",
+    "gridSize": 5,
+    "easeMs": 95,
+    "stepMs": 70,
+    "settleMs": 140,
+    "directions": {
+      "up": [
+        1,
+        11
+      ],
+      "upRight": [
+        2,
+        12
+      ],
+      "right": [
+        3,
+        13
+      ],
+      "downRight": [
+        4,
+        14
+      ],
+      "down": [
+        5,
+        15
+      ],
+      "downLeft": [
+        6,
+        16
+      ],
+      "left": [
+        7,
+        17
+      ],
+      "upLeft": [
+        8,
+        18
+      ]
+    },
+    "centerVariants": {
+      "neutral": 0,
+      "up": 9,
+      "right": 10,
+      "left": 19
+    }
+  },
+  "badminton": {
+    "frames": [
+      "./companion-badminton-00.webp",
+      "./companion-badminton-01.webp",
+      "./companion-badminton-02.webp",
+      "./companion-badminton-03.webp",
+      "./companion-badminton-04.webp",
+      "./companion-badminton-05.webp",
+      "./companion-badminton-06.webp",
+      "./companion-badminton-07.webp"
+    ],
+    "frameCount": 8,
+    "frameMs": 560,
+    "holdMs": 900,
+    "frameDurations": [
+      500,
+      560,
+      650,
+      560,
+      650,
+      650,
+      700,
+      900
+    ],
+    "durationMs": 5170,
+    "fusion": false,
+    "source": "user-sports-cake-20261010",
+    "embeddedProps": true
+  }
+}
