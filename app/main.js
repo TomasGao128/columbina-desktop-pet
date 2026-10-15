@@ -30,11 +30,6 @@ const TRAY_ICON = path.join(APP_DIR, "pet-face.ico");
 const { edgePeekX } = require("./core/edge-peek");
 let dockSide = null;
 let win = null;
-const chatService = require("./chat-service").installChatService({
-  folder: APP_DIR,
-  getPet: () => win,
-  getMood: () => readSettings().emotionMemory?.mood || "calm",
-});
 let tray = null;
 let burstWindow = null;
 const weatherService = require("./weather-service").installWeather({
@@ -847,7 +842,6 @@ function createWindow() {
     weatherService.dispose();
     stopEdgeSlide();
     burstWindow.stop("pet-closed");
-    chatService.dispose();
     win = null;
   });
 }
@@ -856,7 +850,6 @@ app.on("before-quit", () => {
   controlService.dispose();
   weatherService.dispose();
   burstWindow?.stop("quit");
-  chatService.dispose();
 });
 app.on("window-all-closed", () => app.quit());
 

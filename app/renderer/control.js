@@ -184,7 +184,7 @@
       percent,
       (value) => perform({ type: "set", key: "voiceVolume", value }, false),
     );
-    sound.append(node("p", "头、胸、脚触碰和陪伴聊天仍不播放录音。", "help"));
+    sound.append(node("p", "头、胸、脚触碰仅显示文字与动作，不播放录音。", "help"));
     const tuning = section("互动手感", () =>
       perform({ type: "reset", group: "tuning" }),
     );

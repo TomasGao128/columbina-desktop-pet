@@ -988,13 +988,18 @@ app.whenReady().then(async () => {
       wait,
       temp,
     });
-    await require("./chat-runtime-checks.cjs").run({
-      win,
-      js,
-      check,
-      wait,
-      isolated,
-      temp,
+    await check(
+      "public menu excludes API and academic assistants",
+      "!MENU.some(item=>item.label==='助手')&&!MENU.flatMap(item=>item.items||[]).some(item=>/陪伴聊天|论文修改|文字润色|提炼摘要/.test(item.label||''))",
+    );
+    await check(
+      "public renderer has no chat integration or reply listener",
+      "!document.querySelector('script[src*=chat]')&&ipcRenderer.listenerCount('chat-pet-reply')===0",
+    );
+    checks.push({
+      name: "public app excludes API service and chat UI files",
+      pass: !fs.existsSync(path.join(isolated,"chat-service.js")) &&
+        !fs.existsSync(path.join(isolated,"renderer/chat.html")),
     });
     await require("./weather-checks.cjs").run({
       win,

@@ -227,12 +227,12 @@ async function run({ win, js, check, wait, isolated, temp }) {
     JSON.stringify(!invalidOrder.ok),
   );
   const sub = await js(
-    "MENU.find(g=>g.label==='助手').items.map(it=>it.label).reverse()",
+    "MENU.find(g=>g.label==='动作').items.map(it=>it.label).reverse()",
   );
-  await rpc({ type: "menuOrder", key: "group:助手", value: sub });
+  await rpc({ type: "menuOrder", key: "group:动作", value: sub });
   await check(
     "submenu order preserves original item actions",
-    "renderSubItems(MENU.find(g=>g.label==='助手'));subMenu.firstElementChild.textContent.includes(" +
+    "renderSubItems(MENU.find(g=>g.label==='动作'));subMenu.firstElementChild.textContent.includes(" +
       JSON.stringify(sub[0]) +
       ")",
   );
@@ -244,7 +244,7 @@ async function run({ win, js, check, wait, isolated, temp }) {
     "custom menu order persists through settings whitelist",
     JSON.stringify(
       JSON.stringify(orderSaved.root) === JSON.stringify(reversedOrder) &&
-        JSON.stringify(orderSaved["group:助手"]) === JSON.stringify(sub),
+        JSON.stringify(orderSaved["group:动作"]) === JSON.stringify(sub),
     ),
   );
   await cjs("document.getElementById('refresh').click();true");

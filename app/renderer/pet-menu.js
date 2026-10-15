@@ -60,32 +60,6 @@ const MENU = [
     ],
   },
   {
-    icon: "✉️",
-    label: "助手",
-    items: [
-      {
-        icon: "💬",
-        label: "陪伴聊天",
-        act: () => ipcRenderer.send("open-pet-chat", "chat"),
-      },
-      {
-        icon: "✍️",
-        label: "文字润色",
-        act: () => ipcRenderer.send("open-pet-chat", "polish"),
-      },
-      {
-        icon: "📑",
-        label: "论文修改",
-        act: () => ipcRenderer.send("open-pet-chat", "paper"),
-      },
-      {
-        icon: "📝",
-        label: "提炼摘要",
-        act: () => ipcRenderer.send("open-pet-chat", "summary"),
-      },
-    ],
-  },
-  {
     icon: "🎮",
     label: "玩法",
     items: [
