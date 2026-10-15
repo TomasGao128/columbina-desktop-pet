@@ -4,7 +4,7 @@ Windows 桌面陪伴应用：完整人物动作、桌面写真与换装、贴边
 
 **[下载便携版](https://github.com/TomasGao128/columbina-desktop-pet/releases/latest)** · **[使用说明](docs/USER_GUIDE.md)** · **[更新说明](docs/RELEASE_NOTES.md)**
 
-> 计划发布到 `TomasGao128/columbina-desktop-pet`；若当前仓库仍叫 wonderful，请从当前仓库的 Releases 页面下载。普通用户请选择 windows-x64 完整包，GitHub 自动生成的 Source code 不含素材与运行环境。
+> 普通用户请选择 Release 中的 windows-x64 完整包；GitHub 自动生成的 Source code 不含素材与运行环境。
 
 ## 运行预览
 
